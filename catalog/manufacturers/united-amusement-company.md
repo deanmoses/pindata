@@ -1,0 +1,3 @@
+---
+name: United Amusement Company
+---

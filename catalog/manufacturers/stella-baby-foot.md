@@ -1,0 +1,3 @@
+---
+name: Stella Baby-Foot
+---

@@ -1,0 +1,3 @@
+---
+name: Aristocrat L Standard
+---

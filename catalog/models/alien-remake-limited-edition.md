@@ -1,0 +1,9 @@
+---
+name: Alien (Remake Limited Edition)
+title_slug: alien
+opdb_id: G4PBO-MyNeb-A9pVL
+corporate_entity_slug: pinball-brothers
+year: 2021
+month: 9
+variant_of: alien-remake
+---

@@ -1,0 +1,3 @@
+---
+name: World Manufacturing Company
+---

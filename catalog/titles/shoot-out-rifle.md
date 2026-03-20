@@ -1,0 +1,3 @@
+---
+name: Shoot Out Rifle
+---

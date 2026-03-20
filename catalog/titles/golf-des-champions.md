@@ -1,0 +1,3 @@
+---
+name: Golf des Champions
+---

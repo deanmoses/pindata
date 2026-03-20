@@ -1,0 +1,3 @@
+---
+name: Novomatic AG
+---

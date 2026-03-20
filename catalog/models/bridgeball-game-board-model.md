@@ -1,0 +1,8 @@
+---
+name: Bridgeball (game board model)
+title_slug: bridgeball-game-board-model
+ipdb_id: 6748
+corporate_entity_slug: culp-products-company
+player_count: 1
+technology_generation_slug: pure-mechanical
+---

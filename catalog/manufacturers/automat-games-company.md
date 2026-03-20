@@ -1,0 +1,3 @@
+---
+name: Automat Games Company
+---

@@ -1,0 +1,3 @@
+---
+name: Strip Tease
+---

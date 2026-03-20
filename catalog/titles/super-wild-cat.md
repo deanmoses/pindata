@@ -1,0 +1,3 @@
+---
+name: Super Wild Cat
+---

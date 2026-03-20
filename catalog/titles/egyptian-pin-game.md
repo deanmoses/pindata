@@ -1,0 +1,3 @@
+---
+name: Egyptian Pin Game
+---

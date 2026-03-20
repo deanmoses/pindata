@@ -1,0 +1,8 @@
+---
+name: Miss Bowling Turbo
+title_slug: miss-bowling-turbo
+ipdb_id: 4534
+corporate_entity_slug: willy-michiels
+year: 1990
+technology_generation_slug: solid-state
+---

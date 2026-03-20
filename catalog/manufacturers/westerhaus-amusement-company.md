@@ -1,0 +1,3 @@
+---
+name: Westerhaus Amusement Company
+---

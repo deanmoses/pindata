@@ -1,0 +1,3 @@
+---
+name: Dude Ranch
+---

@@ -1,0 +1,10 @@
+---
+name: Batter Up
+title_slug: batter-up-3
+ipdb_id: 4238
+corporate_entity_slug: exhibit-supply-company
+year: 1935
+month: 6
+player_count: 1
+technology_generation_slug: electromechanical
+---

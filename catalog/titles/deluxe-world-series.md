@@ -1,0 +1,3 @@
+---
+name: Deluxe World Series
+---

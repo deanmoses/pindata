@@ -1,0 +1,3 @@
+---
+name: Klode Shops, Incorporated
+---

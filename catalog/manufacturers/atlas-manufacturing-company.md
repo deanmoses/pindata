@@ -1,0 +1,3 @@
+---
+name: Atlas Manufacturing Company
+---

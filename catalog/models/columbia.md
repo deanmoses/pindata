@@ -1,0 +1,7 @@
+---
+name: Columbia
+title_slug: columbia
+ipdb_id: 4047
+corporate_entity_slug: sirmo-games-sa
+player_count: 1
+---

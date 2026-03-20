@@ -1,0 +1,3 @@
+---
+name: Continental Magic Game
+---

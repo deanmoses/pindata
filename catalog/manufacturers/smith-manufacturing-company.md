@@ -1,0 +1,3 @@
+---
+name: Smith Manufacturing Company
+---

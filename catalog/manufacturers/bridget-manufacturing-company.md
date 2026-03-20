@@ -1,0 +1,3 @@
+---
+name: Bridget Manufacturing Company
+---

@@ -1,0 +1,10 @@
+---
+name: Captain Kidd
+title_slug: captain-kidd-2
+ipdb_id: 435
+corporate_entity_slug: abt-manufacturing-company
+year: 1936
+month: 3
+player_count: 1
+technology_generation_slug: electromechanical
+---

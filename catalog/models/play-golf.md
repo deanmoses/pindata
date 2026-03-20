@@ -1,0 +1,8 @@
+---
+name: Play Golf
+title_slug: play-golf
+ipdb_id: 6631
+corporate_entity_slug: chester-pollard-amusement-co-inc
+player_count: 1
+technology_generation_slug: pure-mechanical
+---

@@ -1,0 +1,10 @@
+---
+name: Golden Arrow
+title_slug: golden-arrow-2
+ipdb_id: 3807
+corporate_entity_slug: royal-novelty-company
+year: 1934
+month: 7
+player_count: 1
+technology_generation_slug: electromechanical
+---

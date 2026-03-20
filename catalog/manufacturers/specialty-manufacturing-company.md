@@ -1,0 +1,3 @@
+---
+name: Specialty Manufacturing Company
+---

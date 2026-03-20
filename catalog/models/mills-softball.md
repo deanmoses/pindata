@@ -1,0 +1,8 @@
+---
+name: Mills Softball
+title_slug: mills-softball
+ipdb_id: 5773
+corporate_entity_slug: mills-novelty-company
+player_count: 1
+technology_generation_slug: electromechanical
+---

@@ -1,0 +1,3 @@
+---
+name: R.G. Kollmorgen
+---

@@ -1,0 +1,3 @@
+---
+name: New Pay Table
+---

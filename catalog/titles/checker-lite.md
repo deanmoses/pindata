@@ -1,0 +1,3 @@
+---
+name: Checker-Lite
+---

@@ -1,0 +1,3 @@
+---
+name: Coupe D'Argent
+---

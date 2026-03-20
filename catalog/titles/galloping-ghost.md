@@ -1,0 +1,3 @@
+---
+name: Galloping Ghost
+---

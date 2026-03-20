@@ -1,0 +1,3 @@
+---
+name: Deluxe Fun Cruise
+---

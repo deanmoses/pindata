@@ -1,0 +1,3 @@
+---
+name: Wild Cat Double
+---

@@ -1,0 +1,3 @@
+---
+name: Stoner Manufacturing Company
+---

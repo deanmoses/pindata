@@ -1,0 +1,3 @@
+---
+name: Ambassador (Standard)
+---

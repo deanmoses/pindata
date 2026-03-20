@@ -1,0 +1,3 @@
+---
+name: Champion Manufacturing Company
+---

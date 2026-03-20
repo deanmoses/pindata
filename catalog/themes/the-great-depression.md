@@ -1,0 +1,3 @@
+---
+name: The Great Depression
+---

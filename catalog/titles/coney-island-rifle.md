@@ -1,0 +1,3 @@
+---
+name: Coney Island Rifle
+---

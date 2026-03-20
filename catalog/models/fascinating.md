@@ -1,0 +1,8 @@
+---
+name: Fascinating
+title_slug: fascinating
+ipdb_id: 5296
+corporate_entity_slug: stoner-manufacturing-company
+year: 1935
+month: 10
+---

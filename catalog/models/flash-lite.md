@@ -1,0 +1,10 @@
+---
+name: Flash Lite
+title_slug: flash-lite
+ipdb_id: 875
+corporate_entity_slug: rock-ola-manufacturing-corporation
+year: 1935
+month: 11
+player_count: 1
+technology_generation_slug: electromechanical
+---

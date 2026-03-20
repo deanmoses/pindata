@@ -1,0 +1,3 @@
+---
+name: Superior Products Co.
+---

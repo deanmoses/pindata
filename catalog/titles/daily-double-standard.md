@@ -1,0 +1,3 @@
+---
+name: Daily Double (Standard)
+---

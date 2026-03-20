@@ -1,0 +1,3 @@
+---
+name: Nash Manufacturing Company
+---

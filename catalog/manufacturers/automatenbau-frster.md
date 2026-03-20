@@ -1,0 +1,3 @@
+---
+name: Automatenbau F�rster
+---

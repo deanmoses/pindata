@@ -1,0 +1,3 @@
+---
+name: Soc. Elettrogiochi
+---

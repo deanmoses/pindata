@@ -1,0 +1,10 @@
+---
+name: Grand Slam
+title_slug: grand-slam-5
+ipdb_id: 1077
+corporate_entity_slug: williams-electronic-manufacturing-corporation
+year: 1964
+month: 2
+player_count: 2
+technology_generation_slug: electromechanical
+---

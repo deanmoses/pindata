@@ -1,0 +1,3 @@
+---
+name: Star Super Slugger
+---

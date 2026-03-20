@@ -1,0 +1,3 @@
+---
+name: Tricks (Senior)
+---

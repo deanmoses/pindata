@@ -1,0 +1,11 @@
+[project]
+name = "pindata"
+version = "0.1.0"
+description = "Pinball catalog data — markdown entity files, schemas, and export tooling"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml",
+    "jsonschema",
+    "boto3",
+    "python-dotenv",
+]

@@ -1,0 +1,3 @@
+---
+name: SlugFest (Second Model)
+---

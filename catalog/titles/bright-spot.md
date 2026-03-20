@@ -1,0 +1,3 @@
+---
+name: Bright Spot
+---

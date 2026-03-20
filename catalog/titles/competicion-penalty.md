@@ -1,0 +1,3 @@
+---
+name: Competición Penalty
+---
