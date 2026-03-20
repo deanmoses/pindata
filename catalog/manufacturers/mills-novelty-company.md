@@ -1,3 +1,9 @@
 ---
 name: Mills Novelty Company
 ---
+
+Mills Novelty Company was one of Chicago's oldest and most influential coin-operated machine manufacturers, with a history that predates pinball by decades. Founded by Herbert S. Mills in the late nineteenth century, the company built its fortune on slot machines, arcade machines, and vending equipment, becoming one of the largest names in the American coin-op industry. When the pinball craze erupted in the early 1930s, Mills applied its considerable manufacturing expertise to the new medium, producing over forty pin games between 1932 and 1941.
+
+Mills' pinball catalog began with [[technologygeneration:pure-mechanical]] countertop games like [[title:deluxe-official]] and [[title:official-pin-table]] (both 1932), then moved to full-sized [[technologygeneration:electromechanical]] machines as the industry matured. Designers [[person:bert-e-mills]] and [[person:kenneth-c-shyvers]] contributed to a body of work that reflected the company's broader manufacturing philosophy: solidly built, commercially reliable, and designed to earn. Mills' pin games competed for tavern and arcade placements alongside those of [[manufacturer:gottlieb]], [[manufacturer:genco]], and [[manufacturer:keeney]] during the medium's formative decade.
+
+Mills exited pinball production around 1941, as wartime priorities and material restrictions reshaped the American manufacturing landscape. The company's pinball output represents a relatively brief chapter in a much longer industrial history — Mills was already a giant of the coin-op world before pinball existed, and its broader legacy in slot machines and vending technology far outlasted its time in the pin game business. But those forty-four titles document the engagement of a major American manufacturer with pinball at the moment of the medium's birth, and the company's presence helped legitimize an industry still finding its footing.
