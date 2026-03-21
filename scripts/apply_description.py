@@ -23,8 +23,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
 from frontmatter import parse_frontmatter  # noqa: E402
 
-__all__ = ["apply_description", "parse_frontmatter"]
-
 
 def apply_description(
     catalog_path: Path,

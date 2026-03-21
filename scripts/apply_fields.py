@@ -27,15 +27,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
 import yaml  # noqa: E402
-from catalog_loader import _DIR_SCHEMA_MAP  # noqa: E402
-from frontmatter import _SCHEMA_DIR, parse_frontmatter, validate_frontmatter  # noqa: E402
+from catalog_loader import DIR_SCHEMA_MAP  # noqa: E402
+from frontmatter import SCHEMA_DIR, parse_frontmatter, validate_frontmatter, yaml_quote  # noqa: E402
 
 __all__ = ["apply_fields"]
 
 
 def _load_schema_properties(schema_name: str) -> list[str]:
     """Load a JSON schema and return its property names in order."""
-    schema_path = _SCHEMA_DIR / f"{schema_name}.schema.json"
+    schema_path = SCHEMA_DIR / f"{schema_name}.schema.json"
     if not schema_path.exists():
         raise FileNotFoundError(f"Schema not found: {schema_path}")
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
@@ -45,11 +45,11 @@ def _load_schema_properties(schema_name: str) -> list[str]:
 def _resolve_schema_name(catalog_path: Path) -> str:
     """Determine the schema name from a catalog file path."""
     dir_name = catalog_path.resolve().parent.name
-    schema_name = _DIR_SCHEMA_MAP.get(dir_name)
+    schema_name = DIR_SCHEMA_MAP.get(dir_name)
     if schema_name is None:
         raise ValueError(
             f"Cannot determine schema for directory '{dir_name}'. "
-            f"Known directories: {', '.join(sorted(_DIR_SCHEMA_MAP))}"
+            f"Known directories: {', '.join(sorted(DIR_SCHEMA_MAP))}"
         )
     return schema_name
 
@@ -71,7 +71,7 @@ def _insert_field(frontmatter_lines: list[str], key: str, value: str, property_o
             continue
         # Extract the field name from lines like "key: value" or "key:"
         # Skip continuation lines (indented, like list items under abbreviations)
-        if line.startswith(" ") or line.startswith("-"):
+        if line.startswith("  ") or line.startswith("- "):
             continue
         field_name = line.split(":")[0].strip()
         if field_name in property_order:
@@ -80,7 +80,7 @@ def _insert_field(frontmatter_lines: list[str], key: str, value: str, property_o
                 # Move past this field and any continuation lines
                 insert_after = i
                 for j in range(i + 1, len(frontmatter_lines) - 1):
-                    if frontmatter_lines[j].startswith(" ") or frontmatter_lines[j].startswith("-"):
+                    if frontmatter_lines[j].startswith("  ") or frontmatter_lines[j].startswith("- "):
                         insert_after = j
                     else:
                         break
@@ -92,13 +92,30 @@ def _insert_field(frontmatter_lines: list[str], key: str, value: str, property_o
     return result
 
 
+def _has_value(existing_fm: dict, key: str) -> bool:
+    """Return True if *key* has a non-empty value in *existing_fm*.
+
+    Treats None, empty string, and empty list as "no value."
+    Numeric 0 and boolean False are considered real values since
+    they represent intentional settings in the schema.
+    """
+    if key not in existing_fm:
+        return False
+    val = existing_fm[key]
+    if val is None:
+        return False
+    if isinstance(val, (list, str)) and len(val) == 0:
+        return False
+    return True
+
+
 def _format_field(key: str, value: str | list[str]) -> list[str]:
     """Format a key/value pair as one or more YAML frontmatter lines."""
     if isinstance(value, list):
         if not value:
             return [f"{key}: []"]
-        return [f"{key}:"] + [f"  - {item}" for item in value]
-    return [f"{key}: {value}"]
+        return [f"{key}:"] + [f"  - {yaml_quote(item)}" for item in value]
+    return [f"{key}: {yaml_quote(value)}"]
 
 
 def apply_fields(
@@ -138,7 +155,7 @@ def apply_fields(
     existing_fm = yaml.safe_load(fm_text) or {}
 
     for key, value in fields.items():
-        if key in existing_fm and existing_fm[key] is not None and str(existing_fm[key]) != "":
+        if _has_value(existing_fm, key):
             if not overwrite:
                 raise RuntimeError(
                     f"{catalog_path}: field '{key}' already has value "
@@ -150,7 +167,7 @@ def apply_fields(
     # lines[0] = '---', lines[-1] = '---'
 
     for key, value in fields.items():
-        if key in existing_fm and existing_fm[key] is not None and str(existing_fm[key]) != "":
+        if _has_value(existing_fm, key):
             # Overwrite: remove the existing field (key line + continuation lines)
             start = None
             for i, line in enumerate(lines):
@@ -209,7 +226,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # Parse key=value pairs. For array fields, split on commas.
     schema_name = _resolve_schema_name(args.catalog_file)
-    schema_path = _SCHEMA_DIR / f"{schema_name}.schema.json"
+    schema_path = SCHEMA_DIR / f"{schema_name}.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     schema_props = schema.get("properties", {})
 

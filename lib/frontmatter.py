@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from pathlib import Path
 
 import yaml
@@ -11,7 +12,7 @@ import yaml
 logger = logging.getLogger(__name__)
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_SCHEMA_DIR = _REPO_ROOT / "schema"
+SCHEMA_DIR = _REPO_ROOT / "schema"
 
 # ---------------------------------------------------------------------------
 # Schema loading
@@ -24,12 +25,41 @@ def _load_schema(schema_name: str) -> dict | None:
     """Load and cache a JSON schema by name."""
     if schema_name in _schema_cache:
         return _schema_cache[schema_name]
-    schema_path = _SCHEMA_DIR / f"{schema_name}.schema.json"
+    schema_path = SCHEMA_DIR / f"{schema_name}.schema.json"
     if not schema_path.exists():
         return None
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     _schema_cache[schema_name] = schema
     return schema
+
+
+# ---------------------------------------------------------------------------
+# YAML helpers
+# ---------------------------------------------------------------------------
+
+# Characters/patterns that require quoting in YAML scalar values.
+_YAML_NEEDS_QUOTING = re.compile(
+    r"""[:#{}\[\]&*?|>!%@`]"""  # special YAML indicators
+    r"""|^['"]"""  # leading quote
+    r"""|^\s|\s$"""  # leading/trailing whitespace
+    r"""|^(true|false|yes|no|null|~)$"""  # YAML booleans / null (case-insensitive)
+    r"""|^-?\d"""  # starts like a number
+    r"""|\n""",  # contains newline
+    re.IGNORECASE,
+)
+
+
+def yaml_quote(value: str) -> str:
+    """Return *value* quoted for use as a YAML scalar if necessary.
+
+    Uses double-quotes so that values containing single quotes are
+    handled correctly.  Values that are safe as bare scalars are
+    returned unchanged.  Empty strings are always quoted.
+    """
+    if not value or _YAML_NEEDS_QUOTING.search(value):
+        escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+        return f'"{escaped}"'
+    return value
 
 
 # ---------------------------------------------------------------------------

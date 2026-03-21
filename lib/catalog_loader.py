@@ -40,7 +40,7 @@ class CatalogRecord:
 # ---------------------------------------------------------------------------
 
 # Maps directory names under catalog/ to their schema file names.
-_DIR_SCHEMA_MAP: dict[str, str] = {
+DIR_SCHEMA_MAP: dict[str, str] = {
     "titles": "title",
     "models": "model",
     "people": "person",
@@ -107,7 +107,7 @@ def _iter_directory(
     if not directory.is_dir():
         return
 
-    schema_name = _DIR_SCHEMA_MAP.get(dir_name)
+    schema_name = DIR_SCHEMA_MAP.get(dir_name)
     entity_type = _DIR_ENTITY_TYPE.get(dir_name, dir_name)
 
     for md_file in sorted(directory.glob("*.md")):
