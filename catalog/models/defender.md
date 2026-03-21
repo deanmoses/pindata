@@ -7,4 +7,7 @@ year: 1987
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: manilamatic-system-80b
+theme_slugs:
+  - adventure
+  - fantasy
 ---

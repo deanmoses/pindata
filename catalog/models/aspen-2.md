@@ -6,4 +6,7 @@ corporate_entity_slug: briarwood-a-division-of-brunswick-manufacturing-company
 year: 1977
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - snow-skiing
+  - sports
 ---

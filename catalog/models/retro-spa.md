@@ -5,4 +5,8 @@ ipdb_id: 7037
 player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - body-building
+  - fantasy
+  - relaxation
 ---

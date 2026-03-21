@@ -10,6 +10,9 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: jersey-jack
 variant_of: the-wizard-of-oz-standard-edition
+theme_slugs:
+  - fantasy
+  - magic-wizards
 credit_refs:
 - person_slug: greg-freres
   role: Art

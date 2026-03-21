@@ -7,6 +7,9 @@ year: 1966
 player_count: 1
 production_quantity: '675'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - ships
+  - travel
 credit_refs:
 - person_slug: ted-zale
   role: Design

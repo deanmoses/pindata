@@ -10,6 +10,9 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: multimorphic-p3-roc
 variant_of: rick-and-morty-standard-edition
+theme_slugs:
+  - cartoons
+  - television-shows
 credit_refs:
 - person_slug: scott-danesi
   role: Design

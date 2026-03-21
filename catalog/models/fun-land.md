@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '3100'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - amusement-parks
+  - carnival
+  - circus
+  - fair
 credit_refs:
 - person_slug: art-stenholm
   role: Art

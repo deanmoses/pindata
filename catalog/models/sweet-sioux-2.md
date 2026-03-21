@@ -6,6 +6,8 @@ corporate_entity_slug: alben
 year: 1959
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - native-americans
 credit_refs:
 - person_slug: roy-parker
   role: Art

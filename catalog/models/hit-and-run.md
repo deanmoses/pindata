@@ -6,4 +6,7 @@ corporate_entity_slug: h-m-manufacturing-company
 year: 1933
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

@@ -11,6 +11,8 @@ production_quantity: '10'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80a
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: keith-parkinson
   role: Art

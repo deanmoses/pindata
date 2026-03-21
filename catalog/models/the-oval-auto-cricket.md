@@ -4,4 +4,7 @@ title_slug: the-oval-auto-cricket
 ipdb_id: 7053
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cricket
+  - sports
 ---

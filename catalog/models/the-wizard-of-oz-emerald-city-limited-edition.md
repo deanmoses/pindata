@@ -9,6 +9,9 @@ player_count: 4
 production_quantity: '1000'
 technology_generation_slug: solid-state
 system_slug: jersey-jack
+theme_slugs:
+  - fantasy
+  - magic-wizards
 credit_refs:
 - person_slug: greg-freres
   role: Art

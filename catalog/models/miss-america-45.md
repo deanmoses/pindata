@@ -5,4 +5,7 @@ ipdb_id: 6290
 corporate_entity_slug: victory-games
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - pageantry
+  - women
 ---

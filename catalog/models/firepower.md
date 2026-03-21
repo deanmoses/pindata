@@ -11,6 +11,8 @@ production_quantity: '17410'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-6
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

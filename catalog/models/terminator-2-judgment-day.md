@@ -11,6 +11,9 @@ production_quantity: '15202'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-dot-matrix
+theme_slugs:
+  - celebrities
+  - movies
 credit_refs:
 - person_slug: doug-watson
   role: Art

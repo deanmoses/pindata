@@ -6,6 +6,9 @@ corporate_entity_slug: bally-manufacturing-corporation
 player_count: 1
 production_quantity: '60'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - ships
+  - travel
 credit_refs:
 - person_slug: ted-zale
   role: Design

@@ -8,6 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
 variant_of: family-fun
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: ed-cebula
   role: Design

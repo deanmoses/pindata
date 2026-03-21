@@ -6,6 +6,8 @@ corporate_entity_slug: mr-game
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: mr-game-1b11188-0
+theme_slugs:
+  - racing
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

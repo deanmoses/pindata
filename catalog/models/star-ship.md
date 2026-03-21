@@ -6,6 +6,8 @@ opdb_id: GRLXd-M4oxP
 ipdb_id: 3498
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

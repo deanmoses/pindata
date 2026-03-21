@@ -6,6 +6,9 @@ corporate_entity_slug: williams-electronics-games-incorporated-a-subsidiary-of-w
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: williams-system-11
+theme_slugs:
+  - bank-robbery
+  - crime
 credit_refs:
 - person_slug: matt-walsh
   role: Design

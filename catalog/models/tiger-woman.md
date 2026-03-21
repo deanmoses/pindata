@@ -7,4 +7,8 @@ ipdb_id: 3904
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - girls
+  - women
 ---

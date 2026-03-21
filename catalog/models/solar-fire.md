@@ -6,6 +6,10 @@ opdb_id: GRB26-MQPwX
 ipdb_id: 2238
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 credit_refs:
 - person_slug: barry-oursler
   role: Design

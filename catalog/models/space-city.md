@@ -9,6 +9,10 @@ month: 1
 player_count: 1
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

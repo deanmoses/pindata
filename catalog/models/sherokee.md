@@ -8,4 +8,8 @@ year: 1978
 month: 1
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - historical
+  - native-americans
 ---

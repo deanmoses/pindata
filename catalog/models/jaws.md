@@ -5,6 +5,9 @@ ipdb_id: 5080
 corporate_entity_slug: europlay
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - scuba-diving
+  - sharks
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

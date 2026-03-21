@@ -11,6 +11,8 @@ production_quantity: '600'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - movies
 credit_refs:
 - person_slug: john-borg
   role: Design

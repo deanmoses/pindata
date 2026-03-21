@@ -6,6 +6,8 @@ opdb_id: G4E0z-MDvl7
 ipdb_id: 1966
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - gambling
 credit_refs:
 - person_slug: ward-pemberton
   role: Design

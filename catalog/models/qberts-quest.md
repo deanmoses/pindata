@@ -11,6 +11,8 @@ production_quantity: '884'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80a
+theme_slugs:
+  - video-games
 credit_refs:
 - person_slug: david-moore
   role: Art

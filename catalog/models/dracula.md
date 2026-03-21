@@ -11,6 +11,9 @@ production_quantity: '3350'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-100
+theme_slugs:
+  - monsters
+  - supernatural
 credit_refs:
 - person_slug: harry-williams
   role: Design

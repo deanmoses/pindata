@@ -5,6 +5,8 @@ ipdb_id: 4992
 corporate_entity_slug: ripepi
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - psychedelic
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

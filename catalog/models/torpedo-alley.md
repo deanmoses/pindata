@@ -6,6 +6,9 @@ opdb_id: G48on-ML8B9
 ipdb_id: 2603
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
+  - war
 credit_refs:
 - person_slug: claude-fernandez
   role: Design

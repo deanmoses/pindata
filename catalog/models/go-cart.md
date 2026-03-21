@@ -9,6 +9,8 @@ month: 5
 player_count: 1
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - go-karts
 credit_refs:
 - person_slug: ed-krynski
   role: Design

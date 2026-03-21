@@ -7,4 +7,8 @@ year: 1937
 month: 4
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - blackjack
+  - cards
+  - gambling
 ---

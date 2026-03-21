@@ -7,6 +7,8 @@ ipdb_id: 2019
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: ron-halliburton
   role: Design

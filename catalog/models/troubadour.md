@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '2500'
 technology_generation_slug: electromechanical
 variant_of: harmony
+theme_slugs:
+  - singing
 credit_refs:
 - person_slug: art-stenholm
   role: Art

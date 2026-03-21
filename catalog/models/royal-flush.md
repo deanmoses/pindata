@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '3400'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: roy-parker
   role: Art

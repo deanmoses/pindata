@@ -5,4 +5,7 @@ ipdb_id: 6763
 corporate_entity_slug: taito-trading-co-ltd
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - lunar-exploration
+  - outer-space
 ---

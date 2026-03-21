@@ -11,6 +11,9 @@ production_quantity: '2342'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80b
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

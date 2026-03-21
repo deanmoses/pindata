@@ -7,4 +7,6 @@ year: 1931
 month: 10
 player_count: 2
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - cards
 ---

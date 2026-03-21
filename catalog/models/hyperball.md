@@ -4,6 +4,9 @@ title_slug: hyperball
 corporate_entity_slug: williams-electronics-incorporated
 ipdb_id: 3169
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

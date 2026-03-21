@@ -9,6 +9,8 @@ month: 6
 player_count: 1
 technology_generation_slug: electromechanical
 variant_of: hurdy-gurdy
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: art-stenholm
   role: Art

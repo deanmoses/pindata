@@ -8,4 +8,9 @@ month: 10
 player_count: 1
 production_quantity: '496'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - boating
+  - hawaii
+  - sailing
+  - swimming
 ---

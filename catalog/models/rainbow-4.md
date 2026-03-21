@@ -7,6 +7,12 @@ year: 1962
 month: 6
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - hawaii
+  - swimming
+  - water
+  - women
 credit_refs:
 - person_slug: ed-krynski
   role: Design

@@ -5,4 +5,10 @@ ipdb_id: 5740
 corporate_entity_slug: iberomatic-sa
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - sailing
+  - swimming
+  - water
 ---

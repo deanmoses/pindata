@@ -8,6 +8,8 @@ month: 11
 player_count: 1
 production_quantity: '2500'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - world-places
 credit_refs:
 - person_slug: roy-parker
   role: Art

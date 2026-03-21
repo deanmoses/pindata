@@ -5,4 +5,7 @@ ipdb_id: 5738
 corporate_entity_slug: irmacor
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - celebration
+  - fair
 ---

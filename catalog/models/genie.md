@@ -6,6 +6,8 @@ opdb_id: GRBKZ-ML8Oe
 ipdb_id: 997
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: ed-krynski
   role: Design

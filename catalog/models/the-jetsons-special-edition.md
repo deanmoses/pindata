@@ -7,4 +7,8 @@ year: 2017
 player_count: 4
 production_quantity: '25'
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoons
+  - outer-space
+  - television-shows
 ---

@@ -11,6 +11,9 @@ production_quantity: '750'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: capcom-a0015405
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: hugh-van-zanten
   role: Art

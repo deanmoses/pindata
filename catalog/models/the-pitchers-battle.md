@@ -6,4 +6,7 @@ corporate_entity_slug: rg-kollmorgen
 year: 1935
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

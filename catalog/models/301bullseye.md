@@ -7,4 +7,7 @@ ipdb_id: 403
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - darts
+  - sports
 ---

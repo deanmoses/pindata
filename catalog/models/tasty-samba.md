@@ -6,4 +6,7 @@ corporate_entity_slug: industria-electromecnica-de-recreativos-sa
 year: 1977
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
 ---

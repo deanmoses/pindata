@@ -8,6 +8,8 @@ display_type_slug: score-reels
 technology_generation_slug: electromechanical
 converted_from: play-pool
 is_conversion: true
+theme_slugs:
+  - historical-characters
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

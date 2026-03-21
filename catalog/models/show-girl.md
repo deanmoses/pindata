@@ -7,4 +7,8 @@ year: 1946
 month: 12
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - girls
+  - show-business
+  - women
 ---

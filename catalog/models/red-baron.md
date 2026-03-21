@@ -9,6 +9,9 @@ month: 6
 player_count: 2
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adventure
+  - war
 credit_refs:
 - person_slug: lloyd-rognan
   role: Art

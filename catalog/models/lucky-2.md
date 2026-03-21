@@ -8,4 +8,7 @@ month: 9
 player_count: 1
 production_quantity: '1826'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 ---

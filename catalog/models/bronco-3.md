@@ -7,6 +7,10 @@ year: 1964
 month: 5
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horses
+  - rodeo
+  - western
 credit_refs:
 - person_slug: al-schlappa
   role: Design

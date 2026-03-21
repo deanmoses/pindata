@@ -5,4 +5,8 @@ ipdb_id: 6719
 corporate_entity_slug: j-esteban
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 ---

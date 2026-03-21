@@ -11,6 +11,8 @@ production_quantity: '3983'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11c
+theme_slugs:
+  - science-fiction
 credit_refs:
 - person_slug: greg-freres
   role: Art

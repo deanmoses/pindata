@@ -6,6 +6,10 @@ corporate_entity_slug: united-manufacturing-company
 year: 1947
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
+  - world-places
 credit_refs:
 - person_slug: gordon-horlick
   role: Design

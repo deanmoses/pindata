@@ -11,6 +11,10 @@ production_quantity: '3655'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80
+theme_slugs:
+  - cavemen
+  - dinosaurs
+  - volcanoes
 credit_refs:
 - person_slug: david-moore
   role: Art

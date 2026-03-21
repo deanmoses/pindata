@@ -6,6 +6,10 @@ opdb_id: G5nz5-M7Z94
 ipdb_id: 6201
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - supernatural
+  - television-shows
+  - zombies
 credit_refs:
 - person_slug: john-borg
   role: Design

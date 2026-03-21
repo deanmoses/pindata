@@ -11,6 +11,8 @@ production_quantity: '2840'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80
+theme_slugs:
+  - celebrities
 credit_refs:
 - person_slug: gerry-simkus
   role: Art

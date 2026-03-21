@@ -7,4 +7,7 @@ year: 1933
 month: 4
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dog-racing
+  - sports
 ---

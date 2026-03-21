@@ -6,4 +6,7 @@ corporate_entity_slug: genco-manufacturing-company
 year: 1941
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

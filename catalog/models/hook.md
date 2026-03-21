@@ -11,6 +11,9 @@ production_quantity: '6705'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - movies
+  - pirates
 credit_refs:
 - person_slug: paul-faris
   role: Art

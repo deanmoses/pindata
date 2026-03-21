@@ -7,4 +7,7 @@ year: 1976
 month: 12
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - basketball
+  - sports
 ---

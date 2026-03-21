@@ -5,4 +5,9 @@ ipdb_id: 4378
 corporate_entity_slug: ami-spa
 year: 1976
 player_count: 1
+theme_slugs:
+  - olympics
+  - running
+  - sports
+  - track-and-field
 ---

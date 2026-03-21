@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '1950'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
+  - boats
 credit_refs:
 - person_slug: roy-parker
   role: Art

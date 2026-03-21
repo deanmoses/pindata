@@ -11,6 +11,8 @@ production_quantity: '1500'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-as2518-17
+theme_slugs:
+  - bicentennial
 credit_refs:
 - person_slug: christian-marche
   role: Art

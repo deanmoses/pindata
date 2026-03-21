@@ -8,4 +8,7 @@ month: 8
 player_count: 1
 production_quantity: '456'
 technology_generation_slug: solid-state
+theme_slugs:
+  - auto-racing
+  - sports
 ---

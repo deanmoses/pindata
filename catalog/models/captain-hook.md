@@ -11,6 +11,8 @@ production_quantity: '450'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - pirates
 credit_refs:
 - person_slug: larry-m-blazek
   role: Art

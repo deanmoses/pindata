@@ -5,4 +5,8 @@ ipdb_id: 6832
 corporate_entity_slug: dutch-pinball
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
+  - robots
 ---

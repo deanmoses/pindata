@@ -9,6 +9,8 @@ month: 5
 player_count: 4
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

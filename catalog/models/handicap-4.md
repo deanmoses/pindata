@@ -6,4 +6,7 @@ corporate_entity_slug: max-jentzsch-meerz
 year: 1935
 player_count: 2
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

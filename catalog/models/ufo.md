@@ -4,4 +4,7 @@ title_slug: ufo
 ipdb_id: 5314
 corporate_entity_slug: model-racing
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

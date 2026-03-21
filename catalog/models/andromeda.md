@@ -11,6 +11,9 @@ production_quantity: '500'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - fantasy
+  - women
 credit_refs:
 - person_slug: paul-faris
   role: Art

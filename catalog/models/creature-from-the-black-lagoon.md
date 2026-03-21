@@ -11,6 +11,10 @@ production_quantity: '7841'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-fliptronics-2
+theme_slugs:
+  - drive-in-movies
+  - monsters
+  - movies
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

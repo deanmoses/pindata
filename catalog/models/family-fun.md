@@ -7,6 +7,8 @@ ipdb_id: 817
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - sports
 credit_refs:
 - person_slug: ed-cebula
   role: Design

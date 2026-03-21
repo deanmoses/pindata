@@ -9,6 +9,8 @@ player_count: 6
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - viper-driving
 credit_refs:
 - person_slug: jeff-busch
   role: Art

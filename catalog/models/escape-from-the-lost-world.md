@@ -6,6 +6,8 @@ opdb_id: G5oEz-MQ7Zw
 ipdb_id: 789
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: dan-langlois
   role: Design

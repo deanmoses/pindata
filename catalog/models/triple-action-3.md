@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '2912'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - girls
+  - women
 credit_refs:
 - person_slug: steve-kordek
   role: Design

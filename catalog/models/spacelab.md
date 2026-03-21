@@ -8,6 +8,8 @@ month: 3
 player_count: 1
 production_quantity: '30'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - space-exploration
 credit_refs:
 - person_slug: christian-marche
   role: Art

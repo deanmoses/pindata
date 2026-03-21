@@ -9,4 +9,7 @@ month: 1
 player_count: 2
 technology_generation_slug: electromechanical
 variant_of: race-way
+theme_slugs:
+  - auto-racing
+  - sports
 ---

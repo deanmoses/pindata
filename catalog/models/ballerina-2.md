@@ -9,6 +9,8 @@ month: 1
 player_count: 1
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - ballet
 credit_refs:
 - person_slug: lester-hilbrich
   role: Art

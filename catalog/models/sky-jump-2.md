@@ -6,4 +6,7 @@ corporate_entity_slug: recel-sa
 year: 1974
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - skydiving
+  - sports
 ---

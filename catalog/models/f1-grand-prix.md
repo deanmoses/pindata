@@ -9,6 +9,9 @@ month: 1
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: adriano-nardi
   role: Art

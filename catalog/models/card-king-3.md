@@ -5,4 +5,6 @@ ipdb_id: 6423
 corporate_entity_slug: emmepi
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
 ---

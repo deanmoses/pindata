@@ -10,6 +10,8 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: stern-sam
 variant_of: ac-dc-premium
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

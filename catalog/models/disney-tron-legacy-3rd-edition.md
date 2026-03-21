@@ -7,6 +7,8 @@ year: 2012
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - science-fiction
 credit_refs:
 - person_slug: john-youssi
   role: Art

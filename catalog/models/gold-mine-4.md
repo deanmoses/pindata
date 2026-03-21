@@ -6,4 +6,6 @@ corporate_entity_slug: marvel-manufacturing-company
 year: 1948
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - prospecting
 ---

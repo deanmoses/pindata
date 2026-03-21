@@ -5,4 +5,11 @@ ipdb_id: 5737
 corporate_entity_slug: irmacor
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - sailing
+  - swimming
+  - water
+  - women
 ---

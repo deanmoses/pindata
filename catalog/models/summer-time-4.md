@@ -6,4 +6,10 @@ corporate_entity_slug: elettrocoin
 year: 1970
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - cards
+  - sailing
+  - swimming
+  - water
 ---

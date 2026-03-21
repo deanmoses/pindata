@@ -7,6 +7,8 @@ ipdb_id: 3507
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - nightlife
 credit_refs:
 - person_slug: john-trudeau
   role: Design

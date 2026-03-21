@@ -6,6 +6,8 @@ corporate_entity_slug: pasini
 year: 1970
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - western
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

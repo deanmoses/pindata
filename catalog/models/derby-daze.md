@@ -6,6 +6,9 @@ corporate_entity_slug: sega-pinball-incorporated
 year: 1997
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: frank-suareo
   role: Mechanics

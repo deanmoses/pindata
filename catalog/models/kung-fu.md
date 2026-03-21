@@ -4,4 +4,7 @@ title_slug: kung-fu
 ipdb_id: 6425
 corporate_entity_slug: jensigame-se
 player_count: 1
+theme_slugs:
+  - martial-arts
+  - sports
 ---

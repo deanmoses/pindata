@@ -6,6 +6,8 @@ opdb_id: GqZZ1-MZeoE
 ipdb_id: 6766
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: eric-meunier
   role: Design

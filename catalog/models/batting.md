@@ -4,4 +4,7 @@ title_slug: batting
 ipdb_id: 5770
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

@@ -11,6 +11,9 @@ production_quantity: '108'
 display_type_slug: score-reels
 technology_generation_slug: solid-state
 system_slug: stern-spike-1
+theme_slugs:
+  - music
+  - singing
 credit_refs:
 - person_slug: jeremy-packer
   role: Art

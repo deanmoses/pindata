@@ -5,4 +5,7 @@ ipdb_id: 5585
 corporate_entity_slug: the-sharp-boyd-company
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

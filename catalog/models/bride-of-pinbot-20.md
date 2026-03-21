@@ -8,4 +8,7 @@ display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 converted_from: bride-of-pinbot
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

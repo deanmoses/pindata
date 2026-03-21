@@ -6,6 +6,8 @@ corporate_entity_slug: bally-manufacturing-corporation
 player_count: 2
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - show-business
 credit_refs:
 - person_slug: dick-white
   role: Art

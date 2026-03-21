@@ -8,6 +8,13 @@ month: 3
 player_count: 1
 production_quantity: '3500'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - high-diving
+  - swimming
+  - water
+  - women
 credit_refs:
 - person_slug: roy-parker
   role: Art

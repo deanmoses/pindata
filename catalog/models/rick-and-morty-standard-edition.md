@@ -6,6 +6,9 @@ opdb_id: GQKb2-MYek0
 ipdb_id: 6640
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoons
+  - television-shows
 credit_refs:
 - person_slug: scott-danesi
   role: Design

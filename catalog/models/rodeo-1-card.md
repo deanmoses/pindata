@@ -5,4 +5,6 @@ ipdb_id: 6209
 corporate_entity_slug: united-manufacturing-company
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - rodeo
 ---

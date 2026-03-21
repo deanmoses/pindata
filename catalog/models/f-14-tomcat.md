@@ -6,6 +6,9 @@ opdb_id: GRY2O-MLWdy
 ipdb_id: 804
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
+  - war
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

@@ -5,6 +5,8 @@ ipdb_id: 5297
 year: 1977
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - circus
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

@@ -6,6 +6,9 @@ opdb_id: G5BP6-MJK4Z
 ipdb_id: 1133
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
+  - supernatural
 credit_refs:
 - person_slug: john-osborne
   role: Design

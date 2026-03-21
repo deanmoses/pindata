@@ -6,4 +6,7 @@ corporate_entity_slug: williams-manufacturing-company
 year: 1945
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - military
+  - world-war-ii
 ---

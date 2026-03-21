@@ -7,4 +7,6 @@ ipdb_id: 785
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - celebrities
 ---

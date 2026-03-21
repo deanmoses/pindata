@@ -6,6 +6,9 @@ opdb_id: Grj6X-MJwj5
 ipdb_id: 5822
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - comics
+  - fantasy
 credit_refs:
 - person_slug: john-borg
   role: Design

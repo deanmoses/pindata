@@ -8,4 +8,6 @@ month: 4
 player_count: 1
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - rodeo
 ---

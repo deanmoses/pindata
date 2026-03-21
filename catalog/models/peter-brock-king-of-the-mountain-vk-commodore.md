@@ -4,4 +4,9 @@ title_slug: peter-brock-holden
 opdb_id: Ge1O1-MYeEB-A9wWL
 corporate_entity_slug: vector-pinball
 variant_of: holden-heritage
+theme_slugs:
+  - bathurst
+  - cars
+  - commodore
+  - racing
 ---

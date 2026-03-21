@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '2650'
 technology_generation_slug: electromechanical
 variant_of: fun-fair
+theme_slugs:
+  - carnival
+  - circus
+  - fair
+  - shooting-gallery
 credit_refs:
 - person_slug: art-stenholm
   role: Art

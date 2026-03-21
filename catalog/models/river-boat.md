@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '1650'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
+  - cards
+  - gambling
+  - riverboats
 credit_refs:
 - person_slug: norm-clark
   role: Design

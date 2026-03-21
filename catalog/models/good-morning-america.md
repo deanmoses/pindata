@@ -9,6 +9,9 @@ player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - celebrities
+  - television-shows
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

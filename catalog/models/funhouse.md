@@ -6,6 +6,9 @@ opdb_id: G5Dz7-Mq139
 ipdb_id: 966
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: larry-demar
   role: Design

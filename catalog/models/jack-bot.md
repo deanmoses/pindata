@@ -6,6 +6,12 @@ opdb_id: GRKOX-MLyrW
 ipdb_id: 3619
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - gambling
+  - outer-space
+  - poker
+  - robots
 credit_refs:
 - person_slug: barry-oursler
   role: Design

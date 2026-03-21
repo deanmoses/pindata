@@ -6,6 +6,10 @@ opdb_id: GRnoY-MQVwx
 ipdb_id: 3494
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
+  - fantasy
+  - time-travel
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

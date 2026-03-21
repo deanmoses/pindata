@@ -9,6 +9,10 @@ month: 6
 player_count: 4
 technology_generation_slug: electromechanical
 variant_of: gator
+theme_slugs:
+  - adventure
+  - alligators
+  - water
 credit_refs:
 - person_slug: jerry-kelley
   role: Art

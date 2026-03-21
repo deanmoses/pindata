@@ -8,4 +8,11 @@ month: 1
 player_count: 1
 production_quantity: '2849'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
+  - girls
+  - historical
+  - pageantry
+  - theater
+  - women
 ---

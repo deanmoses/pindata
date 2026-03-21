@@ -5,4 +5,7 @@ ipdb_id: 6858
 corporate_entity_slug: soyuzattraktsion
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

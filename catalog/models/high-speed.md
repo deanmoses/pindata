@@ -6,6 +6,10 @@ opdb_id: GRvzd-MLxV8
 ipdb_id: 1176
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - driving
+  - police
+  - speeding
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

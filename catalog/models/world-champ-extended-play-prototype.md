@@ -7,6 +7,9 @@ year: 1957
 player_count: 1
 production_quantity: '1'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - boxing
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

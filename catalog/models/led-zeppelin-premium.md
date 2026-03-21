@@ -5,6 +5,8 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: Gweel-ME0pP-ARqVK
 ipdb_id: 6761
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

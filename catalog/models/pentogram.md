@@ -5,4 +5,6 @@ ipdb_id: 4352
 corporate_entity_slug: stern-electronics-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - mythology
 ---

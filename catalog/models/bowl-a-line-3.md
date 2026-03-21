@@ -7,4 +7,7 @@ year: 1950
 month: 9
 production_quantity: '99'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

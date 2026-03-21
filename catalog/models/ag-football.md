@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '500'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - football
+  - soccer
+  - sports
 credit_refs:
 - person_slug: tim-elliott
   role: Art

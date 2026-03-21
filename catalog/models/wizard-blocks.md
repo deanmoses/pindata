@@ -8,6 +8,8 @@ month: 11
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: williams-pinball-2000
+theme_slugs:
+  - magic-wizards
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

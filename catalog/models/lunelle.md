@@ -8,4 +8,6 @@ year: 1981
 month: 7
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 ---

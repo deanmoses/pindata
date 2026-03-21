@@ -6,4 +6,7 @@ corporate_entity_slug: soc-elettrogiochi
 year: 1967
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

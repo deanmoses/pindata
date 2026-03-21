@@ -6,6 +6,9 @@ opdb_id: GrPOR-M61Pw
 ipdb_id: 6099
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - cars
+  - travel
 credit_refs:
 - person_slug: john-trudeau
   role: Design

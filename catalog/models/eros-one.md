@@ -7,6 +7,8 @@ ipdb_id: 3738
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - greek-mythology
 credit_refs:
 - person_slug: r-michael-torrey
   role: Art

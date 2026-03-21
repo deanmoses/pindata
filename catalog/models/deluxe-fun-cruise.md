@@ -8,4 +8,7 @@ month: 11
 player_count: 1
 production_quantity: '460'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - travel
+  - world-places
 ---

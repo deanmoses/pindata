@@ -7,4 +7,8 @@ year: 1949
 month: 10
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
+  - hillbillies
+  - rural-living
 ---

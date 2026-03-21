@@ -7,4 +7,6 @@ year: 1960
 month: 11
 player_count: 3
 technology_generation_slug: electromechanical
+theme_slugs:
+  - medieval
 ---

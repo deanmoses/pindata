@@ -6,4 +6,7 @@ corporate_entity_slug: bell-products-company
 year: 1944
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

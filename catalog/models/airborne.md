@@ -11,6 +11,8 @@ production_quantity: '1350'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: capcom-a0015405
+theme_slugs:
+  - aviation
 credit_refs:
 - person_slug: hugh-van-zanten
   role: Art

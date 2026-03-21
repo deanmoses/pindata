@@ -10,6 +10,10 @@ player_count: 1
 production_quantity: '825'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bullfighting
+  - foreign-peoples
+  - sports
 credit_refs:
 - person_slug: ted-zale
   role: Design

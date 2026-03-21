@@ -4,4 +4,7 @@ title_slug: ascot
 ipdb_id: 5965
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

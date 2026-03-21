@@ -11,6 +11,8 @@ production_quantity: '7000'
 display_type_slug: cga
 technology_generation_slug: solid-state
 system_slug: bally-as2518-133
+theme_slugs:
+  - video-games
 credit_refs:
 - person_slug: margaret-hudson
   role: Art

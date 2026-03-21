@@ -6,6 +6,8 @@ opdb_id: G43WO-M1rdV
 ipdb_id: 2255
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: ed-krynski
   role: Design

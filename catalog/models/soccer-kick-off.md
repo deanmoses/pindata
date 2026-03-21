@@ -9,6 +9,9 @@ month: 3
 player_count: 1
 technology_generation_slug: electromechanical
 variant_of: kick-off-2
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: george-molentin
   role: Art

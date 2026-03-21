@@ -9,6 +9,8 @@ month: 10
 player_count: 2
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
 credit_refs:
 - person_slug: christian-marche
   role: Art

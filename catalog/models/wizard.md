@@ -9,6 +9,9 @@ month: 12
 player_count: 1
 technology_generation_slug: electromechanical
 variant_of: magic-wizard
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: gordon-morison
   role: Art

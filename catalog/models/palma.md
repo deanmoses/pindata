@@ -6,4 +6,10 @@ corporate_entity_slug: talleres-del-llobregat-sa-automaticos
 year: 1966
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - travel
+  - water
+  - women
+  - world-places
 ---

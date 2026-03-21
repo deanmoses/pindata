@@ -7,4 +7,7 @@ year: 1937
 month: 11
 player_count: 7
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

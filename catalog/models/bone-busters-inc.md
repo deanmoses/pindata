@@ -6,6 +6,10 @@ opdb_id: G5Lk0-MQjl3
 ipdb_id: 347
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - ghosts
+  - skeletons
+  - supernatural
 credit_refs:
 - person_slug: ray-tanzer
   role: Design

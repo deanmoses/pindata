@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: playmatic-mpu-4
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: blas-gallego
   role: Art

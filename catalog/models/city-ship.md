@@ -7,4 +7,7 @@ ipdb_id: 5130
 technology_generation_slug: electromechanical
 converted_from: super-spin
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

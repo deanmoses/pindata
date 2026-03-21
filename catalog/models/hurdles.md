@@ -7,4 +7,8 @@ year: 1934
 month: 7
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - running
+  - sports
+  - track-and-field
 ---

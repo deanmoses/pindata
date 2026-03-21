@@ -6,6 +6,9 @@ opdb_id: G4qqv-MDW0P
 ipdb_id: 2090
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - police
+  - spies
 credit_refs:
 - person_slug: joe-kaminkow
   role: Design

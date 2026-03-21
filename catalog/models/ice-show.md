@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '400'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - ice-skating
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

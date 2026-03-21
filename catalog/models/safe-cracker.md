@@ -11,6 +11,9 @@ production_quantity: '1148'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - cops-and-robbers
+  - money
 credit_refs:
 - person_slug: john-youssi
   role: Art

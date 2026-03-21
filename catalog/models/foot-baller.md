@@ -5,4 +5,7 @@ ipdb_id: 4975
 corporate_entity_slug: nordamatic
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

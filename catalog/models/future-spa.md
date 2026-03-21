@@ -11,6 +11,10 @@ production_quantity: '6400'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-as2518-35
+theme_slugs:
+  - body-building
+  - fantasy
+  - relaxation
 credit_refs:
 - person_slug: dave-christensen
   role: Art

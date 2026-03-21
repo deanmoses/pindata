@@ -10,6 +10,10 @@ player_count: 1
 production_quantity: '2200'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
+  - psychedelic
 credit_refs:
 - person_slug: gordon-morison
   role: Art

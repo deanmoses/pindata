@@ -7,6 +7,8 @@ ipdb_id: 4110
 display_type_slug: score-reels
 converted_from: space-orbit
 is_conversion: true
+theme_slugs:
+  - horse-racing
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

@@ -11,6 +11,9 @@ production_quantity: '191'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: capcom-a0015405
+theme_slugs:
+  - outer-space
+  - reproduction
 credit_refs:
 - person_slug: paul-mazur
   role: Art

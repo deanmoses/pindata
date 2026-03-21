@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: lcd
 technology_generation_slug: solid-state
 system_slug: multimorphic-p3-roc
+theme_slugs:
+  - auto-racing
+  - toys
 credit_refs:
 - person_slug: jeff-busch
   role: Art

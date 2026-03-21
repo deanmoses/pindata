@@ -7,6 +7,9 @@ year: 2013
 player_count: 2
 technology_generation_slug: solid-state
 system_slug: stern-spike-1
+theme_slugs:
+  - comics
+  - fantasy
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

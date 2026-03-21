@@ -11,6 +11,8 @@ production_quantity: '2250'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - 1980s-party-theme
 credit_refs:
 - person_slug: pat-mcmahon
   role: Art

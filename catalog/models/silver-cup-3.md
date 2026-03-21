@@ -6,4 +6,7 @@ corporate_entity_slug: th-bergmann-company
 year: 1968
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

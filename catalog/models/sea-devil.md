@@ -5,4 +5,8 @@ ipdb_id: 6386
 corporate_entity_slug: elbos-electronics
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
+  - fantasy
+  - submarine-exploration
 ---

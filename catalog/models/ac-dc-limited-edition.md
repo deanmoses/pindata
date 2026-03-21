@@ -7,6 +7,8 @@ ipdb_id: 5777
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: ac-dc-premium
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

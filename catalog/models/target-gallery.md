@@ -7,4 +7,7 @@ year: 1962
 month: 11
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - shooting-gallery
 ---

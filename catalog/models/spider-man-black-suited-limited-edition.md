@@ -11,6 +11,10 @@ production_quantity: '500'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - comics
+  - movies
+  - superheroes
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

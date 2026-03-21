@@ -11,6 +11,10 @@ production_quantity: '3000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - movies
+  - science-fiction
+  - time-travel
 credit_refs:
 - person_slug: paul-faris
   role: Art

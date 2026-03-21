@@ -7,6 +7,9 @@ year: 1935
 month: 5
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fishing
+  - sports
 credit_refs:
 - person_slug: cliff-dumble
   role: Design

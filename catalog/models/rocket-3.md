@@ -7,6 +7,9 @@ year: 1933
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: herbert-g-breitenstein
   role: Design

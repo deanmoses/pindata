@@ -5,4 +5,6 @@ ipdb_id: 5181
 corporate_entity_slug: american-home-entertainment-a-division-of-azrak-hamway-international-inc
 year: 1993
 technology_generation_slug: solid-state
+theme_slugs:
+  - cops-and-robbers
 ---

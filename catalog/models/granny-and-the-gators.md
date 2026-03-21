@@ -10,6 +10,9 @@ player_count: 2
 display_type_slug: cga
 technology_generation_slug: solid-state
 system_slug: bally-as2518-133
+theme_slugs:
+  - adventure
+  - safari
 credit_refs:
 - person_slug: margaret-hudson
   role: Art

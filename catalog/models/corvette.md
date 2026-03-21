@@ -11,6 +11,8 @@ production_quantity: '5001'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+theme_slugs:
+  - car-culture
 credit_refs:
 - person_slug: dan-hughes
   role: Art

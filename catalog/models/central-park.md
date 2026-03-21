@@ -6,6 +6,8 @@ opdb_id: GRpYQ-MRj0O
 ipdb_id: 481
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
 credit_refs:
 - person_slug: ed-krynski
   role: Design

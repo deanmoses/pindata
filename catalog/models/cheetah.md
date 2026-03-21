@@ -11,6 +11,9 @@ production_quantity: '1223'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - fantasy
+  - jungle
 credit_refs:
 - person_slug: harry-williams
   role: Design

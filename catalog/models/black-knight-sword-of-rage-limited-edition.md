@@ -6,6 +6,9 @@ opdb_id: GD7Ld-MBRP4-A1e4P
 ipdb_id: 6569
 technology_generation_slug: solid-state
 variant_of: black-knight-sword-of-rage-premium
+theme_slugs:
+  - historical
+  - knights
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

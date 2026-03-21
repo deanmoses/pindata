@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '3905'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
+  - women
+  - world-places
 credit_refs:
 - person_slug: john-craig
   role: Art

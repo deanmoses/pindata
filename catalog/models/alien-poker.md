@@ -11,6 +11,11 @@ production_quantity: '6000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-6a
+theme_slugs:
+  - cards
+  - fantasy
+  - gambling
+  - outer-space
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

@@ -6,6 +6,8 @@ opdb_id: GRBE4-MJ9rE
 ipdb_id: 6029
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: john-borg
   role: Design

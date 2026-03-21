@@ -5,4 +5,7 @@ ipdb_id: 6698
 corporate_entity_slug: werbeplan-gmbh
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 ---

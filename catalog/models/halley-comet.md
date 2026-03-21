@@ -9,6 +9,8 @@ month: 1
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: fermn-hernndez-garbayo
   role: Art

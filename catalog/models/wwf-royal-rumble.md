@@ -11,6 +11,10 @@ production_quantity: '3500'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - comedy
+  - sports
+  - wrestling
 credit_refs:
 - person_slug: markus-rothkranz
   role: Art

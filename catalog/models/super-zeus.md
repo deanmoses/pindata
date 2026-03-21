@@ -6,6 +6,8 @@ year: 1979
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: bally-as2518-17
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

@@ -5,4 +5,6 @@ ipdb_id: 6329
 corporate_entity_slug: coin-device-mfg-co-inc
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
 ---

@@ -6,4 +6,7 @@ corporate_entity_slug: california-exhibit-company
 year: 1936
 month: 7
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - poker
 ---

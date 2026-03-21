@@ -5,6 +5,9 @@ corporate_entity_slug: d-gottlieb-company-a-columbia-pictures-industries-company
 opdb_id: GRbD8-MLWx0
 ipdb_id: 1983
 display_type_slug: score-reels
+theme_slugs:
+  - music
+  - singing
 credit_refs:
 - person_slug: john-osborne
   role: Design

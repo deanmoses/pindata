@@ -5,4 +5,6 @@ ipdb_id: 5111
 player_count: 4
 production_quantity: '3'
 technology_generation_slug: solid-state
+theme_slugs:
+  - human-physiology
 ---

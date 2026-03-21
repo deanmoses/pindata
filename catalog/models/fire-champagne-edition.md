@@ -11,6 +11,8 @@ production_quantity: '273'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11a
+theme_slugs:
+  - firefighting
 credit_refs:
 - person_slug: mark-sprenger
   role: Art

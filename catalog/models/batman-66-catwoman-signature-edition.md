@@ -6,4 +6,6 @@ corporate_entity_slug: stern-pinball-incorporated
 year: 2019
 month: 6
 variant_of: batman-66-premium
+theme_slugs:
+  - television-shows
 ---

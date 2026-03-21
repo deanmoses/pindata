@@ -11,6 +11,9 @@ production_quantity: '905'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80a
+theme_slugs:
+  - adventure
+  - fantasy
 credit_refs:
 - person_slug: larry-day
   role: Art

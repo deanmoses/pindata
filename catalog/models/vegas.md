@@ -7,6 +7,8 @@ ipdb_id: 2725
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - gambling
 credit_refs:
 - person_slug: ed-cebula
   role: Design

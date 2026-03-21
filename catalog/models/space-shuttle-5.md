@@ -8,4 +8,7 @@ month: 11
 player_count: 2
 technology_generation_slug: solid-state
 system_slug: sega-95680
+theme_slugs:
+  - outer-space
+  - space-exploration
 ---

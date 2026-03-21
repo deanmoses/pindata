@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '950'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cops-and-robbers
 credit_refs:
 - person_slug: roy-parker
   role: Art

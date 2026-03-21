@@ -5,4 +5,8 @@ ipdb_id: 6872
 corporate_entity_slug: sankyo-precision-equipment-company-ltd
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fishing
+  - mythology
+  - sports
 ---

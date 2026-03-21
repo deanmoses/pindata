@@ -10,6 +10,12 @@ player_count: 2
 production_quantity: '1760'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - sailing
+  - swimming
+  - water
 credit_refs:
 - person_slug: roy-parker
   role: Art

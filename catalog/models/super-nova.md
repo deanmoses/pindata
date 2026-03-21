@@ -11,6 +11,8 @@ production_quantity: '1000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: george-molentin
   role: Art

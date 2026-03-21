@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '952'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: gordon-morison
   role: Art

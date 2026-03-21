@@ -6,4 +6,7 @@ opdb_id: G4xpN-MRjPo
 ipdb_id: 3633
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

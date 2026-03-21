@@ -11,6 +11,8 @@ production_quantity: '7000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-9
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: mark-sprenger
   role: Art

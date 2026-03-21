@@ -7,4 +7,9 @@ year: 1973
 month: 4
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - skeet
+  - sports
+  - target-shooting
+  - trap-shooting
 ---

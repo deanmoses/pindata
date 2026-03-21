@@ -6,4 +6,7 @@ corporate_entity_slug: recel-sa
 year: 1978
 player_count: 1
 system_slug: recel-system-iii
+theme_slugs:
+  - jousting
+  - medieval-battle
 ---

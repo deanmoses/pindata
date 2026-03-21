@@ -6,4 +6,8 @@ corporate_entity_slug: skee-ball-inc
 year: 1994
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoon-characters
+  - fantasy
+  - science-fiction
 ---

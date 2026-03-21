@@ -7,4 +7,7 @@ year: 2003
 month: 11
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - car-culture
+  - travel
 ---

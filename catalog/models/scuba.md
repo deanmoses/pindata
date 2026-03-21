@@ -10,6 +10,12 @@ player_count: 2
 production_quantity: '1450'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - mermaids
+  - mythology
+  - scuba-diving
+  - swimming
+  - water
 credit_refs:
 - person_slug: art-stenholm
   role: Art

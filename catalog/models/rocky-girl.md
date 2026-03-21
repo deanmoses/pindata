@@ -8,4 +8,7 @@ display_type_slug: alphanumeric
 technology_generation_slug: electromechanical
 converted_from: rock-star
 is_conversion: true
+theme_slugs:
+  - music
+  - singing
 ---

@@ -7,4 +7,7 @@ year: 1967
 player_count: 1
 production_quantity: '1150'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - snow-skiing
+  - world-places
 ---

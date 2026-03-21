@@ -6,4 +6,6 @@ year: 2015
 player_count: 2
 production_quantity: '1'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horror
 ---

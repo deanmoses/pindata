@@ -7,6 +7,9 @@ year: 1934
 month: 12
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - football
+  - sports
 credit_refs:
 - person_slug: harvey-heiss
   role: Design

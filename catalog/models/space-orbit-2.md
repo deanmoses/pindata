@@ -6,4 +6,6 @@ corporate_entity_slug: skillgame-dba-renato-montanari-giochi
 year: 1972
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
 ---

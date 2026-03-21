@@ -11,6 +11,8 @@ production_quantity: '5124'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: atari-system-2
+theme_slugs:
+  - celebrities
 credit_refs:
 - person_slug: george-opperman
   role: Art

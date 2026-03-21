@@ -5,6 +5,8 @@ ipdb_id: 5288
 corporate_entity_slug: zaccaria
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

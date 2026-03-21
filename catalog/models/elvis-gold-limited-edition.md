@@ -11,6 +11,8 @@ production_quantity: '500'
 technology_generation_slug: solid-state
 system_slug: stern-whitestar
 variant_of: elvis
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: jerry-vanderstelt
   role: Art

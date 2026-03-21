@@ -5,6 +5,9 @@ ipdb_id: 5957
 corporate_entity_slug: williams-manufacturing-company
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
+  - hawaii
 credit_refs:
 - person_slug: lester-hilbrich
   role: Art

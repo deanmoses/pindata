@@ -11,6 +11,10 @@ production_quantity: '2000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80
+theme_slugs:
+  - aliens
+  - outer-space
+  - war
 credit_refs:
 - person_slug: david-moore
   role: Art

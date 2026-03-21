@@ -8,4 +8,9 @@ month: 4
 player_count: 1
 production_quantity: '1702'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - girls
+  - pageantry
+  - women
 ---

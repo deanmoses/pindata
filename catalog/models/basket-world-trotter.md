@@ -7,4 +7,7 @@ year: 1979
 month: 8
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - basketball
+  - sports
 ---

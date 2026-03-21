@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '2500'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - time-travel
 credit_refs:
 - person_slug: christian-marche
   role: Art

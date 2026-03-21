@@ -6,6 +6,9 @@ corporate_entity_slug: bally-manufacturing-corporation
 player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
+  - foreign-peoples
 credit_refs:
 - person_slug: christian-marche
   role: Art

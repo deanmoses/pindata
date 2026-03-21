@@ -11,6 +11,8 @@ production_quantity: '1220'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80b
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: larry-day
   role: Art

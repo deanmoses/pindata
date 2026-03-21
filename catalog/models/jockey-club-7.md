@@ -7,4 +7,7 @@ year: 1935
 player_count: 1
 production_quantity: '25'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

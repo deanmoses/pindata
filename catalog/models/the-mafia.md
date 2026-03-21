@@ -11,6 +11,8 @@ production_quantity: '10'
 display_type_slug: lcd
 technology_generation_slug: solid-state
 system_slug: team-pinball-rboard-v2
+theme_slugs:
+  - cops-and-robbers
 credit_refs:
 - person_slug: attila-szabo
   role: Art

@@ -6,4 +6,7 @@ corporate_entity_slug: alben
 year: 1964
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

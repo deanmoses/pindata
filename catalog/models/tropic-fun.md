@@ -10,6 +10,13 @@ player_count: 1
 production_quantity: '1100'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - sailing
+  - surfing
+  - swimming
+  - water
+  - women
 credit_refs:
 - person_slug: christian-marche
   role: Art

@@ -7,6 +7,8 @@ year: 1996
 player_count: 1
 production_quantity: '5'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adult
 credit_refs:
 - person_slug: dave-christensen
   role: Art

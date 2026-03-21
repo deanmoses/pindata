@@ -7,4 +7,7 @@ year: 1996
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: mac-system-iv
+theme_slugs:
+  - basketball
+  - sports
 ---

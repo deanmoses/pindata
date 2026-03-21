@@ -10,6 +10,10 @@ player_count: 4
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - cards
+  - gambling
+  - poker
 credit_refs:
 - person_slug: brian-rood
   role: Art

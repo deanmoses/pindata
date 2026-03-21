@@ -11,6 +11,9 @@ production_quantity: '406'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-as2518-35
+theme_slugs:
+  - bicycling
+  - sports
 credit_refs:
 - person_slug: greg-freres
   role: Art

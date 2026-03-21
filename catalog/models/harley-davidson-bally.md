@@ -11,6 +11,10 @@ production_quantity: '2187'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-wpc-alphanumeric
+theme_slugs:
+  - motocross
+  - motorcycles
+  - sports
 credit_refs:
 - person_slug: mark-sprenger
   role: Art

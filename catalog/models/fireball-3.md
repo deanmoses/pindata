@@ -10,4 +10,6 @@ player_count: 4
 production_quantity: '10000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 ---

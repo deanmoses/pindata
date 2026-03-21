@@ -11,6 +11,10 @@ production_quantity: '3700'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-9
+theme_slugs:
+  - dragons
+  - fantasy
+  - magic-wizards
 credit_refs:
 - person_slug: pam-erickson
   role: Art

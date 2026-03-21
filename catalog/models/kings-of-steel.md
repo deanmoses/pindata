@@ -6,6 +6,10 @@ opdb_id: GR67j-M7ZYy
 ipdb_id: 1382
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
+  - historical
+  - knights
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

@@ -7,4 +7,7 @@ year: 1935
 month: 2
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - football
+  - sports
 ---

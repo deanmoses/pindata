@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '80'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - golf
+  - sports
 credit_refs:
 - person_slug: jim-patla
   role: Design

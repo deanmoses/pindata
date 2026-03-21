@@ -7,4 +7,7 @@ year: 1953
 month: 8
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - war
 ---

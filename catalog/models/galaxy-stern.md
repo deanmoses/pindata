@@ -6,6 +6,8 @@ opdb_id: GrdDB-ML8xK
 ipdb_id: 980
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: harry-williams
   role: Design

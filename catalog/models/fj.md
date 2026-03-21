@@ -9,6 +9,10 @@ month: 1
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - cars
+  - hot-rods
+  - nostalgia
 credit_refs:
 - person_slug: mike-eggleston
   role: Art

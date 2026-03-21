@@ -11,6 +11,9 @@ production_quantity: '5703'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11b
+theme_slugs:
+  - historical
+  - knights
 credit_refs:
 - person_slug: doug-watson
   role: Art

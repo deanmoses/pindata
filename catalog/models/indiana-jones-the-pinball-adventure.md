@@ -11,6 +11,9 @@ production_quantity: '12716'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-dcs
+theme_slugs:
+  - adventure
+  - movies
 credit_refs:
 - person_slug: doug-watson
   role: Art

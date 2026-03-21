@@ -6,4 +6,7 @@ corporate_entity_slug: mayoni-enterprises
 year: 1989
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - basketball
+  - sports
 ---

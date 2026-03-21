@@ -7,6 +7,10 @@ ipdb_id: 3519
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - outer-space
+  - war
 credit_refs:
 - person_slug: stefano-baronti
   role: Art

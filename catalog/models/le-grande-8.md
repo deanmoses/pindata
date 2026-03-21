@@ -8,6 +8,9 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: panthera
 is_conversion: true
+theme_slugs:
+  - amusement-parks
+  - roller-coasters
 credit_refs:
 - person_slug: agns-g-dusaugey
   role: Art

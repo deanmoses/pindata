@@ -5,4 +5,10 @@ ipdb_id: 6904
 corporate_entity_slug: talleres-del-llobregat-sa-automaticos
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - sports
+  - water-skiing
+  - women
 ---

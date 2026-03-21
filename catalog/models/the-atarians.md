@@ -6,6 +6,8 @@ opdb_id: Gry9N-MQYVj
 ipdb_id: 102
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - adventure
 credit_refs:
 - person_slug: bob-jonesi
   role: Design

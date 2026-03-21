@@ -11,6 +11,10 @@ production_quantity: '100'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-7
+theme_slugs:
+  - fantasy
+  - magic-wizards
+  - outer-space
 credit_refs:
 - person_slug: larry-m-blazek
   role: Art

@@ -11,6 +11,9 @@ production_quantity: '4883'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-as2518-17
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: dick-white
   role: Art

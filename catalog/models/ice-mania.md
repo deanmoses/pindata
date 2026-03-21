@@ -8,4 +8,7 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: ice-fever
 is_conversion: true
+theme_slugs:
+  - hockey
+  - sports
 ---

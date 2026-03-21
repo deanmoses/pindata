@@ -8,6 +8,9 @@ month: 5
 player_count: 1
 production_quantity: '246'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 credit_refs:
 - person_slug: joe-warner
   role: Design

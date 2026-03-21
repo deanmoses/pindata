@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '5680'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
 credit_refs:
 - person_slug: christian-marche
   role: Art

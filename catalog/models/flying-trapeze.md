@@ -8,6 +8,9 @@ month: 9
 player_count: 1
 production_quantity: '1000'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: roy-parker
   role: Art

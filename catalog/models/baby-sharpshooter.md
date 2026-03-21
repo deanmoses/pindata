@@ -5,6 +5,9 @@ ipdb_id: 5680
 corporate_entity_slug: game-plan-incorporated
 year: 1985
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - target-shooting
 credit_refs:
 - person_slug: larry-m-blazek
   role: Art

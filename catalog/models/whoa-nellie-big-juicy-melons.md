@@ -6,6 +6,10 @@ opdb_id: GRYX4-MLqqx
 ipdb_id: 6252
 display_type_slug: score-reels
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - farming
+  - women
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

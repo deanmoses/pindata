@@ -5,4 +5,7 @@ ipdb_id: 6769
 corporate_entity_slug: mills-novelty-company
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - hunting
+  - sports
 ---

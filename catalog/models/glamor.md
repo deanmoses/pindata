@@ -10,6 +10,10 @@ player_count: 1
 production_quantity: '300'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - girls
+  - glamour
+  - women
 credit_refs:
 - person_slug: roy-parker
   role: Art

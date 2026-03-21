@@ -6,4 +6,7 @@ year: 2006
 player_count: 4
 production_quantity: '4'
 technology_generation_slug: solid-state
+theme_slugs:
+  - golf
+  - sports
 ---

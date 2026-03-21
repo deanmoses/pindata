@@ -7,4 +7,6 @@ year: 1975
 month: 5
 production_quantity: '3'
 technology_generation_slug: solid-state
+theme_slugs:
+  - craps
 ---

@@ -11,6 +11,9 @@ production_quantity: '3746'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-fliptronics-2
+theme_slugs:
+  - fantasy
+  - pirates
 credit_refs:
 - person_slug: pat-mcmahon
   role: Art

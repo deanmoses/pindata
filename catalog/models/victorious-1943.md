@@ -7,4 +7,7 @@ year: 1943
 month: 5
 player_count: 7
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

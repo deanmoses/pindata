@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '1310'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - travel
+  - world-places
 credit_refs:
 - person_slug: ted-zale
   role: Design

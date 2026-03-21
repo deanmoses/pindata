@@ -11,6 +11,9 @@ production_quantity: '5100'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: stern-whitestar
+theme_slugs:
+  - fantasy
+  - movies
 credit_refs:
 - person_slug: jerry-vanderstelt
   role: Art

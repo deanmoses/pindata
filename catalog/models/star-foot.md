@@ -6,4 +6,8 @@ corporate_entity_slug: satem
 year: 1964
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - football
+  - soccer
+  - sports
 ---

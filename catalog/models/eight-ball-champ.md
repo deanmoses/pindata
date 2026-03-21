@@ -11,6 +11,8 @@ production_quantity: '1500'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

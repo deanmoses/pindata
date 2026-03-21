@@ -11,6 +11,8 @@ production_quantity: '600'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: bruce-schafernak
   role: Art

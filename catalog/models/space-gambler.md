@@ -6,4 +6,7 @@ opdb_id: G5bVN-M61nY
 ipdb_id: 2250
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

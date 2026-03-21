@@ -5,4 +5,8 @@ ipdb_id: 4816
 corporate_entity_slug: diverses-eletrnicas-industria-e-comercio-ltda
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 ---

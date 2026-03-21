@@ -6,6 +6,8 @@ opdb_id: GbPde-Mp43l-AO4Do
 ipdb_id: 6566
 technology_generation_slug: solid-state
 variant_of: the-munsters-premium
+theme_slugs:
+  - television-shows
 credit_refs:
 - person_slug: john-borg
   role: Design

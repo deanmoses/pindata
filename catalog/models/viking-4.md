@@ -6,6 +6,8 @@ corporate_entity_slug: renov-automatic-jolux
 year: 1968
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - norse-history
 credit_refs:
 - person_slug: jean-amiot
   role: Art

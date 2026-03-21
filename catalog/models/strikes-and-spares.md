@@ -6,6 +6,9 @@ opdb_id: GrleW-MYeod
 ipdb_id: 2406
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - bowling
+  - sports
 credit_refs:
 - person_slug: gary-gayton
   role: Design

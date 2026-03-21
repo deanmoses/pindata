@@ -11,6 +11,9 @@ production_quantity: '1000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - boxing
+  - sports
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

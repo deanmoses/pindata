@@ -6,6 +6,8 @@ corporate_entity_slug: stern-electronics-incorporated
 player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: joe-joos-jr
   role: Design

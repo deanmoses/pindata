@@ -11,6 +11,9 @@ production_quantity: '3500'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - celebrities
+  - movies
 credit_refs:
 - person_slug: b-farris
   role: Art

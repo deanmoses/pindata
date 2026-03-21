@@ -11,6 +11,8 @@ production_quantity: '1750'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-as2518-133
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

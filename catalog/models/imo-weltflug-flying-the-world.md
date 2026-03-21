@@ -6,4 +6,8 @@ corporate_entity_slug: max-jentzsch-meerz
 year: 1937
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - airports
+  - aviation
+  - travel
 ---

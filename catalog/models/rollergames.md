@@ -11,6 +11,10 @@ production_quantity: '5000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11c
+theme_slugs:
+  - roller-derby
+  - roller-skating
+  - sports
 credit_refs:
 - person_slug: linda-deal
   role: Art

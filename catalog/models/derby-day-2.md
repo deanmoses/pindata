@@ -7,6 +7,9 @@ year: 1932
 month: 5
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: a-raymond-katz
   role: Art

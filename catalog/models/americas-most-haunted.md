@@ -11,6 +11,9 @@ production_quantity: '150'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: spooky-pinheck
+theme_slugs:
+  - ghost-hunting
+  - supernatural
 credit_refs:
 - person_slug: ben-heckendorn
   role: Art

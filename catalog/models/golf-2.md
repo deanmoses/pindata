@@ -5,4 +5,7 @@ ipdb_id: 6852
 corporate_entity_slug: fbrica-de-aparatos-electro-mecnicos-recreativos-sl-ofmadrid
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - golf
+  - sports
 ---

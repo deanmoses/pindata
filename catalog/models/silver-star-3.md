@@ -6,4 +6,6 @@ corporate_entity_slug: fbrica-de-aparatos-electro-mecnicos-recreativos-sl-ofmadr
 year: 1966
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - western
 ---

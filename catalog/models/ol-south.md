@@ -6,4 +6,7 @@ corporate_entity_slug: sirmo-games-sa
 year: 2002
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - american-history
+  - american-places
 ---

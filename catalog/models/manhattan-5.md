@@ -6,4 +6,7 @@ corporate_entity_slug: salor-sa
 year: 1962
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - world-places
 ---

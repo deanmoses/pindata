@@ -7,6 +7,9 @@ ipdb_id: 6453
 display_type_slug: lcd
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - science-fiction
 credit_refs:
 - person_slug: stephen-silver
   role: Art

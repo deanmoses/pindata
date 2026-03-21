@@ -11,6 +11,10 @@ production_quantity: '2502'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-3
+theme_slugs:
+  - aliens
+  - fantasy
+  - outer-space
 credit_refs:
 - person_slug: christian-marche
   role: Art

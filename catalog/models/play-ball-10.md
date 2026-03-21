@@ -5,4 +5,7 @@ ipdb_id: 6632
 corporate_entity_slug: chester-pollard-amusement-co-inc
 player_count: 2
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

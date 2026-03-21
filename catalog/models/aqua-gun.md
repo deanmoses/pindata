@@ -8,4 +8,9 @@ month: 1
 player_count: 1
 production_quantity: '1250'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - diving
+  - spear-fishing
+  - sports
+  - water-sports
 ---

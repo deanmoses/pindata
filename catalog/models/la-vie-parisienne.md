@@ -5,6 +5,9 @@ ipdb_id: 5196
 corporate_entity_slug: bally-manufacturing-corporation
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - historical
+  - show-business
 credit_refs:
 - person_slug: dave-christensen
   role: Art

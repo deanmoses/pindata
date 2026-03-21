@@ -7,6 +7,8 @@ year: 1991
 player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - war
 credit_refs:
 - person_slug: ed-cebula
   role: Design

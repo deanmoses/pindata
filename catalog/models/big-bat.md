@@ -6,4 +6,7 @@ corporate_entity_slug: bally-midway-manufacturing-company
 year: 1984
 technology_generation_slug: solid-state
 system_slug: bally-as2518-133
+theme_slugs:
+  - baseball
+  - sports
 ---

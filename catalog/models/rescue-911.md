@@ -11,6 +11,10 @@ production_quantity: '4000'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - ambulance
+  - fire-trucks
+  - police
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

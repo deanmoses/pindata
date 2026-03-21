@@ -11,6 +11,10 @@ production_quantity: '2800'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-7
+theme_slugs:
+  - billiards
+  - fantasy
+  - outer-space
 credit_refs:
 - person_slug: pam-erickson
   role: Art

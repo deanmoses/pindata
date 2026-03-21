@@ -11,6 +11,10 @@ production_quantity: '12001'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11a
+theme_slugs:
+  - fantasy
+  - outer-space
+  - robots
 credit_refs:
 - person_slug: python-anghelo
   role: Art

@@ -7,4 +7,7 @@ ipdb_id: 805
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - dancing
+  - music
 ---

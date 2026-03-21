@@ -6,6 +6,8 @@ opdb_id: G42Pk-MZe2e
 ipdb_id: 2821
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

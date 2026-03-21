@@ -6,6 +6,8 @@ opdb_id: G41yq-MQP65
 ipdb_id: 307
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: john-buras
   role: Design

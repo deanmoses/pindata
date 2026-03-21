@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '1125'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - college
+  - school
 credit_refs:
 - person_slug: ted-zale
   role: Design

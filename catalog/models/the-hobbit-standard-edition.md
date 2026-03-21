@@ -6,6 +6,10 @@ opdb_id: G5bYr-MLezO
 ipdb_id: 6222
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - magic-wizards
+  - movies
 credit_refs:
 - person_slug: joe-balcer
   role: Design

@@ -9,6 +9,10 @@ month: 8
 player_count: 4
 technology_generation_slug: electromechanical
 variant_of: aces-high
+theme_slugs:
+  - gambling
+  - poker
+  - riverboats
 credit_refs:
 - person_slug: art-stenholm
   role: Art

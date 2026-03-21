@@ -6,6 +6,11 @@ opdb_id: G5vLR-ME049
 ipdb_id: 6429
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - movies
+  - outer-space
+  - science-fiction
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

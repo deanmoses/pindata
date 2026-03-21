@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '857'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - transportation
+  - world-places
 credit_refs:
 - person_slug: paul-loreli
   role: Art

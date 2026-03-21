@@ -7,4 +7,8 @@ year: 1945
 month: 7
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - marines
+  - military
+  - war
 ---

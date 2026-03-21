@@ -8,4 +8,6 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: space-shuttle
 is_conversion: true
+theme_slugs:
+  - horror
 ---

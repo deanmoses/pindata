@@ -11,6 +11,9 @@ production_quantity: '13075'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-7
+theme_slugs:
+  - historical
+  - knights
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

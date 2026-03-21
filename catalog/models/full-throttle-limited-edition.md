@@ -6,6 +6,9 @@ corporate_entity_slug: heighway-pinball-ltd
 year: 2016
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - motorcycle-racing
+  - sports
 credit_refs:
 - person_slug: dave-sanders
   role: Art

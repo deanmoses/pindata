@@ -6,6 +6,10 @@ opdb_id: GR9lZ-MkP2j
 ipdb_id: 175
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - motocross
+  - motorcycles
+  - sports
 credit_refs:
 - person_slug: larry-demar
   role: Design

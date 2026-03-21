@@ -6,6 +6,9 @@ opdb_id: G41d5-M0ovk
 ipdb_id: 6308
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - medieval
+  - television-shows
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

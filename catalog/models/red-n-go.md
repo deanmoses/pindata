@@ -5,6 +5,8 @@ ipdb_id: 6143
 corporate_entity_slug: williams-electronic-manufacturing-corporation
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - automobile-travel
 credit_refs:
 - person_slug: art-stenholm
   role: Art

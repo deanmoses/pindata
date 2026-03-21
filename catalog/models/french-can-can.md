@@ -4,6 +4,10 @@ title_slug: french-can-can
 ipdb_id: 6061
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - dancing
+  - music
+  - women
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

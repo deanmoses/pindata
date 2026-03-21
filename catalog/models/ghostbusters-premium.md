@@ -6,6 +6,9 @@ opdb_id: GR9Nr-M5RxE
 ipdb_id: 6333
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - movies
+  - science-fiction
 credit_refs:
 - person_slug: john-trudeau
   role: Design

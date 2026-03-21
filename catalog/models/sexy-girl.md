@@ -8,6 +8,9 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: playboy
 is_conversion: true
+theme_slugs:
+  - girls
+  - women
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

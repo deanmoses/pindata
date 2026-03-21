@@ -6,6 +6,9 @@ opdb_id: GrX7q-MLWkn
 ipdb_id: 476
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - motorcycles
 credit_refs:
 - person_slug: jim-patla
   role: Design

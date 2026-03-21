@@ -6,6 +6,9 @@ opdb_id: GRVpL-MJjPR
 ipdb_id: 3165
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

@@ -8,4 +8,9 @@ month: 6
 player_count: 1
 production_quantity: '968'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - amusement-parks
+  - roller-coasters
+  - swimming
+  - water
 ---

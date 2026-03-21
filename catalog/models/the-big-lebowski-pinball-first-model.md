@@ -10,6 +10,10 @@ player_count: 4
 production_quantity: '95'
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - bowling
+  - movies
+  - sports
 credit_refs:
 - person_slug: freek-van-haagen
   role: Art

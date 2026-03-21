@@ -6,4 +6,7 @@ corporate_entity_slug: genco-manufacturing-company
 year: 1938
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - horse-racing
 ---

@@ -7,4 +7,7 @@ month: 10
 player_count: 2
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - astrology
+  - fantasy
 ---

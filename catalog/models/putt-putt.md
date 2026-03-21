@@ -6,4 +6,7 @@ corporate_entity_slug: specialty-manufacturing-company
 year: 1931
 month: 6
 player_count: 1
+theme_slugs:
+  - golf
+  - sports
 ---

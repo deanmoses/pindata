@@ -7,6 +7,9 @@ player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: zaccaria-gen-1
+theme_slugs:
+  - adventure
+  - war
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

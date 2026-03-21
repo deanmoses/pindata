@@ -10,6 +10,9 @@ player_count: 2
 production_quantity: '1850'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bullfighting
+  - sports
 credit_refs:
 - person_slug: george-molentin
   role: Art

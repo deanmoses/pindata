@@ -10,6 +10,10 @@ player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: atari-system-1
+theme_slugs:
+  - fantasy
+  - futuristic-travel
+  - motorcycles
 credit_refs:
 - person_slug: george-opperman
   role: Art

@@ -7,4 +7,8 @@ year: 1967
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fantasy
+  - flying-saucers
+  - outer-space
 ---

@@ -5,4 +5,6 @@ ipdb_id: 5632
 corporate_entity_slug: bigliardini-elettronici-milano
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dog-racing
 ---

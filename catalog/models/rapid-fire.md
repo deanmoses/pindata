@@ -9,6 +9,8 @@ player_count: 4
 production_quantity: '5000'
 technology_generation_slug: solid-state
 system_slug: bally-as2518-35
+theme_slugs:
+  - space-alien-combat
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

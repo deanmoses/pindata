@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '594'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - pinball
+  - sports
 credit_refs:
 - person_slug: mike-kubin
   role: Design

@@ -10,4 +10,7 @@ player_count: 1
 production_quantity: '1400'
 display_type_slug: backglass-lights
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

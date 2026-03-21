@@ -8,6 +8,10 @@ player_count: 1
 production_quantity: '12'
 technology_generation_slug: solid-state
 system_slug: williams-system-8
+theme_slugs:
+  - american-history
+  - hillbillies
+  - rural-living
 credit_refs:
 - person_slug: dan-langlois
   role: Design

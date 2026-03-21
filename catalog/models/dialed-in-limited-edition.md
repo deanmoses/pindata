@@ -6,6 +6,10 @@ opdb_id: G4X2l-MYepl-A1WXy
 ipdb_id: 6351
 technology_generation_slug: solid-state
 variant_of: dialed-in
+theme_slugs:
+  - disasters
+  - heros-journey
+  - pop-culture
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

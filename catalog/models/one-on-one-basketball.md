@@ -8,6 +8,9 @@ player_count: 2
 production_quantity: '3'
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - basketball
+  - sports
 credit_refs:
 - person_slug: jon-norris
   role: Design

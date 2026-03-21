@@ -6,6 +6,9 @@ opdb_id: G4Jdp-MJNrr
 ipdb_id: 498
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: ed-cebula
   role: Design

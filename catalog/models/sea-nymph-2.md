@@ -7,4 +7,7 @@ month: 9
 player_count: 1
 production_quantity: '1'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fantasy
+  - mythology
 ---

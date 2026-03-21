@@ -11,6 +11,9 @@ production_quantity: '2200'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - cartoons
+  - television-shows
 credit_refs:
 - person_slug: dave-link
   role: Art

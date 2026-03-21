@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '666'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: gordon-morison
   role: Art

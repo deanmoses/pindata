@@ -6,4 +6,7 @@ corporate_entity_slug: northwest-coin-machine-company
 year: 1932
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - cards
+  - gambling
 ---

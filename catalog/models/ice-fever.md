@@ -6,6 +6,9 @@ opdb_id: G43DV-MQYKB
 ipdb_id: 1260
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - hockey
+  - sports
 credit_refs:
 - person_slug: john-trudeau
   role: Design

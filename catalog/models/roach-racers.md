@@ -9,6 +9,9 @@ player_count: 1
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: data-east-v3b
+theme_slugs:
+  - comedy
+  - insects
 credit_refs:
 - person_slug: frank-suareo
   role: Mechanics

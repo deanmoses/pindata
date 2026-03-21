@@ -11,6 +11,10 @@ production_quantity: '6878'
 display_type_slug: cga
 technology_generation_slug: solid-state
 system_slug: williams-pinball-2000
+theme_slugs:
+  - aliens
+  - fantasy
+  - martians
 credit_refs:
 - person_slug: greg-freres
   role: Art

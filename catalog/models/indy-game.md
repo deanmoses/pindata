@@ -5,4 +5,7 @@ ipdb_id: 6774
 corporate_entity_slug: komaya-co-ltd
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 ---

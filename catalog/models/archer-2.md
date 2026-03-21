@@ -6,6 +6,9 @@ corporate_entity_slug: genco-manufacturing-company
 year: 1937
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - archery
+  - sports
 credit_refs:
 - person_slug: harvey-heiss
   role: Design

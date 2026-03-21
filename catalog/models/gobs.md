@@ -8,4 +8,7 @@ month: 3
 player_count: 1
 production_quantity: '400'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - military
+  - world-war-ii
 ---

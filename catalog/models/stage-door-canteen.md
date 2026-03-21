@@ -8,6 +8,12 @@ month: 11
 player_count: 1
 production_quantity: '7500'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - girls
+  - music
+  - nightlife
+  - women
 credit_refs:
 - person_slug: roy-parker
   role: Art

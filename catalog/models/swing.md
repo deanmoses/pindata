@@ -8,4 +8,12 @@ month: 3
 player_count: 1
 production_quantity: '1352'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - bicycling
+  - dancing
+  - golf
+  - sports
+  - swimming
+  - tennis
 ---

@@ -6,6 +6,9 @@ opdb_id: Grep0-MQYN4
 ipdb_id: 3163
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: tony-kraemer
   role: Design

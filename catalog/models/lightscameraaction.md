@@ -11,6 +11,9 @@ production_quantity: '1708'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - movie-making
+  - show-business
 credit_refs:
 - person_slug: brian-r-johnson
   role: Art

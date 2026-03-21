@@ -7,6 +7,8 @@ ipdb_id: 6560
 display_type_slug: lcd
 technology_generation_slug: solid-state
 variant_of: deadpool-premium
+theme_slugs:
+  - superheroes
 credit_refs:
 - person_slug: george-gomez
   role: Design

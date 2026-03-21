@@ -11,6 +11,9 @@ production_quantity: '4414'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - basketball
+  - sports
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

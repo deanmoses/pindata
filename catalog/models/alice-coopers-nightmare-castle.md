@@ -11,6 +11,10 @@ production_quantity: '500'
 display_type_slug: lcd
 technology_generation_slug: solid-state
 system_slug: multimorphic-p3-roc
+theme_slugs:
+  - horror
+  - music
+  - supernatural
 credit_refs:
 - person_slug: jeff-zornow
   role: Art

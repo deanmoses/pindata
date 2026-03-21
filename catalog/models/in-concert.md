@@ -5,6 +5,9 @@ ipdb_id: 7043
 corporate_entity_slug: midway-manufacturing-company-a-subsidiary-of-wms-industries-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
+  - singing
 credit_refs:
 - person_slug: python-anghelo
   role: Art

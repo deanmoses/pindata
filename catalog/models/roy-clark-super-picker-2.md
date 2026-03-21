@@ -5,6 +5,11 @@ ipdb_id: 6315
 corporate_entity_slug: allied-leisure-industries-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - celebrities
+  - dancing
+  - music
+  - singing
 credit_refs:
 - person_slug: bob-betor
   role: Design

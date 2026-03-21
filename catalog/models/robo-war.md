@@ -11,6 +11,8 @@ production_quantity: '2130'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80b
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

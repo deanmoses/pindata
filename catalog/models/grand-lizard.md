@@ -11,6 +11,8 @@ production_quantity: '2750'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: paul-faris
   role: Art

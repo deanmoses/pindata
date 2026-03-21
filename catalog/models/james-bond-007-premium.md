@@ -5,6 +5,8 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: GQKyP-MP3OK-AOEEx
 ipdb_id: 6897
 technology_generation_slug: solid-state
+theme_slugs:
+  - spies
 credit_refs:
 - person_slug: george-gomez
   role: Design

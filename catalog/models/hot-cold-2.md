@@ -7,4 +7,7 @@ year: 1978
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: recel-system-iii
+theme_slugs:
+  - snow-skiing
+  - sports
 ---

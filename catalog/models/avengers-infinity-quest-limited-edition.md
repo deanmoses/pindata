@@ -6,6 +6,9 @@ opdb_id: Gj66P-MXr0E-ARkqN
 ipdb_id: 6756
 technology_generation_slug: solid-state
 variant_of: avengers-infinity-quest-premium
+theme_slugs:
+  - comics
+  - fantasy
 credit_refs:
 - person_slug: keith-elwin
   role: Design

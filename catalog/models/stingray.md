@@ -11,6 +11,9 @@ production_quantity: '3006'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-100
+theme_slugs:
+  - scuba-diving
+  - water-sports
 credit_refs:
 - person_slug: mike-kubin
   role: Design

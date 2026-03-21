@@ -5,6 +5,9 @@ ipdb_id: 6284
 corporate_entity_slug: williams-manufacturing-company
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - majorettes
+  - parades
 credit_refs:
 - person_slug: harry-mabs
   role: Design

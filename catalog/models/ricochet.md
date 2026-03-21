@@ -7,6 +7,9 @@ year: 1937
 month: 2
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: wendell-bartelt
   role: Design

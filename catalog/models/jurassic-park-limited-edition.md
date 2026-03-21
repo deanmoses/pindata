@@ -6,6 +6,8 @@ opdb_id: GK17D-MKNKd-AOyKv
 ipdb_id: 6575
 technology_generation_slug: solid-state
 variant_of: jurassic-park-premium
+theme_slugs:
+  - dinosaurs
 credit_refs:
 - person_slug: keith-elwin
   role: Design

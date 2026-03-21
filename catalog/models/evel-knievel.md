@@ -6,6 +6,8 @@ opdb_id: G59wx-MLnZ3
 ipdb_id: 4499
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - celebrities
 credit_refs:
 - person_slug: gary-gayton
   role: Design

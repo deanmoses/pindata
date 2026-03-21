@@ -6,6 +6,8 @@ corporate_entity_slug: ami-spa
 year: 1976
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

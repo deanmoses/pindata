@@ -6,6 +6,9 @@ opdb_id: GR6Or-MKNYR
 ipdb_id: 6216
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - sports
+  - wrestling
 credit_refs:
 - person_slug: john-trudeau
   role: Design

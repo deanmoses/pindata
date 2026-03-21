@@ -6,4 +6,7 @@ corporate_entity_slug: coin-concepts-incorporated
 year: 1994
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - baseball
+  - sports
 ---

@@ -8,4 +8,7 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: pinball-champ-82
 is_conversion: true
+theme_slugs:
+  - boxing
+  - sports
 ---

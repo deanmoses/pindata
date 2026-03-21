@@ -5,4 +5,8 @@ ipdb_id: 6304
 year: 2015
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - sports
+  - surfing
+  - water
 ---

@@ -10,6 +10,9 @@ player_count: 2
 production_quantity: '1650'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: steve-kordek
   role: Design

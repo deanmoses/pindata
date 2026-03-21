@@ -8,6 +8,8 @@ player_count: 4
 production_quantity: '17'
 technology_generation_slug: solid-state
 system_slug: bally-as2518-17
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: christian-marche
   role: Art

@@ -7,6 +7,10 @@ ipdb_id: 6156
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: the-walking-dead-premium
+theme_slugs:
+  - supernatural
+  - television-shows
+  - zombies
 credit_refs:
 - person_slug: john-borg
   role: Design

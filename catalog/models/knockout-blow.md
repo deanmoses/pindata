@@ -7,4 +7,7 @@ year: 1978
 month: 5
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - boxing
+  - sports
 ---

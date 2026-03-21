@@ -6,4 +6,9 @@ corporate_entity_slug: d-gottlieb-company
 year: 1932
 player_count: 2
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - blackjack
+  - cards
+  - gambling
+  - poker
 ---

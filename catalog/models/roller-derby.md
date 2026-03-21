@@ -5,6 +5,9 @@ ipdb_id: 2003
 corporate_entity_slug: bally-manufacturing-corporation
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - roller-skating
+  - sports
 credit_refs:
 - person_slug: don-hooker
   role: Design

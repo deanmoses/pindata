@@ -6,6 +6,9 @@ corporate_entity_slug: bally-midway-manufacturing-company
 player_count: 2
 technology_generation_slug: solid-state
 system_slug: bally-as2518-133
+theme_slugs:
+  - baseball
+  - sports
 credit_refs:
 - person_slug: doug-watson
   role: Art

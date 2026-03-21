@@ -5,6 +5,9 @@ ipdb_id: 5545
 corporate_entity_slug: skee-ball-inc
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: mark-sprenger
   role: Art

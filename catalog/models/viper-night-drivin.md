@@ -11,6 +11,8 @@ production_quantity: '1100'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - viper-driving
 credit_refs:
 - person_slug: morgan-weistling
   role: Art

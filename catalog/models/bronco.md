@@ -9,6 +9,10 @@ month: 11
 player_count: 2
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horses
+  - rodeo
+  - western
 credit_refs:
 - person_slug: al-schlappa
   role: Design

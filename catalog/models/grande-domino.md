@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '4000'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dominoes
+  - games
 credit_refs:
 - person_slug: art-stenholm
   role: Art

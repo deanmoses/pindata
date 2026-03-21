@@ -11,6 +11,9 @@ production_quantity: '2249'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: dan-hughes
   role: Art

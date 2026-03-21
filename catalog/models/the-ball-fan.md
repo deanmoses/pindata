@@ -7,6 +7,9 @@ year: 1935
 month: 6
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 credit_refs:
 - person_slug: wendell-bartelt
   role: Design

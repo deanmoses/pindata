@@ -9,6 +9,10 @@ player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - fantasy
+  - monsters
+  - scuba-diving
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

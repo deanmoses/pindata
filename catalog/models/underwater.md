@@ -9,4 +9,7 @@ month: 6
 player_count: 4
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adventure
+  - war
 ---

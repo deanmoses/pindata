@@ -11,6 +11,9 @@ production_quantity: '2711'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - golf
+  - sports
 credit_refs:
 - person_slug: john-youssi
   role: Art

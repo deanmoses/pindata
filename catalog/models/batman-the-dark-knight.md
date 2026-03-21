@@ -6,6 +6,9 @@ opdb_id: G4yVw-M85j8
 ipdb_id: 5307
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - movies
+  - superheroes
 credit_refs:
 - person_slug: george-gomez
   role: Design

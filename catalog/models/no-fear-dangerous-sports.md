@@ -11,6 +11,8 @@ production_quantity: '4540'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+theme_slugs:
+  - sports
 credit_refs:
 - person_slug: greg-freres
   role: Art

@@ -7,6 +7,11 @@ ipdb_id: 6430
 display_type_slug: lcd
 technology_generation_slug: solid-state
 variant_of: star-wars-premium
+theme_slugs:
+  - fantasy
+  - movies
+  - outer-space
+  - science-fiction
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

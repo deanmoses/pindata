@@ -6,6 +6,8 @@ opdb_id: G5pxD-Mp48v
 ipdb_id: 3639
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - space-fantasy
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

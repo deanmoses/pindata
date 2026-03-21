@@ -5,4 +5,8 @@ ipdb_id: 6311
 corporate_entity_slug: playmatic
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - boats
+  - mermaids
+  - water
 ---

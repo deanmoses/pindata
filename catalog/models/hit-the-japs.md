@@ -7,6 +7,9 @@ year: 1942
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - patriotism
+  - war
 credit_refs:
 - person_slug: roy-parker
   role: Art

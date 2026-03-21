@@ -9,4 +9,9 @@ month: 1
 player_count: 2
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - antiques
+  - nostalgia
+  - trains
+  - transportation
 ---

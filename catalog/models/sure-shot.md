@@ -6,4 +6,6 @@ opdb_id: G5KXk-MLB9V-AOjJb
 ipdb_id: 4574
 technology_generation_slug: solid-state
 variant_of: eight-ball-deluxe
+theme_slugs:
+  - billiards
 ---

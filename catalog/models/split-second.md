@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: doug-watson
   role: Art

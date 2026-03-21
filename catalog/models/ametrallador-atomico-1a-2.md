@@ -5,4 +5,9 @@ ipdb_id: 6735
 corporate_entity_slug: torres-macarrn
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - historical
+  - military
+  - war
 ---

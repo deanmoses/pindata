@@ -5,4 +5,7 @@ ipdb_id: 5505
 corporate_entity_slug: soc-elettrogiochi
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

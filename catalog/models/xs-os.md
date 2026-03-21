@@ -6,6 +6,11 @@ opdb_id: GRpWD-MNEPl
 ipdb_id: 2822
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - board-games
+  - games
+  - tic-tac-toe
+  - time-travel
 credit_refs:
 - person_slug: george-christian
   role: Design

@@ -8,4 +8,7 @@ month: 12
 player_count: 1
 production_quantity: '515'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
+  - swimming
 ---

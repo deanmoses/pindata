@@ -9,6 +9,8 @@ month: 2
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - cops-and-robbers
 credit_refs:
 - person_slug: adriano-nardi
   role: Art

@@ -7,6 +7,10 @@ ipdb_id: 5863
 display_type_slug: score-reels
 converted_from: whoa-nellie-big-juicy-melons
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - farming
+  - women
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

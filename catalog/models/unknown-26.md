@@ -5,4 +5,7 @@ ipdb_id: 6826
 corporate_entity_slug: shyvers-coin-automatic-machine-company
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horses
+  - western
 ---

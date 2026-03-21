@@ -11,6 +11,9 @@ production_quantity: '1061'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - cars
+  - food
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

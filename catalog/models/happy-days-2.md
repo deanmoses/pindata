@@ -7,4 +7,11 @@ year: 1936
 month: 12
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - dancing
+  - nightlife
+  - swimming
+  - water
+  - women
 ---

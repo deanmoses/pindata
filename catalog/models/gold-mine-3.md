@@ -9,4 +9,6 @@ player_count: 6
 production_quantity: '1200'
 technology_generation_slug: solid-state
 system_slug: williams-system-11b
+theme_slugs:
+  - bowling
 ---

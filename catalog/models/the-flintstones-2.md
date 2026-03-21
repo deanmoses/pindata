@@ -9,4 +9,6 @@ month: 6
 player_count: 1
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoons
 ---

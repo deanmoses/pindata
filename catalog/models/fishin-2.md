@@ -6,4 +6,6 @@ corporate_entity_slug: arco-sales-co
 year: 1942
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fishing
 ---

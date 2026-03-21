@@ -11,4 +11,6 @@ production_quantity: '336'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-100
+theme_slugs:
+  - astrology
 ---

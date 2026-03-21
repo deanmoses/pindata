@@ -7,4 +7,8 @@ year: 1986
 month: 8
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
+  - gambling
+  - poker
 ---

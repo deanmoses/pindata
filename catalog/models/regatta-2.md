@@ -7,4 +7,10 @@ year: 1938
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adventure
+  - boats
+  - nautical
+  - sailing
+  - water
 ---

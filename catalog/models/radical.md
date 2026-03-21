@@ -11,6 +11,9 @@ production_quantity: '1328'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11c
+theme_slugs:
+  - skateboarding
+  - sports
 credit_refs:
 - person_slug: john-youssi
   role: Art

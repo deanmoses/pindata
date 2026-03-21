@@ -11,6 +11,10 @@ production_quantity: '3380'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - basketball
+  - celebrities
+  - sports
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

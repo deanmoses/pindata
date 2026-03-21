@@ -5,4 +5,7 @@ ipdb_id: 5364
 corporate_entity_slug: md
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 ---

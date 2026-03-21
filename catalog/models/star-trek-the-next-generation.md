@@ -11,6 +11,9 @@ production_quantity: '11728'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-dcs
+theme_slugs:
+  - outer-space
+  - television-shows
 credit_refs:
 - person_slug: greg-freres
   role: Art

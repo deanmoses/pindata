@@ -7,6 +7,8 @@ year: 1966
 month: 6
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - world-places
 credit_refs:
 - person_slug: roy-parker
   role: Art

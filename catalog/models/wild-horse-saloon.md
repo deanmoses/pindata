@@ -6,4 +6,6 @@ corporate_entity_slug: data-east-pinball-incorporated
 year: 1991
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - burlesque
 ---

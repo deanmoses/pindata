@@ -5,4 +5,7 @@ ipdb_id: 4891
 corporate_entity_slug: sentinel-inc
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - demolition-derby
+  - sports
 ---

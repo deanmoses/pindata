@@ -6,4 +6,7 @@ corporate_entity_slug: american-amusement-company
 year: 1946
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

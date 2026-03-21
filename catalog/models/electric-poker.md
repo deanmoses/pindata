@@ -6,4 +6,7 @@ corporate_entity_slug: h-c-evans-company
 year: 1929
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - poker
 ---

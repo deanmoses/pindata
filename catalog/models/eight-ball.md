@@ -6,6 +6,8 @@ opdb_id: GrN7J-MJ78q
 ipdb_id: 760
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: george-christian
   role: Design

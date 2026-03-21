@@ -6,6 +6,8 @@ opdb_id: G5n1Q-MXrnx
 ipdb_id: 1819
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: ed-krynski
   role: Design

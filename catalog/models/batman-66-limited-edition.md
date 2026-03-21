@@ -7,6 +7,10 @@ ipdb_id: 6355
 display_type_slug: lcd
 technology_generation_slug: solid-state
 variant_of: batman-66-premium
+theme_slugs:
+  - comics
+  - superheroes
+  - television-shows
 credit_refs:
 - person_slug: george-gomez
   role: Design

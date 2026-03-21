@@ -7,6 +7,9 @@ year: 1966
 month: 8
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: al-schlappa
   role: Design

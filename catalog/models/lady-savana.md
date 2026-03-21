@@ -4,4 +4,6 @@ title_slug: lady-savana
 ipdb_id: 5422
 corporate_entity_slug: alco
 player_count: 4
+theme_slugs:
+  - fantasy
 ---

@@ -7,6 +7,9 @@ year: 1992
 player_count: 1
 production_quantity: '11'
 technology_generation_slug: solid-state
+theme_slugs:
+  - football
+  - sports
 credit_refs:
 - person_slug: matt-scott
   role: Music

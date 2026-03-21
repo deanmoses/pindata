@@ -5,6 +5,9 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: GZVOd-MwNxZ-AOLoy
 ipdb_id: 6596
 technology_generation_slug: solid-state
+theme_slugs:
+  - horror
+  - supernatural
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

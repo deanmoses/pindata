@@ -11,6 +11,10 @@ production_quantity: '1500'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - action-movies
+  - movies
+  - outer-space
 credit_refs:
 - person_slug: jeff-busch
   role: Art

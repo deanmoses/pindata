@@ -11,6 +11,9 @@ production_quantity: '7300'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11b
+theme_slugs:
+  - cars
+  - transportation
 credit_refs:
 - person_slug: python-anghelo
   role: Art

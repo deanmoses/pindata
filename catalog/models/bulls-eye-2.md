@@ -10,6 +10,9 @@ player_count: 2
 production_quantity: '80'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - archery
+  - sports
 credit_refs:
 - person_slug: ted-zale
   role: Design

@@ -6,4 +6,8 @@ corporate_entity_slug: shyvers-coin-automatic-machine-company
 year: 1934
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - military
+  - nautical
+  - naval
 ---

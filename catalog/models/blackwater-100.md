@@ -6,6 +6,10 @@ opdb_id: G5K6X-MQjwK
 ipdb_id: 319
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - motocross
+  - motorcycles
+  - sports
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

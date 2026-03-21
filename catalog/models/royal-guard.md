@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '2900'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - world-cultures
 credit_refs:
 - person_slug: art-stenholm
   role: Art

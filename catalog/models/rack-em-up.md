@@ -6,6 +6,8 @@ opdb_id: G4ywq-MLqxN
 ipdb_id: 1902
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: john-buras
   role: Design

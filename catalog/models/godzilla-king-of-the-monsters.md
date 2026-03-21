@@ -6,4 +6,7 @@ corporate_entity_slug: spooky-pinball-llc
 player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - monsters
+  - science-fiction
 ---

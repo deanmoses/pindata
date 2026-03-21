@@ -3,6 +3,9 @@ name: Playing For Keeps
 title_slug: playing-for-keeps
 ipdb_id: 5924
 technology_generation_slug: solid-state
+theme_slugs:
+  - evolution
+  - science
 credit_refs:
 - person_slug: gordon-morison
   role: Art

@@ -7,6 +7,8 @@ ipdb_id: 4108
 display_type_slug: score-reels
 converted_from: golden-arrow
 is_conversion: true
+theme_slugs:
+  - women
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

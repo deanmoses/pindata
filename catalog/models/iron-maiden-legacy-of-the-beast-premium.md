@@ -6,6 +6,8 @@ opdb_id: G4dOQ-MkPxr
 ipdb_id: 6556
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: keith-elwin
   role: Design

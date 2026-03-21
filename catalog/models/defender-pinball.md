@@ -6,6 +6,10 @@ opdb_id: G5p7D-MJNVo
 ipdb_id: 651
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
+  - video-games
 credit_refs:
 - person_slug: barry-oursler
   role: Design

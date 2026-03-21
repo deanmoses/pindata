@@ -7,4 +7,7 @@ year: 1954
 month: 3
 player_count: 6
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

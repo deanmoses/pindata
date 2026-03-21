@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '700'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - pageantry
+  - women
 credit_refs:
 - person_slug: jerry-koci
   role: Design

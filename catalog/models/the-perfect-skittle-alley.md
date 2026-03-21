@@ -5,4 +5,8 @@ ipdb_id: 5971
 corporate_entity_slug: advance-automatic-machine-and-device-company
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - bowling
+  - skittles
+  - sports
 ---

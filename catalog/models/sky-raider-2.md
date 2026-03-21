@@ -7,4 +7,9 @@ year: 1958
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - outer-space
+  - war
+  - women
 ---

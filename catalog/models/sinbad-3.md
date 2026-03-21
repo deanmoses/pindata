@@ -8,4 +8,7 @@ year: 1978
 month: 5
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fantasy
+  - mythology
 ---

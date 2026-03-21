@@ -6,6 +6,8 @@ opdb_id: G59wx-MLBX4
 ipdb_id: 793
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - celebrities
 credit_refs:
 - person_slug: gary-gayton
   role: Design

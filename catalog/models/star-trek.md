@@ -6,6 +6,9 @@ opdb_id: GRVnd-MQZzx
 ipdb_id: 2355
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - television-shows
 credit_refs:
 - person_slug: gary-gayton
   role: Design

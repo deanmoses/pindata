@@ -6,6 +6,9 @@ corporate_entity_slug: renato-montanari-giochi
 year: 1973
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

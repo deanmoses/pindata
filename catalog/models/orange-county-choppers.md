@@ -6,6 +6,8 @@ corporate_entity_slug: incredible-technologies-incorporated
 year: 2005
 production_quantity: '12'
 technology_generation_slug: solid-state
+theme_slugs:
+  - motorcycles
 credit_refs:
 - person_slug: stephen-alexander
   role: Art

@@ -9,6 +9,8 @@ player_count: 1
 production_quantity: '54'
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - prospecting
 credit_refs:
 - person_slug: ray-tanzer
   role: Design

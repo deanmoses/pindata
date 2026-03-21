@@ -7,4 +7,7 @@ ipdb_id: 4330
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - fantasy
+  - outer-space
 ---

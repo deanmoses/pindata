@@ -4,4 +4,7 @@ title_slug: carnaval-2
 ipdb_id: 5953
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - celebration
 ---

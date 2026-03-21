@@ -10,6 +10,10 @@ player_count: 1
 production_quantity: '2600'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - cards
+  - gambling
 credit_refs:
 - person_slug: norm-clark
   role: Design

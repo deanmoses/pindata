@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '8282'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - western
 credit_refs:
 - person_slug: gordon-morison
   role: Art

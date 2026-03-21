@@ -7,4 +7,12 @@ year: 1957
 month: 6
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - fishing
+  - golf
+  - sports
+  - tennis
+  - water
+  - women
 ---

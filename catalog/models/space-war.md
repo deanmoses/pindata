@@ -7,4 +7,8 @@ year: 2017
 month: 4
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 ---

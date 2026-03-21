@@ -6,4 +6,7 @@ corporate_entity_slug: scientific-machine-corporation
 year: 1948
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

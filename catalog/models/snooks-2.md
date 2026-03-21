@@ -7,4 +7,10 @@ year: 1939
 month: 5
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - boating
+  - sailing
+  - swimming
+  - women
 ---

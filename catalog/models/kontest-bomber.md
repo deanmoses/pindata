@@ -6,4 +6,7 @@ corporate_entity_slug: gillispie-games-company
 year: 1946
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - war
 ---

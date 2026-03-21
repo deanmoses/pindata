@@ -11,6 +11,8 @@ production_quantity: '5240'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80
+theme_slugs:
+  - mythology
 credit_refs:
 - person_slug: david-moore
   role: Art

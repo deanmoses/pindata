@@ -8,6 +8,10 @@ month: 6
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 credit_refs:
 - person_slug: greg-freres
   role: Art

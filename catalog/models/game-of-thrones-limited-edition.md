@@ -7,6 +7,9 @@ ipdb_id: 6309
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: game-of-thrones-premium
+theme_slugs:
+  - medieval
+  - television-shows
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

@@ -5,4 +5,7 @@ ipdb_id: 6990
 corporate_entity_slug: famare-sa
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - city-skyline
+  - stock-market
 ---

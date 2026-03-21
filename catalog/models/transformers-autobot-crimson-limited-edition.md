@@ -6,6 +6,9 @@ opdb_id: GRnPz-Mx0XO-AOxV9
 ipdb_id: 5754
 technology_generation_slug: solid-state
 variant_of: transformers-limited-edition
+theme_slugs:
+  - robots
+  - science-fiction
 credit_refs:
 - person_slug: george-gomez
   role: Design

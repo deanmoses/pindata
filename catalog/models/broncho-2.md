@@ -8,6 +8,9 @@ month: 9
 player_count: 1
 production_quantity: '2260'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - rodeo
 credit_refs:
 - person_slug: harvey-heiss
   role: Design

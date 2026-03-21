@@ -5,6 +5,9 @@ ipdb_id: 4337
 corporate_entity_slug: williams-electronics-games-incorporated-a-subsidiary-of-wms-industries-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - military
+  - war
 credit_refs:
 - person_slug: tim-elliott
   role: Art

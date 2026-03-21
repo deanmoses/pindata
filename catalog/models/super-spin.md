@@ -6,6 +6,8 @@ opdb_id: G4qzZ-MQpoP
 ipdb_id: 2445
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: ed-krynski
   role: Design

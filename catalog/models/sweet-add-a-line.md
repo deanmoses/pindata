@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '800'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - music
+  - singing
+  - water
 credit_refs:
 - person_slug: roy-parker
   role: Art

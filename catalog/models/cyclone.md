@@ -6,6 +6,10 @@ opdb_id: G4O2b-MJpn4
 ipdb_id: 617
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
+  - fair
 credit_refs:
 - person_slug: barry-oursler
   role: Design

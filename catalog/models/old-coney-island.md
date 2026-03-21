@@ -6,6 +6,9 @@ opdb_id: G4qjj-MZeyb
 ipdb_id: 553
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: ed-cebula
   role: Design

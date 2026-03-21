@@ -11,6 +11,9 @@ production_quantity: '8875'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-6
+theme_slugs:
+  - mythology
+  - world-history
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

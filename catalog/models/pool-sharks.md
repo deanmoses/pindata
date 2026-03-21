@@ -11,6 +11,8 @@ production_quantity: '2250'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11c
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: doug-watson
   role: Art

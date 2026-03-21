@@ -6,6 +6,8 @@ opdb_id: GQKyP-MP3OK-A1KoX
 ipdb_id: 6898
 technology_generation_slug: solid-state
 variant_of: james-bond-007-premium
+theme_slugs:
+  - spies
 credit_refs:
 - person_slug: george-gomez
   role: Design

@@ -6,6 +6,10 @@ opdb_id: G5W0z-MLW6N
 ipdb_id: 2461
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - amusement-parks
+  - safari
+  - water
 credit_refs:
 - person_slug: jon-norris
   role: Design

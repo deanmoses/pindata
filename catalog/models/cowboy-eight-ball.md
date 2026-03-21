@@ -6,4 +6,6 @@ corporate_entity_slug: ltd-do-brasil-diverses-eletrnicas-ltda
 year: 1981
 player_count: 3
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
 ---

@@ -6,4 +6,7 @@ corporate_entity_slug: taito-do-brasil-a-division-of-taito-japan
 year: 1980
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - auto-racing
+  - car-rallies
 ---

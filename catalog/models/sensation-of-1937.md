@@ -8,4 +8,7 @@ month: 5
 player_count: 1
 production_quantity: '1097'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - high-diving
+  - swimming
 ---

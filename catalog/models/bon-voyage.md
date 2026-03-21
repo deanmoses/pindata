@@ -10,6 +10,10 @@ player_count: 1
 production_quantity: '1585'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - transportation
+  - travel
 credit_refs:
 - person_slug: dave-christensen
   role: Art

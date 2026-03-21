@@ -6,6 +6,9 @@ opdb_id: GRnwQ-M9R5d
 ipdb_id: 1125
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - basketball
+  - sports
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

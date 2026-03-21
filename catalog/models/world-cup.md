@@ -11,6 +11,9 @@ production_quantity: '6253'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-3
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: christian-marche
   role: Art

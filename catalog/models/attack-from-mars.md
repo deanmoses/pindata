@@ -11,6 +11,10 @@ production_quantity: '3450'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - aliens
+  - fantasy
+  - martians
 credit_refs:
 - person_slug: doug-watson
   role: Art

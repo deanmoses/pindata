@@ -8,6 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: star-ship
 is_conversion: true
+theme_slugs:
+  - movies
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

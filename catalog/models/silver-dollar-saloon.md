@@ -6,4 +6,8 @@ corporate_entity_slug: fun-industries-inc
 year: 1988
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - american-west
+  - historical
+  - western
 ---

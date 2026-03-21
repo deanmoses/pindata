@@ -5,6 +5,8 @@ ipdb_id: 3727
 corporate_entity_slug: williams-electronics-incorporated
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - mythology
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

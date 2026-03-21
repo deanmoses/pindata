@@ -7,6 +7,9 @@ year: 1941
 month: 5
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - high-diving
+  - swimming
 credit_refs:
 - person_slug: roy-parker
   role: Art

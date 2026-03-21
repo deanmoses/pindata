@@ -6,4 +6,8 @@ corporate_entity_slug: allied-leisure-industries-incorporated
 year: 1975
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - dancing
+  - music
+  - singing
 ---

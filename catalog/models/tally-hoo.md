@@ -9,6 +9,9 @@ month: 7
 player_count: 1
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fox-hunting
+  - sports
 credit_refs:
 - person_slug: eulogio-pingarrn
   role: Design

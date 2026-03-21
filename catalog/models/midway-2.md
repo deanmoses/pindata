@@ -7,4 +7,8 @@ year: 1942
 month: 8
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - historical
+  - war
+  - world-war-ii
 ---

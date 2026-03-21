@@ -8,6 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: gamatron
 is_conversion: true
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: harry-williams
   role: Design

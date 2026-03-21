@@ -11,6 +11,9 @@ production_quantity: '1369'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - boxing
+  - sports
 credit_refs:
 - person_slug: linda-deal
   role: Art

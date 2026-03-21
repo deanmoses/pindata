@@ -7,6 +7,9 @@ year: 1961
 month: 4
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - amusement-parks
+  - carnival
 credit_refs:
 - person_slug: don-hooker
   role: Design

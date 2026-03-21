@@ -10,6 +10,10 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: stern-spike-2
 variant_of: star-wars-original-home-edition
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 credit_refs:
 - person_slug: george-gomez
   role: Design

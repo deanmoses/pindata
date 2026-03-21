@@ -7,4 +7,7 @@ year: 1949
 month: 8
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - movie-making
+  - show-business
 ---

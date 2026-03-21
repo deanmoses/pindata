@@ -7,4 +7,9 @@ year: 1934
 month: 8
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - amusement-parks
+  - carnival
+  - ferris-wheels
+  - roller-coasters
 ---

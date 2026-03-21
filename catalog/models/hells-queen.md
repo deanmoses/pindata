@@ -10,6 +10,10 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-1
 variant_of: hell
+theme_slugs:
+  - carnality
+  - damnation
+  - hell
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

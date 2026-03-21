@@ -6,4 +6,7 @@ corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
 year: 1977
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - gambling
+  - slot-machines
 ---

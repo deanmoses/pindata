@@ -6,6 +6,8 @@ corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1968
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - western
 credit_refs:
 - person_slug: christian-marche
   role: Art

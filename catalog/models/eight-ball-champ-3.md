@@ -5,6 +5,8 @@ ipdb_id: 6431
 corporate_entity_slug: maibesa-sa
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: tony-ramunni
   role: Art

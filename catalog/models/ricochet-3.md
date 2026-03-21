@@ -7,6 +7,10 @@ year: 1954
 month: 11
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - archery
+  - riflery
+  - target-shooting
 credit_refs:
 - person_slug: roy-parker
   role: Art

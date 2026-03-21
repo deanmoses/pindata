@@ -6,6 +6,8 @@ opdb_id: GredR-Mb5jN
 ipdb_id: 5708
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: tom-kopera
   role: Design

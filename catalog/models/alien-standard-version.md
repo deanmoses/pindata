@@ -7,6 +7,8 @@ year: 2021
 month: 3
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - science-fiction
 credit_refs:
 - person_slug: aurich-lawson
   role: Art

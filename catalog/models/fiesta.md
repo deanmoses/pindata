@@ -8,4 +8,8 @@ month: 5
 player_count: 1
 production_quantity: '958'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - dancing
+  - music
+  - singing
 ---

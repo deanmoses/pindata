@@ -9,4 +9,8 @@ player_count: 4
 production_quantity: '750'
 technology_generation_slug: solid-state
 system_slug: williams-system-11a
+theme_slugs:
+  - fantasy
+  - outer-space
+  - robots
 ---

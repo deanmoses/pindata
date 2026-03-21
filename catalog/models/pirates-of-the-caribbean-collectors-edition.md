@@ -6,6 +6,9 @@ opdb_id: GRbPY-MBR24
 ipdb_id: 6494
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - movies
+  - pirates
 credit_refs:
 - person_slug: eric-meunier
   role: Design

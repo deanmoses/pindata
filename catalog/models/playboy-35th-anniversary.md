@@ -11,6 +11,8 @@ production_quantity: '2338'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: data-east-v2
+theme_slugs:
+  - celebrities
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

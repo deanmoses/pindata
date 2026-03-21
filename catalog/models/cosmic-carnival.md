@@ -7,6 +7,9 @@ year: 2019
 month: 6
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - monsters
 credit_refs:
 - person_slug: donny-gillies
   role: Art

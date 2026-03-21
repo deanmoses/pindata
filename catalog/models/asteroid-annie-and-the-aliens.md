@@ -11,6 +11,12 @@ production_quantity: '211'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-1
+theme_slugs:
+  - aliens
+  - cards
+  - fantasy
+  - outer-space
+  - poker
 credit_refs:
 - person_slug: gordon-morison
   role: Art

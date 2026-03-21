@@ -7,4 +7,7 @@ year: 1950
 month: 5
 production_quantity: '89'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

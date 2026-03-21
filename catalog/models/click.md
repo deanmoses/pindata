@@ -7,4 +7,10 @@ year: 1947
 month: 8
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - modeling
+  - photography
+  - swimming
+  - water
 ---

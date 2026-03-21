@@ -10,6 +10,9 @@ player_count: 2
 production_quantity: '500'
 technology_generation_slug: electromechanical
 variant_of: pleasure-isle
+theme_slugs:
+  - american-places
+  - hawaii
 credit_refs:
 - person_slug: roy-parker
   role: Art

@@ -7,4 +7,6 @@ year: 1995
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: mac-system-iv
+theme_slugs:
+  - food
 ---

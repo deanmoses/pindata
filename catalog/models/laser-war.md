@@ -6,6 +6,8 @@ opdb_id: G5one-MQY5V
 ipdb_id: 1415
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: joe-kaminkow
   role: Design

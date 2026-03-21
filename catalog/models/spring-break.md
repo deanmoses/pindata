@@ -11,6 +11,8 @@ production_quantity: '3550'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80b
+theme_slugs:
+  - aquatic-fun
 credit_refs:
 - person_slug: don-marshall
   role: Art

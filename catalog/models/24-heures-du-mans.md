@@ -5,4 +5,7 @@ ipdb_id: 5271
 corporate_entity_slug: billares-cordoba-antonio-cordoba
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - auto-racing
+  - sports
 ---

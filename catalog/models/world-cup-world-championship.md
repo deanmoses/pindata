@@ -5,6 +5,9 @@ ipdb_id: 5152
 corporate_entity_slug: bell-games
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - soccer
+  - sports
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

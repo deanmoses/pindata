@@ -6,6 +6,9 @@ opdb_id: G5LW9-ML371
 ipdb_id: 5301
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoons
+  - movies
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

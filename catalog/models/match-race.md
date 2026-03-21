@@ -8,6 +8,9 @@ month: 3
 player_count: 2
 production_quantity: '4'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: steve-kordek
   role: Design

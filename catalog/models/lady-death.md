@@ -8,6 +8,9 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: mata-hari-em
 is_conversion: true
+theme_slugs:
+  - fantasy
+  - vampires
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

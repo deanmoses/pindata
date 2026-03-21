@@ -8,4 +8,7 @@ player_count: 4
 production_quantity: '1'
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - human-physiology
+  - medical
 ---

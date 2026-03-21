@@ -11,6 +11,11 @@ production_quantity: '2705'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11b
+theme_slugs:
+  - fantasy
+  - knights
+  - magic-wizards
+  - medieval
 credit_refs:
 - person_slug: doug-watson
   role: Art

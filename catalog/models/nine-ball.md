@@ -11,6 +11,8 @@ production_quantity: '2279'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: jorge-obregon
   role: Art

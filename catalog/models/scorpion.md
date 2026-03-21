@@ -11,6 +11,8 @@ production_quantity: '2000'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-6
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

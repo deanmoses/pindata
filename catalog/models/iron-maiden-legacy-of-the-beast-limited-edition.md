@@ -7,6 +7,8 @@ ipdb_id: 6557
 display_type_slug: lcd
 technology_generation_slug: solid-state
 variant_of: iron-maiden-legacy-of-the-beast-premium
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: keith-elwin
   role: Design

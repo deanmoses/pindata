@@ -11,6 +11,12 @@ production_quantity: '1900'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-3
+theme_slugs:
+  - comedy
+  - country-and-western
+  - dancing
+  - music
+  - singing
 credit_refs:
 - person_slug: constantino-mitchell
   role: Art

@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '810'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
 credit_refs:
 - person_slug: roy-parker
   role: Art

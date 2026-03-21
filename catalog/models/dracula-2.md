@@ -8,6 +8,8 @@ player_count: 4
 production_quantity: '262'
 technology_generation_slug: solid-state
 system_slug: stern-mpu-100
+theme_slugs:
+  - supernatural
 credit_refs:
 - person_slug: harry-williams
   role: Design

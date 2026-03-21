@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '1100'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - hunting
+  - safari
+  - sports
 credit_refs:
 - person_slug: ted-zale
   role: Design

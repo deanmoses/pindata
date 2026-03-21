@@ -6,6 +6,9 @@ opdb_id: GrqZX-MDEPd
 ipdb_id: 5558
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - movies
 credit_refs:
 - person_slug: chris-granner
   role: Design

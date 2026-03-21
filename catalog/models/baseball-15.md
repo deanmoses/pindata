@@ -6,4 +6,7 @@ corporate_entity_slug: atlas-indicator-works-incorporated
 year: 1931
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

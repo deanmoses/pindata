@@ -6,6 +6,10 @@ opdb_id: G5pp2-ME0eP
 ipdb_id: 6416
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - horror
+  - music
+  - supernatural
 credit_refs:
 - person_slug: ben-heckendorn
   role: Design

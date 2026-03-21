@@ -9,6 +9,8 @@ month: 3
 player_count: 2
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aquatic-parks
 credit_refs:
 - person_slug: christian-marche
   role: Art

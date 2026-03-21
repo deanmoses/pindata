@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - roller-coasters
+  - video-games
 credit_refs:
 - person_slug: john-youssi
   role: Art

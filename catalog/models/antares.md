@@ -9,6 +9,11 @@ month: 1
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
+  - space-travel
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

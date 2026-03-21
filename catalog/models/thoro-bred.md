@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '1750'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fox-hunting
+  - horses
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

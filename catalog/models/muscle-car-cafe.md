@@ -7,4 +7,7 @@ year: 2004
 player_count: 4
 production_quantity: '2'
 technology_generation_slug: solid-state
+theme_slugs:
+  - car-rallies
+  - cars
 ---

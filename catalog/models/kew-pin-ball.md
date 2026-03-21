@@ -7,4 +7,6 @@ year: 1931
 month: 5
 player_count: 4
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - billiards
 ---

@@ -9,4 +9,7 @@ month: 1
 player_count: 2
 technology_generation_slug: electromechanical
 variant_of: gondolier
+theme_slugs:
+  - boats
+  - world-places
 ---

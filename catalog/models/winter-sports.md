@@ -6,6 +6,9 @@ opdb_id: GrxWp-MDvrD
 ipdb_id: 3563
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - snow-skiing
+  - sports
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

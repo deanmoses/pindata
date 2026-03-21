@@ -6,6 +6,9 @@ opdb_id: GZVOd-MwNxZ-ARove
 ipdb_id: 6598
 technology_generation_slug: solid-state
 variant_of: elviras-house-of-horrors-premium
+theme_slugs:
+  - horror
+  - supernatural
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

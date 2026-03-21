@@ -8,6 +8,8 @@ player_count: 4
 production_quantity: '10'
 technology_generation_slug: solid-state
 system_slug: jersey-jack
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: arian-buhler
   role: Art

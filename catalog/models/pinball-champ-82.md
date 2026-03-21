@@ -6,6 +6,8 @@ opdb_id: GrPdq-MQYkJ
 ipdb_id: 1794
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - pinball
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

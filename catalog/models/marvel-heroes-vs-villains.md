@@ -6,6 +6,8 @@ corporate_entity_slug: zizzle-arcade-pinball
 year: 2006
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - comic-book-characters
 credit_refs:
 - person_slug: john-popadiuk
   role: Art

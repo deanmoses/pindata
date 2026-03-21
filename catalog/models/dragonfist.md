@@ -11,6 +11,9 @@ production_quantity: '302'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - martial-arts
+  - sports
 credit_refs:
 - person_slug: doug-watson
   role: Art

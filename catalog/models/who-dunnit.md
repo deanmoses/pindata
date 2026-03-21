@@ -11,6 +11,8 @@ production_quantity: '2416'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+theme_slugs:
+  - murder-mystery
 credit_refs:
 - person_slug: linda-deal
   role: Art

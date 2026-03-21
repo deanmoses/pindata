@@ -8,6 +8,8 @@ player_count: 2
 production_quantity: '6'
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: greg-freres
   role: Art

@@ -5,6 +5,9 @@ ipdb_id: 6627
 corporate_entity_slug: zizzle-arcade-pinball
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - sports
+  - wrestling
 credit_refs:
 - person_slug: john-popadiuk
   role: Art

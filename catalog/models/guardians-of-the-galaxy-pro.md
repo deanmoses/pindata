@@ -6,6 +6,9 @@ opdb_id: GRWvz-Mp4yl
 ipdb_id: 6474
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - movies
+  - superheroes
 credit_refs:
 - person_slug: john-borg
   role: Design

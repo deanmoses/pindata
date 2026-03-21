@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: lcd
 technology_generation_slug: solid-state
 system_slug: quetzal-qpc
+theme_slugs:
+  - auto-racing
+  - sports
 credit_refs:
 - person_slug: gustavo-diaz-soler
   role: Art

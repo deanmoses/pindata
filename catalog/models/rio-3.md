@@ -9,4 +9,9 @@ month: 6
 player_count: 4
 display_type_slug: score-reels
 technology_generation_slug: solid-state
+theme_slugs:
+  - celebration
+  - dancing
+  - music
+  - world-places
 ---

@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '1700'
 technology_generation_slug: electromechanical
 variant_of: world-beauties
+theme_slugs:
+  - cards
 credit_refs:
 - person_slug: roy-parker
   role: Art

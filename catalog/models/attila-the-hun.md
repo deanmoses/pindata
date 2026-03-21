@@ -6,6 +6,8 @@ opdb_id: GrZxD-MLO4Y
 ipdb_id: 109
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - historical
 credit_refs:
 - person_slug: john-trudeau
   role: Design

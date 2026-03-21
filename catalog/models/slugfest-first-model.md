@@ -8,6 +8,9 @@ month: 3
 player_count: 2
 technology_generation_slug: solid-state
 system_slug: williams-wpc-dot-matrix
+theme_slugs:
+  - baseball
+  - sports
 credit_refs:
 - person_slug: linda-deal
   role: Art

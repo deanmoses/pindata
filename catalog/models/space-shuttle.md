@@ -6,6 +6,8 @@ opdb_id: G4jyz-MDyYE
 ipdb_id: 3263
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - space-exploration
 credit_refs:
 - person_slug: lorenzo-rimondini
   role: Art

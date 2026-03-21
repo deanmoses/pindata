@@ -7,6 +7,9 @@ ipdb_id: 5707
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: tron-legacy
+theme_slugs:
+  - movies
+  - science-fiction
 credit_refs:
 - person_slug: john-borg
   role: Design

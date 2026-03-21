@@ -6,6 +6,8 @@ opdb_id: GYWBZ-MW9B0
 ipdb_id: 6648
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

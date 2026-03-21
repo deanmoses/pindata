@@ -8,4 +8,6 @@ month: 1
 player_count: 1
 production_quantity: '351'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - billiards
 ---

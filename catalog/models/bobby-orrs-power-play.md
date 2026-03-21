@@ -6,6 +6,10 @@ opdb_id: G4en0-MJ5vB
 ipdb_id: 1858
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - celebrities
+  - hockey
+  - sports
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

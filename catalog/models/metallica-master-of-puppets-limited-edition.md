@@ -7,6 +7,8 @@ ipdb_id: 6031
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: metallica-premium
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: john-borg
   role: Design

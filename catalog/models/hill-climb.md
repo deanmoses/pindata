@@ -5,6 +5,8 @@ ipdb_id: 5333
 corporate_entity_slug: mylstar-electronics-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - motorcycles
 credit_refs:
 - person_slug: john-trudeau
   role: Design

@@ -6,4 +6,7 @@ corporate_entity_slug: h-c-evans-company
 year: 1953
 player_count: 7
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
+  - sports
 ---

@@ -5,4 +5,8 @@ ipdb_id: 6986
 corporate_entity_slug: design-plus-industries
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - hockey
+  - soccer
+  - sports
 ---

@@ -5,6 +5,11 @@ ipdb_id: 6274
 corporate_entity_slug: williams-electronics-incorporated
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - boats
+  - nautical
+  - ships
+  - water
 credit_refs:
 - person_slug: chris-otis
   role: Design

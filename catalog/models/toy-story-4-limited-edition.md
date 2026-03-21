@@ -5,6 +5,8 @@ corporate_entity_slug: jersey-jack-pinball-inc-elk-grove-village-il
 opdb_id: GJ2o0-MrRye-ARNwE
 ipdb_id: 6950
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoon-characters
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

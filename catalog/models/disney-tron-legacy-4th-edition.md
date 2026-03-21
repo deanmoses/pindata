@@ -8,6 +8,8 @@ player_count: 4
 production_quantity: '200'
 technology_generation_slug: solid-state
 system_slug: stern-sam
+theme_slugs:
+  - science-fiction
 credit_refs:
 - person_slug: john-youssi
   role: Art

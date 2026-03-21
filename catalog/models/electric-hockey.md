@@ -9,4 +9,7 @@ month: 1
 player_count: 2
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - hockey
+  - sports
 ---

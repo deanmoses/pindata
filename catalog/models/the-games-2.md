@@ -10,4 +10,7 @@ player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: nsm-control-unit-217838
+theme_slugs:
+  - olympics
+  - sports
 ---

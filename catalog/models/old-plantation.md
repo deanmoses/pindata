@@ -7,6 +7,9 @@ year: 1961
 month: 2
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - confederate-american-south
+  - historical
 credit_refs:
 - person_slug: ed-krynski
   role: Design

@@ -6,4 +6,7 @@ corporate_entity_slug: exhibit-supply-company
 year: 1950
 player_count: 5
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

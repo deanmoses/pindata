@@ -7,4 +7,6 @@ year: 1987
 month: 6
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - 1980s-party-theme
 ---

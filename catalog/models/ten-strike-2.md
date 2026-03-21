@@ -6,4 +6,7 @@ corporate_entity_slug: williams-manufacturing-company
 year: 1958
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

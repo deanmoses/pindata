@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '2100'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - games
+  - robots
+  - school
+  - tic-tac-toe
 credit_refs:
 - person_slug: roy-parker
   role: Art

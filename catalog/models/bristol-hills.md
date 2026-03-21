@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '110'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - snow-skiing
+  - snowmobiling
+  - sports
 credit_refs:
 - person_slug: art-stenholm
   role: Art

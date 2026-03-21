@@ -11,6 +11,10 @@ production_quantity: '4700'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - celebrities
+  - music
+  - musical
 credit_refs:
 - person_slug: kurt-andersen
   role: Art

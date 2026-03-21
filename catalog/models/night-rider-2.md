@@ -10,6 +10,10 @@ player_count: 4
 production_quantity: '4155'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - transportation
+  - travel
+  - truck-driving
 credit_refs:
 - person_slug: paul-faris
   role: Art

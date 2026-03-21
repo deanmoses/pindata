@@ -6,4 +6,7 @@ corporate_entity_slug: elettrocoin
 year: 1969
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - soccer
+  - sports
 ---

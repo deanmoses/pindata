@@ -7,6 +7,8 @@ year: 1932
 month: 7
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - circus
 credit_refs:
 - person_slug: raymond-t-moloney
   role: Design

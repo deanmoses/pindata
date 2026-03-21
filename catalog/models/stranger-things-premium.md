@@ -5,6 +5,11 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: Gzy89-M0oPy-A1zrL
 ipdb_id: 6643
 technology_generation_slug: solid-state
+theme_slugs:
+  - horror
+  - science-fiction
+  - supernatural
+  - television-shows
 credit_refs:
 - person_slug: brian-eddy
   role: Design

@@ -6,4 +6,7 @@ corporate_entity_slug: united-manufacturing-company
 year: 1952
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - football
+  - sports
 ---

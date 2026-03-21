@@ -5,4 +5,7 @@ ipdb_id: 5751
 corporate_entity_slug: united-manufacturing-company
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

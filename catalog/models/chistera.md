@@ -5,4 +5,7 @@ ipdb_id: 4661
 year: 1952
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - jai-alai
+  - sports
 ---

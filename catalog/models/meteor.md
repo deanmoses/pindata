@@ -6,6 +6,8 @@ opdb_id: G5b38-MDqkx
 ipdb_id: 1580
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: steve-kirk
   role: Design

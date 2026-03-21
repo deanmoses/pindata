@@ -5,4 +5,7 @@ ipdb_id: 5633
 corporate_entity_slug: skillgame-dba-renato-montanari-giochi
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - police
 ---

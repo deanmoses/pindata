@@ -7,6 +7,9 @@ ipdb_id: 6476
 display_type_slug: lcd
 technology_generation_slug: solid-state
 variant_of: guardians-of-the-galaxy-premium
+theme_slugs:
+  - movies
+  - superheroes
 credit_refs:
 - person_slug: john-borg
   role: Design

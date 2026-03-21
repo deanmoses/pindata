@@ -7,6 +7,10 @@ ipdb_id: 3823
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - dancing
+  - music
+  - nightlife
 credit_refs:
 - person_slug: bob-betor
   role: Design

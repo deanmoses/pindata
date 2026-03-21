@@ -6,6 +6,8 @@ opdb_id: GRw0r-Mp42p
 ipdb_id: 753
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - earthquake
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

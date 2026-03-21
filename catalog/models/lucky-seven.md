@@ -6,6 +6,8 @@ opdb_id: G5D3O-Ml9xp
 ipdb_id: 3798
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - gambling
 credit_refs:
 - person_slug: chris-otis
   role: Design

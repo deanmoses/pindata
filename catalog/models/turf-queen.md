@@ -8,4 +8,6 @@ month: 2
 player_count: 1
 production_quantity: '347'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horse-racing
 ---

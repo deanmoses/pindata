@@ -6,6 +6,10 @@ opdb_id: GryQj-MLvN7
 ipdb_id: 4497
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - transportation
+  - travel
+  - truck-driving
 credit_refs:
 - person_slug: greg-kmiec
   role: Design

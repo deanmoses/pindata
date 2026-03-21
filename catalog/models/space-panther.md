@@ -7,4 +7,8 @@ year: 1988
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: mac-system-iv
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 ---

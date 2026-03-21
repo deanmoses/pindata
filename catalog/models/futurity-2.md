@@ -6,4 +6,7 @@ corporate_entity_slug: western-equipment-supply-company
 year: 1934
 month: 5
 player_count: 1
+theme_slugs:
+  - horse-racing
+  - sports
 ---

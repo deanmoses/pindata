@@ -6,6 +6,9 @@ opdb_id: GRb2y-MZezV
 ipdb_id: 3631
 display_type_slug: cga
 technology_generation_slug: solid-state
+theme_slugs:
+  - monster-truck-rallies
+  - motorcycles
 credit_refs:
 - person_slug: mauro-ferrari
   role: Design

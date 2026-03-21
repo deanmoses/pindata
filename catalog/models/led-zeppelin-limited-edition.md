@@ -6,6 +6,8 @@ opdb_id: Gweel-ME0pP-AR0N5
 ipdb_id: 6762
 technology_generation_slug: solid-state
 variant_of: led-zeppelin-premium
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

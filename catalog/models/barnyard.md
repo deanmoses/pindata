@@ -9,6 +9,8 @@ month: 7
 player_count: 1
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - farm-animals
 credit_refs:
 - person_slug: rory-cernuda
   role: Art

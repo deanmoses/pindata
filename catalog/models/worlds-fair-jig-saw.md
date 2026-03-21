@@ -7,6 +7,8 @@ year: 1933
 month: 8
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - centennial-celebration
 credit_refs:
 - person_slug: david-rockola
   role: Design

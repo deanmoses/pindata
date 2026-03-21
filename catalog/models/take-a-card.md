@@ -8,6 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: electromechanical
 converted_from: lawman
 is_conversion: true
+theme_slugs:
+  - cards
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

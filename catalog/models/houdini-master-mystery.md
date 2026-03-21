@@ -5,6 +5,9 @@ ipdb_id: 6469
 corporate_entity_slug: american-pinball-inc
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - historical-characters
+  - magic-wizards
 credit_refs:
 - person_slug: matt-andrews
   role: Art

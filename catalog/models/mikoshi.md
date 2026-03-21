@@ -10,4 +10,6 @@ player_count: 2
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: sega-95534
+theme_slugs:
+  - celebration
 ---

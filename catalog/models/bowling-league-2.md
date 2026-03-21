@@ -8,4 +8,7 @@ month: 11
 player_count: 1
 production_quantity: '2525'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

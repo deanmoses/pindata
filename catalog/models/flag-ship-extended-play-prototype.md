@@ -6,6 +6,9 @@ corporate_entity_slug: d-gottlieb-company
 year: 1957
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - nautical
+  - sailing
 credit_refs:
 - person_slug: roy-parker
   role: Art

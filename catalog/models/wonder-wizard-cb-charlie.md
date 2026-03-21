@@ -5,4 +5,9 @@ ipdb_id: 5642
 corporate_entity_slug: sentinel-inc
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - hot-rods
+  - transportation
+  - travel
+  - truck-driving
 ---

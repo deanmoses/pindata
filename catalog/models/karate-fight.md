@@ -10,6 +10,9 @@ player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - martial-arts
+  - sports
 credit_refs:
 - person_slug: dan-langlois
   role: Design

@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '600'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
 credit_refs:
 - person_slug: steve-kordek
   role: Design

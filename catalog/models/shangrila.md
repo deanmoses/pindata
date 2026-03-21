@@ -7,6 +7,9 @@ year: 1943
 month: 11
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
+  - war
 credit_refs:
 - person_slug: roy-parker
   role: Art

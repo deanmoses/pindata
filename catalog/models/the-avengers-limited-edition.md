@@ -7,6 +7,10 @@ ipdb_id: 5940
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: the-avengers-premium
+theme_slugs:
+  - comics
+  - fantasy
+  - movies
 credit_refs:
 - person_slug: george-gomez
   role: Design

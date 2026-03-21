@@ -6,6 +6,11 @@ opdb_id: Gryd3-MLqjd
 ipdb_id: 548
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
+  - fair
+  - roller-coasters
 credit_refs:
 - person_slug: barry-oursler
   role: Design

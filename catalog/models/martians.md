@@ -7,6 +7,8 @@ year: 2004
 month: 4
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - aliens
 credit_refs:
 - person_slug: mauro-aleto
   role: Art

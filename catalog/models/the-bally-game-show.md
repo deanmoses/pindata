@@ -11,6 +11,10 @@ production_quantity: '2500'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11c
+theme_slugs:
+  - comedy
+  - game-shows
+  - television-shows
 credit_refs:
 - person_slug: tim-elliott
   role: Art

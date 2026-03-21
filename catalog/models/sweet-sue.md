@@ -7,4 +7,9 @@ year: 1948
 month: 12
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - swimming
+  - water
+  - women
 ---

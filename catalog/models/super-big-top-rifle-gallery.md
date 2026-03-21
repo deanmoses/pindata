@@ -7,4 +7,7 @@ year: 1955
 month: 11
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - circus
 ---

@@ -6,4 +6,6 @@ corporate_entity_slug: rowamet-indstria-eletrometalrgica-ltda
 year: 1983
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
 ---

@@ -6,6 +6,8 @@ opdb_id: G5Yyo-ML3Wo
 ipdb_id: 2489
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - wrestling
 credit_refs:
 - person_slug: john-trudeau
   role: Design

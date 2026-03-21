@@ -7,6 +7,9 @@ ipdb_id: 6100
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 variant_of: mustang-premium
+theme_slugs:
+  - cars
+  - travel
 credit_refs:
 - person_slug: john-trudeau
   role: Design

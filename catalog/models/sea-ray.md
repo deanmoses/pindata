@@ -10,6 +10,11 @@ player_count: 2
 production_quantity: '1300'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - diving
+  - spear-fishing
+  - sports
+  - water-sports
 credit_refs:
 - person_slug: christian-marche
   role: Art

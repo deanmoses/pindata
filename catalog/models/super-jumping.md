@@ -6,4 +6,7 @@ corporate_entity_slug: alben
 year: 1957
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - equestrian
+  - horse-shows
 ---

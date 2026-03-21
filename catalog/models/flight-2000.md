@@ -11,6 +11,8 @@ production_quantity: '6301'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: doug-watson
   role: Art

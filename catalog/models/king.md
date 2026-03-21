@@ -7,4 +7,6 @@ ipdb_id: 3625
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - celebrities
 ---

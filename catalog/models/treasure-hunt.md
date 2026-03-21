@@ -6,4 +6,7 @@ corporate_entity_slug: gerber-glass-distributing-company
 year: 1935
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adventure
+  - pirates
 ---

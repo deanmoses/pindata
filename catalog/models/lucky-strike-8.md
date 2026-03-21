@@ -9,4 +9,7 @@ month: 1
 player_count: 4
 display_type_slug: alphanumeric
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 ---

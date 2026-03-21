@@ -9,6 +9,8 @@ month: 10
 player_count: 1
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - family-vacation
 credit_refs:
 - person_slug: paul-faris
   role: Art

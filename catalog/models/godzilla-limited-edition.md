@@ -6,6 +6,9 @@ opdb_id: GweeP-Ml9pZ-A9vXB
 ipdb_id: 6843
 technology_generation_slug: solid-state
 variant_of: godzilla-premium
+theme_slugs:
+  - monsters
+  - science-fiction
 credit_refs:
 - person_slug: keith-elwin
   role: Design

@@ -8,4 +8,8 @@ year: 1967
 month: 1
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - amusement-parks
+  - carnival
+  - roller-coasters
 ---

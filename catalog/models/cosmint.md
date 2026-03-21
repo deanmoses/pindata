@@ -9,6 +9,8 @@ month: 1
 player_count: 4
 technology_generation_slug: electromechanical
 variant_of: cosmos
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: jerry-kelley
   role: Art

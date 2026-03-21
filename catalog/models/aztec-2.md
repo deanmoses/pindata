@@ -8,6 +8,8 @@ month: 11
 player_count: 4
 production_quantity: '10'
 technology_generation_slug: solid-state
+theme_slugs:
+  - historical
 credit_refs:
 - person_slug: gordon-horlick
   role: Design

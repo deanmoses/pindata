@@ -6,6 +6,9 @@ opdb_id: GRwZ7-MJ7vy
 ipdb_id: 619
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: roger-sharpe
   role: Design

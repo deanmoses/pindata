@@ -6,4 +6,8 @@ corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1975
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - aliens
+  - outer-space
+  - ufo
 ---

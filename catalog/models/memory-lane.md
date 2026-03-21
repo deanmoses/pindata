@@ -6,6 +6,9 @@ opdb_id: Gry0Z-MP3zR
 ipdb_id: 1570
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - bowling
+  - sports
 credit_refs:
 - person_slug: mike-kubin
   role: Design

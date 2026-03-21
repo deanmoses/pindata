@@ -9,6 +9,10 @@ month: 5
 player_count: 4
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - sports
+  - surfing
+  - water-sports
 credit_refs:
 - person_slug: george-molentin
   role: Art

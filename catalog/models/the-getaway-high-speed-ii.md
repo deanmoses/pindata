@@ -11,6 +11,10 @@ production_quantity: '13259'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-fliptronics-2
+theme_slugs:
+  - driving
+  - police
+  - speeding
 credit_refs:
 - person_slug: doug-watson
   role: Art

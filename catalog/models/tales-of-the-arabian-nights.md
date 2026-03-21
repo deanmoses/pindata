@@ -11,6 +11,9 @@ production_quantity: '3128'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: pat-mcmahon
   role: Art

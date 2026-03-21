@@ -10,6 +10,10 @@ player_count: 2
 production_quantity: '3202'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - blackjack
+  - cards
+  - gambling
 credit_refs:
 - person_slug: louis-raynaud
   role: Art

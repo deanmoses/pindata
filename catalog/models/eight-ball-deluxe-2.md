@@ -10,6 +10,8 @@ player_count: 4
 technology_generation_slug: solid-state
 system_slug: bally-as2518-35
 variant_of: eight-ball-deluxe
+theme_slugs:
+  - billiards
 credit_refs:
 - person_slug: margaret-hudson
   role: Art

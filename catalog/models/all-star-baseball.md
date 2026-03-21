@@ -6,4 +6,7 @@ corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1962
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

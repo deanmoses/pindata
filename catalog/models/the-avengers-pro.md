@@ -6,6 +6,10 @@ opdb_id: GRzNR-MLlEj
 ipdb_id: 5938
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - comics
+  - fantasy
+  - movies
 credit_refs:
 - person_slug: george-gomez
   role: Design

@@ -6,4 +6,7 @@ corporate_entity_slug: western-products-incorporated
 year: 1940
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

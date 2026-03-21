@@ -6,6 +6,9 @@ opdb_id: Grq1D-MQokp
 ipdb_id: 1777
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - music
+  - singing
 credit_refs:
 - person_slug: ed-cebula
   role: Design

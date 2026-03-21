@@ -9,6 +9,8 @@ month: 1
 player_count: 4
 technology_generation_slug: solid-state
 variant_of: acdc-pro
+theme_slugs:
+  - music
 credit_refs:
 - person_slug: steve-ritchie
   role: Design

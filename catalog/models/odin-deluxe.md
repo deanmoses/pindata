@@ -8,6 +8,8 @@ year: 1985
 month: 1
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - norse-mythology
 credit_refs:
 - person_slug: eulogio-pingarrn
   role: Design

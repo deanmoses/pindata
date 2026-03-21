@@ -8,6 +8,10 @@ month: 5
 player_count: 1
 production_quantity: '3700'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adult
+  - girls
+  - women
 credit_refs:
 - person_slug: roy-parker
   role: Art

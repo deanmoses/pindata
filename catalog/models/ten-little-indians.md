@@ -7,6 +7,8 @@ year: 1950
 month: 7
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - native-americans
 credit_refs:
 - person_slug: wayne-neyens
   role: Design

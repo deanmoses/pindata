@@ -7,6 +7,9 @@ year: 1982
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: game-plan-mpu-2
+theme_slugs:
+  - hockey
+  - sports
 credit_refs:
 - person_slug: larry-day
   role: Art

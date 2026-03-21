@@ -10,6 +10,9 @@ player_count: 6
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - football
+  - sports
 credit_refs:
 - person_slug: joe-balcer
   role: Design

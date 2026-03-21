@@ -5,4 +5,9 @@ ipdb_id: 6173
 year: 2007
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - golf
+  - motorcycles
+  - sports
+  - transportation
 ---

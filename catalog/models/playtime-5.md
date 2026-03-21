@@ -6,4 +6,8 @@ corporate_entity_slug: irmacor
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: recel-system-iii
+theme_slugs:
+  - historical
+  - knights
+  - medieval
 ---

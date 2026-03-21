@@ -5,6 +5,8 @@ ipdb_id: 6510
 corporate_entity_slug: bally-manufacturing-corporation
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
 credit_refs:
 - person_slug: dave-christensen
   role: Art

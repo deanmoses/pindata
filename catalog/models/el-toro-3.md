@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '2065'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bullfighting
 credit_refs:
 - person_slug: dick-white
   role: Art

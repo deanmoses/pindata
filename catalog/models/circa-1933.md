@@ -8,6 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
 variant_of: roy-clark-the-entertainer
+theme_slugs:
+  - historical
 credit_refs:
 - person_slug: r-michael-torrey
   role: Art

@@ -7,4 +7,7 @@ year: 1953
 month: 11
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - billiards
+  - sports
 ---

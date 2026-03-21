@@ -8,4 +8,7 @@ month: 12
 player_count: 1
 production_quantity: '2894'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - snow-skiing
+  - sports
 ---

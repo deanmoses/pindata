@@ -8,6 +8,9 @@ month: 2
 player_count: 1
 production_quantity: '3000'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - bowling
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

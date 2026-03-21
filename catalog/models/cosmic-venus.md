@@ -6,4 +6,8 @@ year: 1978
 month: 10
 production_quantity: '1'
 technology_generation_slug: solid-state
+theme_slugs:
+  - dinosaurs
+  - outer-space
+  - space-fantasy
 ---

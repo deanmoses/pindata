@@ -7,4 +7,7 @@ year: 1960
 month: 2
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

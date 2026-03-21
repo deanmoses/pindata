@@ -5,4 +5,7 @@ ipdb_id: 6837
 corporate_entity_slug: dama-srl
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - court-jester
+  - royalty
 ---

@@ -6,6 +6,8 @@ opdb_id: GJ2o0-MrRye-AO62p
 ipdb_id: 6951
 technology_generation_slug: solid-state
 variant_of: toy-story-4-limited-edition
+theme_slugs:
+  - cartoon-characters
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

@@ -6,6 +6,10 @@ opdb_id: GBLLP-MW900-A1KoQ
 ipdb_id: 6830
 technology_generation_slug: solid-state
 variant_of: the-mandalorian-premium
+theme_slugs:
+  - fantasy
+  - outer-space
+  - science-fiction
 credit_refs:
 - person_slug: brian-eddy
   role: Design

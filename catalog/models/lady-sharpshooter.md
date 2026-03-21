@@ -7,6 +7,8 @@ ipdb_id: 1407
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 cabinet_slug: cocktail
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: larry-m-blazek
   role: Art

@@ -7,6 +7,8 @@ year: 1985
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-1
+theme_slugs:
+  - adventure
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

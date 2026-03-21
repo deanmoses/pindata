@@ -6,4 +6,6 @@ corporate_entity_slug: gotham-pressed-steel-corporation
 year: 1939
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - american-west
 ---

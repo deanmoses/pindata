@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '180'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - evolution
+  - science
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

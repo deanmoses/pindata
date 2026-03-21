@@ -6,4 +6,6 @@ corporate_entity_slug: williams-manufacturing-company
 player_count: 1
 production_quantity: '1'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-places
 ---

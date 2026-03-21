@@ -6,6 +6,9 @@ opdb_id: GRVjJ-MLq7W
 ipdb_id: 4059
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: cameron-silver
   role: Design

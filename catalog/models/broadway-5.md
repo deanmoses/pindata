@@ -7,4 +7,8 @@ year: 1932
 month: 9
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - american-places
+  - show-business
+  - theater
 ---

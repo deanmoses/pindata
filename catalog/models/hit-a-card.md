@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '1600'
 technology_generation_slug: electromechanical
 variant_of: solitaire
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: art-stenholm
   role: Art

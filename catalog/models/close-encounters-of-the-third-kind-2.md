@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '470'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - movies
+  - outer-space
 credit_refs:
 - person_slug: gordon-morison
   role: Art

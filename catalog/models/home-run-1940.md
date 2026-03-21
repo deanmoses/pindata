@@ -8,4 +8,7 @@ month: 2
 player_count: 1
 production_quantity: '2645'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

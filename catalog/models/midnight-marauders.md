@@ -6,4 +6,8 @@ corporate_entity_slug: bally-midway-manufacturing-company
 year: 1984
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
 ---

@@ -8,6 +8,9 @@ month: 12
 player_count: 1
 production_quantity: '1809'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - hunting
+  - sports
 credit_refs:
 - person_slug: jerry-koci
   role: Design

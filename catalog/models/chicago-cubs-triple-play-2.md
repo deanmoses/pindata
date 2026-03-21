@@ -6,6 +6,9 @@ corporate_entity_slug: vifico-sa
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80b
+theme_slugs:
+  - baseball
+  - sports
 credit_refs:
 - person_slug: larry-day
   role: Art

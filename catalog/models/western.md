@@ -7,6 +7,8 @@ year: 1969
 month: 10
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - western
 credit_refs:
 - person_slug: art-stenholm
   role: Art

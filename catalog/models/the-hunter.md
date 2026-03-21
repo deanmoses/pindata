@@ -7,6 +7,8 @@ ipdb_id: 3733
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 is_conversion: true
+theme_slugs:
+  - war
 credit_refs:
 - person_slug: michele-mike-martinelli
   role: Art

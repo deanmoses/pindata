@@ -6,4 +6,6 @@ corporate_entity_slug: illinois-pin-ball-incorporated
 year: 2000
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
 ---

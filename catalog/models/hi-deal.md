@@ -10,6 +10,11 @@ player_count: 1
 production_quantity: '2085'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - cards
+  - city-buildings
+  - city-scene
 credit_refs:
 - person_slug: dick-white
   role: Art

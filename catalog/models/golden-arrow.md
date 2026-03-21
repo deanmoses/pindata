@@ -6,6 +6,9 @@ opdb_id: G5WPp-MDBx9
 ipdb_id: 1044
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - native-americans
+  - warriors
 credit_refs:
 - person_slug: ed-krynski
   role: Design

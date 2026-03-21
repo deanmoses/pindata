@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '459'
 display_type_slug: score-reels
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
 credit_refs:
 - person_slug: gordon-morison
   role: Art

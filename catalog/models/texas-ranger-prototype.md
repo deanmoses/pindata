@@ -6,6 +6,9 @@ corporate_entity_slug: d-gottlieb-company
 player_count: 1
 production_quantity: '1'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-west
+  - police
 credit_refs:
 - person_slug: gordon-morison
   role: Art

@@ -7,4 +7,7 @@ year: 1974
 month: 6
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - adventure
+  - pirates
 ---

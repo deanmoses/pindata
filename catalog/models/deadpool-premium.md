@@ -6,6 +6,8 @@ opdb_id: G6lnq-MRj7Z
 ipdb_id: 6559
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - superheroes
 credit_refs:
 - person_slug: george-gomez
   role: Design

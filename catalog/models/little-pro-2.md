@@ -7,6 +7,9 @@ year: 1990
 player_count: 1
 production_quantity: '250'
 technology_generation_slug: solid-state
+theme_slugs:
+  - golf
+  - sports
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

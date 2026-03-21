@@ -7,4 +7,6 @@ year: 1954
 month: 3
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - bingo
 ---

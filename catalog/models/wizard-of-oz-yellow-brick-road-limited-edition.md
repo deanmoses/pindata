@@ -6,6 +6,9 @@ corporate_entity_slug: jersey-jack-pinball-inc-lakewood-nj
 year: 2019
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - magic-wizards
 credit_refs:
 - person_slug: greg-freres
   role: Art

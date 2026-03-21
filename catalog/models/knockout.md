@@ -10,6 +10,9 @@ player_count: 2
 production_quantity: '2085'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - boxing
+  - sports
 credit_refs:
 - person_slug: dick-white
   role: Art

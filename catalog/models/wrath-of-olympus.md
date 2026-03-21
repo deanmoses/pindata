@@ -11,6 +11,8 @@ production_quantity: '6'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: multimorphic-p-roc
+theme_slugs:
+  - mythology
 credit_refs:
 - person_slug: scott-gullicks
   role: Art

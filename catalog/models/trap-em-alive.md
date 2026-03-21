@@ -6,4 +6,7 @@ corporate_entity_slug: gotham-pressed-steel-corporation
 year: 1936
 player_count: 1
 technology_generation_slug: pure-mechanical
+theme_slugs:
+  - hunting
+  - safari
 ---

@@ -5,4 +5,9 @@ ipdb_id: 6367
 corporate_entity_slug: talleres-del-llobregat-sa-automaticos
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - celebration
+  - dancing
+  - music
+  - singing
 ---

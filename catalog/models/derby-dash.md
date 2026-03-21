@@ -6,6 +6,9 @@ corporate_entity_slug: bromley-inc
 year: 1995
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - horse-racing
+  - sports
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

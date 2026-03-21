@@ -5,4 +5,7 @@ ipdb_id: 6820
 corporate_entity_slug: us-woodcraft-corporation
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - billiards
+  - sports
 ---

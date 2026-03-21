@@ -11,6 +11,9 @@ production_quantity: '5403'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: williams-system-11b
+theme_slugs:
+  - cards
+  - gambling
 credit_refs:
 - person_slug: john-youssi
   role: Art

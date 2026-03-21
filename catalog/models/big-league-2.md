@@ -5,4 +5,7 @@ ipdb_id: 260
 corporate_entity_slug: bally-manufacturing-corporation
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

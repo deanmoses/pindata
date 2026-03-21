@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '626'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - sports
+  - water-sports
 credit_refs:
 - person_slug: steve-kordek
   role: Design

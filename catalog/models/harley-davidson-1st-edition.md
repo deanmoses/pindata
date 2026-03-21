@@ -10,6 +10,8 @@ player_count: 6
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - motorcycles
 credit_refs:
 - person_slug: john-borg
   role: Design

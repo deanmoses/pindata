@@ -5,4 +5,7 @@ ipdb_id: 5733
 corporate_entity_slug: coffee-mat-amusement-division
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - space-fantasy
 ---

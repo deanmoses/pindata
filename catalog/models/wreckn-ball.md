@@ -4,6 +4,8 @@ title_slug: wreckn-ball
 ipdb_id: 6167
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - construction
 credit_refs:
 - person_slug: pat-lawlor
   role: Design

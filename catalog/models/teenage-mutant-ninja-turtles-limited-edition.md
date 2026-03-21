@@ -6,6 +6,9 @@ opdb_id: Gd2Xb-MRjpZ-A92v0
 ipdb_id: 6732
 technology_generation_slug: solid-state
 variant_of: teenage-mutant-ninja-turtles-premium
+theme_slugs:
+  - cartoons
+  - television-shows
 credit_refs:
 - person_slug: john-borg
   role: Design

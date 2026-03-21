@@ -5,6 +5,9 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: Gj66P-MXr0E-A1nx0
 ipdb_id: 6755
 technology_generation_slug: solid-state
+theme_slugs:
+  - comics
+  - fantasy
 credit_refs:
 - person_slug: keith-elwin
   role: Design

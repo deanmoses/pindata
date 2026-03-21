@@ -6,6 +6,10 @@ opdb_id: GRpee-MePdR
 ipdb_id: 1502
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - outer-space
+  - robots
 credit_refs:
 - person_slug: john-trudeau
   role: Design

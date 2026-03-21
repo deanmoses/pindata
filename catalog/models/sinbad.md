@@ -6,6 +6,9 @@ opdb_id: G4xqN-MD1Rj
 ipdb_id: 2159
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - fantasy
+  - mythology
 credit_refs:
 - person_slug: ed-krynski
   role: Design

@@ -6,6 +6,9 @@ corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1964
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - poker
 credit_refs:
 - person_slug: roy-parker
   role: Art

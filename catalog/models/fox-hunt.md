@@ -8,4 +8,7 @@ month: 9
 player_count: 1
 production_quantity: '1503'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - fox-hunting
+  - sports
 ---

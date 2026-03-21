@@ -6,4 +6,7 @@ corporate_entity_slug: marsaplay
 year: 2012
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - animals
+  - zoo
 ---

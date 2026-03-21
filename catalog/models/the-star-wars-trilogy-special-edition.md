@@ -10,6 +10,9 @@ player_count: 6
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: sega-whitestar
+theme_slugs:
+  - movies
+  - outer-space
 credit_refs:
 - person_slug: marc-raneses
   role: Art

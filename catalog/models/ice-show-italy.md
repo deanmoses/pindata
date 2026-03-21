@@ -7,6 +7,9 @@ year: 1966
 month: 3
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - ice-skating
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

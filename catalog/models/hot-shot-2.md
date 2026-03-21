@@ -8,6 +8,9 @@ month: 10
 player_count: 1
 technology_generation_slug: solid-state
 system_slug: williams-wpc-dot-matrix
+theme_slugs:
+  - basketball
+  - sports
 credit_refs:
 - person_slug: brian-eddy
   role: Design

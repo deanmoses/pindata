@@ -7,4 +7,9 @@ year: 1938
 month: 4
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - beach
+  - games
+  - swimming
+  - water
 ---

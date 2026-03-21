@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '825'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - animals
+  - jungle
 credit_refs:
 - person_slug: gordon-morison
   role: Art

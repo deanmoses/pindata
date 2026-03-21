@@ -8,6 +8,8 @@ player_count: 4
 production_quantity: '423'
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - outer-space
 credit_refs:
 - person_slug: jorge-obregon
   role: Art

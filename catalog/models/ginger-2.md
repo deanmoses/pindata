@@ -7,6 +7,10 @@ year: 1947
 month: 10
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - girls
+  - glamour
+  - women
 credit_refs:
 - person_slug: gordon-horlick
   role: Design

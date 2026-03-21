@@ -10,4 +10,7 @@ player_count: 4
 production_quantity: '55'
 display_type_slug: score-reels
 technology_generation_slug: solid-state
+theme_slugs:
+  - cards
+  - gambling
 ---

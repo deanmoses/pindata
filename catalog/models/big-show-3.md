@@ -7,6 +7,9 @@ year: 1940
 month: 2
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: roy-parker
   role: Art

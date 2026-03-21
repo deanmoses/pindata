@@ -6,6 +6,8 @@ opdb_id: G578Y-MJNzE
 ipdb_id: 1622
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - gambling
 credit_refs:
 - person_slug: john-trudeau
   role: Design

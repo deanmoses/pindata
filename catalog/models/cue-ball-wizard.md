@@ -6,6 +6,9 @@ opdb_id: G5vPd-MJp7z
 ipdb_id: 610
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - billiards
+  - celebrities
 credit_refs:
 - person_slug: jon-norris
   role: Design

@@ -6,6 +6,8 @@ opdb_id: G417e-Ml9ZE
 ipdb_id: 1557
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - historical
 credit_refs:
 - person_slug: jim-patla
   role: Design

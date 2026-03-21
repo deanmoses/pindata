@@ -11,6 +11,8 @@ production_quantity: '3'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - truck-driving
 credit_refs:
 - person_slug: pat-mcmahon
   role: Art

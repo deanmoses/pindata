@@ -4,4 +4,7 @@ title_slug: 1963-a-l-twins
 ipdb_id: 4386
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

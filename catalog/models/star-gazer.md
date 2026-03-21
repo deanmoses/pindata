@@ -11,6 +11,8 @@ production_quantity: '869'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: stern-mpu-200
+theme_slugs:
+  - astrology
 credit_refs:
 - person_slug: gerry-simkus
   role: Art

@@ -5,4 +5,9 @@ ipdb_id: 6603
 corporate_entity_slug: fipermatic-indstria-comrcio-importao-e-exportao-ltda
 player_count: 2
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
+  - science-fiction
+  - space-fantasy
+  - space-travel
 ---

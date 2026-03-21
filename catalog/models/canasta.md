@@ -10,4 +10,7 @@ player_count: 1
 production_quantity: '720'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - canasta
+  - cards
 ---

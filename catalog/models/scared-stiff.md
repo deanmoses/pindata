@@ -11,6 +11,9 @@ production_quantity: '4028'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: wpc-95
+theme_slugs:
+  - celebrities
+  - horror
 credit_refs:
 - person_slug: greg-freres
   role: Art

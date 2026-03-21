@@ -7,6 +7,9 @@ year: 1986
 player_count: 4
 technology_generation_slug: solid-state
 system_slug: bally-6803
+theme_slugs:
+  - cards
+  - poker
 credit_refs:
 - person_slug: greg-freres
   role: Art

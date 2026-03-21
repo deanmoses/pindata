@@ -8,4 +8,8 @@ display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 converted_from: xs-os
 is_conversion: true
+theme_slugs:
+  - football
+  - sports
+  - tic-tac-toe
 ---

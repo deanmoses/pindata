@@ -8,6 +8,9 @@ month: 12
 player_count: 2
 technology_generation_slug: solid-state
 system_slug: williams-system-10
+theme_slugs:
+  - football
+  - sports
 credit_refs:
 - person_slug: tim-elliott
   role: Art

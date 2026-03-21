@@ -6,4 +6,7 @@ corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
 year: 1980
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - pinball
+  - sports
 ---

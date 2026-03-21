@@ -9,6 +9,11 @@ month: 11
 player_count: 1
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - cards
+  - swimming
+  - water
+  - women
 credit_refs:
 - person_slug: christian-marche
   role: Art

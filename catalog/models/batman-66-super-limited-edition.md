@@ -11,6 +11,10 @@ production_quantity: "80"
 technology_generation_slug: solid-state
 system_slug: stern-spike-2
 variant_of: batman-66-premium
+theme_slugs:
+  - comics
+  - superheroes
+  - television-shows
 credit_refs:
   - person_slug: christopher-franchi
     role: Art

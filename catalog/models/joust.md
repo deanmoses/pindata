@@ -6,6 +6,8 @@ opdb_id: G4den-MLRYK
 ipdb_id: 1316
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - video-games
 credit_refs:
 - person_slug: barry-oursler
   role: Design

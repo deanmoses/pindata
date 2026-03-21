@@ -11,6 +11,10 @@ production_quantity: '1504'
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
 system_slug: gottlieb-system-80a
+theme_slugs:
+  - boxing
+  - movies
+  - sports
 credit_refs:
 - person_slug: david-moore
   role: Art

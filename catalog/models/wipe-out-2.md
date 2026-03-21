@@ -6,4 +6,7 @@ corporate_entity_slug: coffee-mat-amusement-division
 year: 1976
 player_count: 2
 technology_generation_slug: solid-state
+theme_slugs:
+  - sports
+  - water-sports
 ---

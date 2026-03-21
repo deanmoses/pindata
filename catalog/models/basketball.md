@@ -10,6 +10,9 @@ player_count: 1
 production_quantity: '1200'
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
+theme_slugs:
+  - basketball
+  - sports
 credit_refs:
 - person_slug: roy-parker
   role: Art

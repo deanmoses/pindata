@@ -10,6 +10,9 @@ player_count: 4
 production_quantity: '3235'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: roy-parker
   role: Art

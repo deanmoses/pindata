@@ -5,4 +5,8 @@ ipdb_id: 6024
 corporate_entity_slug: eusebio-martinez-garcia
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - aviation
+  - historical
+  - travel
 ---

@@ -8,6 +8,8 @@ month: 8
 player_count: 1
 production_quantity: '100'
 technology_generation_slug: solid-state
+theme_slugs:
+  - dinosaurs
 credit_refs:
 - person_slug: lyle-williman
   role: Design

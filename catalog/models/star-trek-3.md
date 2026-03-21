@@ -11,6 +11,9 @@ production_quantity: '4400'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: data-east-v3
+theme_slugs:
+  - outer-space
+  - television-shows
 credit_refs:
 - person_slug: kevin-oconnor
   role: Art

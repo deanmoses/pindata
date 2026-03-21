@@ -6,4 +6,7 @@ corporate_entity_slug: eusebio-martinez-garcia
 year: 1976
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - horses
+  - western
 ---

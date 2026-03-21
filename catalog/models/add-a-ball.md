@@ -9,6 +9,9 @@ month: 9
 player_count: 1
 technology_generation_slug: electromechanical
 variant_of: skill-ball
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: steve-kordek
   role: Design

@@ -11,6 +11,9 @@ production_quantity: '100'
 technology_generation_slug: solid-state
 system_slug: stern-spike-2
 variant_of: the-beatles-gold-edition
+theme_slugs:
+  - music
+  - singing
 credit_refs:
 - person_slug: christopher-franchi
   role: Art

@@ -6,4 +6,8 @@ corporate_entity_slug: brunswick-manufacturing-company
 year: 1980
 player_count: 4
 technology_generation_slug: solid-state
+theme_slugs:
+  - carnival
+  - circus
+  - trapeze
 ---

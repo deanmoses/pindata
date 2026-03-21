@@ -6,4 +6,7 @@ corporate_entity_slug: williams-manufacturing-company
 year: 1955
 player_count: 6
 technology_generation_slug: electromechanical
+theme_slugs:
+  - baseball
+  - sports
 ---

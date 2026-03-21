@@ -10,4 +10,8 @@ player_count: 4
 production_quantity: '75'
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - cartoons
+  - outer-space
+  - television-shows
 ---

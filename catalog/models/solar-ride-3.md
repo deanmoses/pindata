@@ -8,4 +8,7 @@ year: 1979
 month: 1
 player_count: 4
 technology_generation_slug: electromechanical
+theme_slugs:
+  - outer-space
+  - space-fantasy
 ---

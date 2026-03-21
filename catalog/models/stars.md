@@ -6,6 +6,9 @@ opdb_id: GrXEW-MDEwr
 ipdb_id: 2366
 display_type_slug: alphanumeric
 technology_generation_slug: solid-state
+theme_slugs:
+  - outer-space
+  - space-exploration
 credit_refs:
 - person_slug: steve-kirk
   role: Design

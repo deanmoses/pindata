@@ -11,6 +11,9 @@ production_quantity: '3525'
 display_type_slug: cga
 technology_generation_slug: solid-state
 system_slug: williams-pinball-2000
+theme_slugs:
+  - movies
+  - outer-space
 credit_refs:
 - person_slug: dave-mueller
   role: Art

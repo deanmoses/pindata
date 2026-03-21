@@ -10,6 +10,10 @@ player_count: 4
 production_quantity: '1100'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+theme_slugs:
+  - carnival
+  - dancing
+  - music
 credit_refs:
 - person_slug: steve-kordek
   role: Design

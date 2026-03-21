@@ -10,6 +10,10 @@ player_count: 4
 display_type_slug: lcd
 technology_generation_slug: solid-state
 system_slug: stern-spike-2
+theme_slugs:
+  - fantasy
+  - outer-space
+  - science-fiction
 credit_refs:
 - person_slug: randy-martinez
   role: Art

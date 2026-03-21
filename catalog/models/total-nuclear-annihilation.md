@@ -6,6 +6,8 @@ opdb_id: GRD79-M0odk
 ipdb_id: 6444
 display_type_slug: lcd
 technology_generation_slug: solid-state
+theme_slugs:
+  - war
 credit_refs:
 - person_slug: scott-danesi
   role: Design

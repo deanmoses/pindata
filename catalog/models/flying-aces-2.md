@@ -8,4 +8,6 @@ year: 1977
 month: 1
 player_count: 1
 technology_generation_slug: solid-state
+theme_slugs:
+  - aviation
 ---

@@ -11,6 +11,9 @@ production_quantity: '2'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+theme_slugs:
+  - carnival
+  - circus
 credit_refs:
 - person_slug: pat-mcmahon
   role: Art

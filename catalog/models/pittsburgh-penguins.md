@@ -6,4 +6,7 @@ year: 2013
 player_count: 4
 production_quantity: '2'
 technology_generation_slug: electromechanical
+theme_slugs:
+  - hockey
+  - sports
 ---

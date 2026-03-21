@@ -5,6 +5,8 @@ corporate_entity_slug: stern-pinball-incorporated
 opdb_id: GbPde-Mp43l-AOQwL
 ipdb_id: 6565
 technology_generation_slug: solid-state
+theme_slugs:
+  - television-shows
 credit_refs:
 - person_slug: john-borg
   role: Design

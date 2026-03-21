@@ -6,6 +6,9 @@ opdb_id: G5bv3-MLW68
 ipdb_id: 662
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - movies
+  - science-fiction
 credit_refs:
 - person_slug: dennis-nordman
   role: Design

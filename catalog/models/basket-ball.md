@@ -6,4 +6,7 @@ corporate_entity_slug: manufacturas-automaticas-americanas
 year: 1966
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - basketball
+  - sports
 ---

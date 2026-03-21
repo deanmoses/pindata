@@ -6,6 +6,11 @@ opdb_id: Gzy89-M0oPy-A9xXV
 ipdb_id: 6644
 technology_generation_slug: solid-state
 variant_of: stranger-things-premium
+theme_slugs:
+  - horror
+  - science-fiction
+  - supernatural
+  - television-shows
 credit_refs:
 - person_slug: brian-eddy
   role: Design

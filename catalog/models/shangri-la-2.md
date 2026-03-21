@@ -6,4 +6,7 @@ corporate_entity_slug: d-gottlieb-company
 year: 1943
 player_count: 1
 technology_generation_slug: electromechanical
+theme_slugs:
+  - american-history
+  - war
 ---

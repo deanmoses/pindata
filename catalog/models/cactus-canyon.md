@@ -6,6 +6,8 @@ opdb_id: G4835-Mb5eO
 ipdb_id: 4445
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
+theme_slugs:
+  - american-west
 credit_refs:
 - person_slug: matt-coriale
   role: Design
