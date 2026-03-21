@@ -1,3 +1,7 @@
 ---
 name: Buckley Manufacturing Company
 ---
+
+Buckley Manufacturing Company was a Chicago maker active in pinball from 1932 through 1936, with a compact catalog of eleven known titles that mirrors the industry's rapid shift from countertop bagatelles to electrically assisted payout-oriented games. Early Buckley machines such as [[title:favorite-2]], [[title:little-joe-3]], [[title:lucky-star-4]], and [[title:windy-city]] were [[technologygeneration:pure-mechanical]] tables rooted in the penny-novelty trade. By 1935 and 1936, the company had moved toward [[technologygeneration:electromechanical]] designs including [[title:diamond-mine]], [[title:hop-scotch]], [[title:pay-day]], [[title:sure-shot]], and [[title:fair-play]].
+
+What distinguishes Buckley is the degree to which its later games leaned toward payout and operator flexibility. Surviving documentation for [[title:sure-shot]], [[title:combination-2]], and [[title:fair-play]] shows models offered as straight amusement tables, payout registers, or automatic-payout machines, placing Buckley squarely in the gray zone where early pinball, trade stimulation, and gambling-adjacent equipment overlapped. That profile makes the company a useful reminder that 1930s Chicago pinball was not yet a settled form: it was an experimental branch of the wider coin-machine business, and Buckley's short run captures that unsettled commercial moment unusually well.
