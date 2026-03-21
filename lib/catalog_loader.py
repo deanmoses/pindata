@@ -8,20 +8,18 @@ series, systems, franchises, themes, and taxonomy records.
 
 from __future__ import annotations
 
-import json
 import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator
 
-import yaml
+from frontmatter import parse_markdown_file, validate_frontmatter
 
 logger = logging.getLogger(__name__)
 
 # Resolve paths relative to the repo root.
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _CATALOG_DIR = _REPO_ROOT / "catalog"
-_SCHEMA_DIR = _REPO_ROOT / "schema"
 
 
 @dataclass(frozen=True)
@@ -35,97 +33,6 @@ class CatalogRecord:
     file_path: Path
 
 
-# ---------------------------------------------------------------------------
-# Schema loading
-# ---------------------------------------------------------------------------
-
-_schema_cache: dict[str, dict] = {}
-
-
-def _load_schema(schema_name: str) -> dict | None:
-    """Load and cache a JSON schema by name."""
-    if schema_name in _schema_cache:
-        return _schema_cache[schema_name]
-    schema_path = _SCHEMA_DIR / f"{schema_name}.schema.json"
-    if not schema_path.exists():
-        return None
-    schema = json.loads(schema_path.read_text(encoding="utf-8"))
-    _schema_cache[schema_name] = schema
-    return schema
-
-
-# ---------------------------------------------------------------------------
-# Frontmatter validation
-# ---------------------------------------------------------------------------
-
-# Optional dependency: jsonschema is used if installed but not required
-# at import time so the module can be loaded in lightweight contexts.
-try:
-    import jsonschema
-
-    _HAS_JSONSCHEMA = True
-except ModuleNotFoundError:  # pragma: no cover
-    _HAS_JSONSCHEMA = False
-
-
-def validate_frontmatter(
-    frontmatter: dict, schema_name: str, file_path: Path
-) -> list[str]:
-    """Validate frontmatter against a JSON schema.
-
-    Returns a list of error messages (empty if valid).
-    """
-    if not _HAS_JSONSCHEMA:
-        return []
-
-    schema = _load_schema(schema_name)
-    if schema is None:
-        return [f"No schema found: {schema_name}.schema.json"]
-
-    errors: list[str] = []
-    validator = jsonschema.Draft202012Validator(schema)
-    for error in sorted(validator.iter_errors(frontmatter), key=lambda e: list(e.path)):
-        path = ".".join(str(p) for p in error.absolute_path) or "(root)"
-        errors.append(f"{file_path}: {path}: {error.message}")
-    return errors
-
-
-# ---------------------------------------------------------------------------
-# Markdown parsing
-# ---------------------------------------------------------------------------
-
-
-def _parse_markdown_file(file_path: Path) -> tuple[dict, str] | None:
-    """Parse a Markdown file with YAML frontmatter.
-
-    Returns (frontmatter_dict, body_text) or None on parse failure.
-    """
-    text = file_path.read_text(encoding="utf-8")
-
-    if not text.startswith("---"):
-        logger.warning("No frontmatter delimiter in %s", file_path)
-        return None
-
-    # Find the closing --- delimiter.
-    end = text.find("\n---", 3)
-    if end == -1:
-        logger.warning("Unclosed frontmatter in %s", file_path)
-        return None
-
-    frontmatter_text = text[3:end].strip()
-    body = text[end + 4 :].strip()
-
-    try:
-        frontmatter = yaml.safe_load(frontmatter_text)
-    except yaml.YAMLError as exc:
-        logger.warning("YAML parse error in %s: %s", file_path, exc)
-        return None
-
-    if not isinstance(frontmatter, dict):
-        logger.warning("Frontmatter is not a mapping in %s", file_path)
-        return None
-
-    return frontmatter, body
 
 
 # ---------------------------------------------------------------------------
@@ -204,7 +111,7 @@ def _iter_directory(
     entity_type = _DIR_ENTITY_TYPE.get(dir_name, dir_name)
 
     for md_file in sorted(directory.glob("*.md")):
-        result = _parse_markdown_file(md_file)
+        result = parse_markdown_file(md_file)
         if result is None:
             continue
 

@@ -18,7 +18,9 @@ import argparse
 import sys
 from pathlib import Path
 
-from catalog_loader import CatalogRecord, iter_all
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
+
+from catalog_loader import CatalogRecord, iter_all  # noqa: E402
 
 
 def _collect_records(catalog_dir: Path | None) -> list[CatalogRecord]:

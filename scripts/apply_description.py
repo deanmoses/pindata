@@ -19,32 +19,11 @@ import argparse
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
-def parse_frontmatter(text: str) -> tuple[str, str]:
-    """Split a markdown file into (frontmatter_block, body).
+from frontmatter import parse_frontmatter  # noqa: E402
 
-    The frontmatter_block includes the opening and closing ``---``
-    delimiters and the trailing newline.  The body is everything after.
-
-    Raises ValueError if the file has no valid frontmatter.
-    """
-    if not text.startswith("---"):
-        raise ValueError("File does not start with frontmatter delimiter (---)")
-
-    end = text.find("\n---", 3)
-    if end == -1:
-        raise ValueError("Unclosed frontmatter (missing closing ---)")
-
-    # Include through the closing "---\n"
-    frontmatter_end = end + 4  # len("\n---")
-    frontmatter_block = text[:frontmatter_end]
-
-    # Ensure frontmatter block ends with exactly one newline
-    if not frontmatter_block.endswith("\n"):
-        frontmatter_block += "\n"
-
-    body = text[frontmatter_end:].strip()
-    return frontmatter_block, body
+__all__ = ["apply_description", "parse_frontmatter"]
 
 
 def apply_description(

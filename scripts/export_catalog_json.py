@@ -17,7 +17,9 @@ import json
 import sys
 from pathlib import Path
 
-from catalog_loader import iter_all
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
+
+from catalog_loader import iter_all  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "export"
