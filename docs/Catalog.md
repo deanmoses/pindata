@@ -2,19 +2,19 @@
 
 This project has a catalog of pinball machines, manufacturers, and pinball-related people.
 
-The catalog is authored as one Markdown file per entity in `data/pinbase/`. Each file has YAML frontmatter for structured fields and an optional Markdown
+The catalog is authored as one Markdown file per entity in `catalog/`. Each file has YAML frontmatter for structured fields and an optional Markdown
 body for prose descriptions. This is the canonical source for all data authored and synthesized by this project (as opposed to data coming from external third party sources).
 
 ## Directory structure
 
 ```text
-data/pinbase/
+catalog/
   models/                 #  ~7k files — individual pinball machines
   titles/                 #  ~6k files — title groupings (e.g. all versions of "Medieval Madness")
   manufacturers/          # ~700 files — brand names (Williams, Bally, Stern, etc.)
   corporate_entities/     # ~800 files — legal entities behind the brands
   people/                 # ~600 files — designers, artists, programmers
-  themes/                 # ~600 files — thematic categories
+  themes/                 # ~450 files — thematic categories
   franchises/             # ~130 files — IP franchises (Star Wars, Indiana Jones, etc.)
   systems/                #  ~70 files — hardware platforms (WPC-95, System 11, etc.)
   gameplay_features/      #  ~20 files — multiball, ramps, etc.
@@ -60,39 +60,29 @@ Syntax notes:
 
 ## Schemas
 
-JSON Schema files in `data/schemas/pinbase/` define the valid frontmatter for
-each entity type. The loader (`backend/apps/catalog/ingestion/pinbase_loader.py`)
-validates every record against its schema at load time.
+JSON Schema files in `schema/` define the valid frontmatter for
+each entity type. The validator (`scripts/validate_catalog.py`)
+validates every record against its schema.
 
 ## Validation
 
-This validation script validates the YAML and runs a lot of other checks:
-
 ```bash
-uv run python scripts/validate_pinbase_records.py
+make validate
 ```
 
 ## Editing records
 
-1. Edit the markdown file directly in `data/pinbase/<entity_type>/<slug>.md`.
+1. Edit the markdown file directly in `catalog/<entity_type>/<slug>.md`.
 2. To create a new record, create a new `.md` file. The filename is the slug.
 3. Omit optional fields that don't have values — don't set them to null.
-4. When adding records that have external IDs (like to IPDB or OPDB), query the [explore
-   database](Explore.md) first to find the correct external IDs.
-5. Run validation: `uv run python scripts/validate_pinbase_records.py`
-6. Rebuild the explore database to check cross-source agreement: `make explore`
+4. Run validation: `make validate`
 
 ## How the data flows
 
-1. **Authoring**: Records are edited in `data/pinbase/` as markdown files, using the [explore
-   database](Explore.md) to do research and validate all facts.
-2. **Export**: `scripts/export_pinbase_json.py` converts markdown to JSON in
-   `data/ingest_sources/pinbase_export/` for consumption by DuckDB and Django.
-3. **Validation**: DuckDB explore database checks integrity and cross-source
-   agreement.
-4. **Ingestion**: Django management commands read the exported JSON and assert
-   claims through the provenance system. Pinbase claims have the highest
-   priority (300), overriding OPDB (200) and IPDB (100).
+1. **Authoring**: Records are edited in `catalog/` as markdown files.
+2. **Export**: `make export` converts markdown to JSON in `export/`.
+3. **Push**: `make push` uploads the JSON to Cloudflare R2.
+4. **Downstream**: Consumer projects ([Pinexplore](https://github.com/deanmoses/pinexplore), [Pinbase](https://github.com/deanmoses/pinbase)) pull the JSON from R2.
 
 ## Rationale
 
