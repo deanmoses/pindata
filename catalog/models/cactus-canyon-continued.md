@@ -1,6 +1,6 @@
 ---
 name: Cactus Canyon Continued
-title_slug: cactus-canyon-remake
+title_slug: cactus-canyon
 opdb_id: G4835-M2YEn
 corporate_entity_slug: eric-priepke
 display_type_slug: dot-matrix
