@@ -1,6 +1,8 @@
 ---
 name: Cocktail
 display_order: 4
+aliases:
+  - Cocktail table
 ---
 
 Cocktail cabinets are horizontal, table-height units with a flat glass top, designed so players look down onto the playfield from above while seated. The format takes its name from the cocktail-table arcade cabinets popularized by video games like *Space Invaders* and *Pac-Man* in the late 1970s, and it shares their social premise: a game built into a piece of furniture, suitable for a bar or lounge where players sit with drinks rather than standing at an upright machine.
