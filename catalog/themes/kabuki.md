@@ -1,3 +1,5 @@
 ---
 name: Kabuki
+parents:
+  - Theater
 ---

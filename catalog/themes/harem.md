@@ -1,3 +1,5 @@
 ---
 name: Harem
+parents:
+  - Adult
 ---

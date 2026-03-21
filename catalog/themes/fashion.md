@@ -1,3 +1,5 @@
 ---
 name: Fashion
+parents:
+  - Glamour
 ---

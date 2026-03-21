@@ -1,3 +1,5 @@
 ---
 name: Majorettes
+parents:
+  - Music
 ---

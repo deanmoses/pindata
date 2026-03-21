@@ -1,3 +1,5 @@
 ---
 name: Hypergamy
+parents:
+  - Adult
 ---

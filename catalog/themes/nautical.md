@@ -1,3 +1,5 @@
 ---
 name: Nautical
+parents:
+  - Water
 ---

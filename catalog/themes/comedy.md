@@ -1,3 +1,5 @@
 ---
 name: Comedy
+aliases:
+  - Humor
 ---

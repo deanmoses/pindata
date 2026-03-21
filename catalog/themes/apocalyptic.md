@@ -1,3 +1,5 @@
 ---
 name: Apocalyptic
+parents:
+  - Disasters
 ---

@@ -1,3 +1,5 @@
 ---
 name: Dragons
+parents:
+  - Fantasy
 ---

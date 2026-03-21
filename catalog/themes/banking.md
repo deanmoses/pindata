@@ -1,3 +1,5 @@
 ---
 name: Banking
+parents:
+  - Money
 ---

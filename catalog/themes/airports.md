@@ -1,3 +1,5 @@
 ---
 name: Airports
+parents:
+  - Aviation
 ---

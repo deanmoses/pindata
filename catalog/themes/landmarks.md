@@ -1,3 +1,5 @@
 ---
 name: Landmarks
+parents:
+  - Travel
 ---

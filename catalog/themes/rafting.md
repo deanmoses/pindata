@@ -1,3 +1,5 @@
 ---
 name: Rafting
+parents:
+  - Boating
 ---

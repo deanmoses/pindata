@@ -1,3 +1,5 @@
 ---
 name: Cavemen
+parents:
+  - Historical
 ---

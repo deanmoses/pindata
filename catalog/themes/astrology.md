@@ -1,3 +1,5 @@
 ---
 name: Astrology
+aliases:
+  - Horoscope
 ---

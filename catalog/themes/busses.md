@@ -1,3 +1,5 @@
 ---
 name: Busses
+parents:
+  - Transportation
 ---

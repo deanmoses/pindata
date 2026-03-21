@@ -1,3 +1,5 @@
 ---
 name: Racing
+parents:
+  - Sports
 ---

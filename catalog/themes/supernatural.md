@@ -1,3 +1,5 @@
 ---
 name: Supernatural
+parents:
+  - Horror
 ---

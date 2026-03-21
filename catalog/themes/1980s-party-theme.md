@@ -1,3 +1,5 @@
 ---
-name: 1980S Party Theme
+name: "1980's Party Theme"
+parents:
+  - Nostalgia
 ---

@@ -1,3 +1,5 @@
 ---
 name: Frontier
+parents:
+  - Western
 ---

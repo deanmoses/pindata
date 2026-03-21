@@ -1,3 +1,5 @@
 ---
 name: Zodiac
+parents:
+  - Astrology
 ---

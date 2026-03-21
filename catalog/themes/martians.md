@@ -1,3 +1,5 @@
 ---
 name: Martians
+parents:
+  - Aliens
 ---

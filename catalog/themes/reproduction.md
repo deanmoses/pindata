@@ -1,3 +1,5 @@
 ---
 name: Reproduction
+parents:
+  - Adult
 ---

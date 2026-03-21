@@ -1,3 +1,5 @@
 ---
 name: Animals
+aliases:
+  - Wildlife
 ---

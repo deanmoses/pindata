@@ -1,3 +1,5 @@
 ---
 name: Jungle
+parents:
+  - Animals
 ---

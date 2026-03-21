@@ -1,3 +1,5 @@
 ---
 name: Prehistoric
+parents:
+  - Historical
 ---

@@ -1,3 +1,5 @@
 ---
 name: Dancing
+aliases:
+  - Dacing
 ---

@@ -1,3 +1,5 @@
 ---
 name: Vaudeville
+parents:
+  - Theater
 ---

@@ -1,3 +1,5 @@
 ---
 name: Farming
+aliases:
+  - Agriculture
 ---

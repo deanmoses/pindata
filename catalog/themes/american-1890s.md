@@ -1,3 +1,5 @@
 ---
-name: American 1890S
+name: "American 1890's"
+parents:
+  - American History
 ---

@@ -1,3 +1,5 @@
 ---
 name: Egyptology
+parents:
+  - Historical
 ---

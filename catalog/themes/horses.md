@@ -1,3 +1,5 @@
 ---
 name: Horses
+parents:
+  - Animals
 ---

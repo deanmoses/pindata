@@ -1,3 +1,5 @@
 ---
 name: Love
+parents:
+  - Romance
 ---

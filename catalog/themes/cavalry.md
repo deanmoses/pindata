@@ -1,3 +1,5 @@
 ---
 name: Cavalry
+parents:
+  - Military
 ---

@@ -1,3 +1,5 @@
 ---
 name: Pets
+parents:
+  - Animals
 ---

@@ -1,3 +1,5 @@
 ---
 name: Polo
+parents:
+  - Sports
 ---

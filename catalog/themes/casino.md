@@ -1,3 +1,5 @@
 ---
 name: Casino
+parents:
+  - Gambling
 ---

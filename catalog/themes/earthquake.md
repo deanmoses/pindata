@@ -1,3 +1,5 @@
 ---
 name: Earthquake
+parents:
+  - Disasters
 ---

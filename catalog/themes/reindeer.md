@@ -1,3 +1,5 @@
 ---
 name: Reindeer
+parents:
+  - Animals
 ---

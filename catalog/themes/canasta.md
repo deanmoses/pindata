@@ -1,3 +1,5 @@
 ---
 name: Canasta
+parents:
+  - Gambling
 ---

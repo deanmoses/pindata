@@ -1,3 +1,5 @@
 ---
 name: Motorcycles
+parents:
+  - Sports
 ---

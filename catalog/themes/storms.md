@@ -1,0 +1,5 @@
+---
+name: Storms
+parents:
+  - Disasters
+---

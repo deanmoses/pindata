@@ -1,3 +1,5 @@
 ---
 name: Alligators
+parents:
+  - Animals
 ---

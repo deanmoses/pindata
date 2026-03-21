@@ -1,3 +1,5 @@
 ---
 name: Dinosaurs
+parents:
+  - Animals
 ---

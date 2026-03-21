@@ -1,3 +1,5 @@
 ---
 name: Theater
+aliases:
+  - Theaters
 ---

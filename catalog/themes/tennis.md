@@ -1,3 +1,5 @@
 ---
 name: Tennis
+parents:
+  - Sports
 ---

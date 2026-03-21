@@ -1,3 +1,5 @@
 ---
 name: School
+aliases:
+  - Education
 ---

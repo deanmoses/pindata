@@ -1,3 +1,5 @@
 ---
 name: Warriors
+parents:
+  - Military
 ---

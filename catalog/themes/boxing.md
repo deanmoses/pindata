@@ -1,3 +1,5 @@
 ---
 name: Boxing
+parents:
+  - Sports
 ---

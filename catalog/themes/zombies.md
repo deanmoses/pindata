@@ -1,3 +1,5 @@
 ---
 name: Zombies
+parents:
+  - Horror
 ---

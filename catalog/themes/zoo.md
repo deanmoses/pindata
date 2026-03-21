@@ -1,3 +1,5 @@
 ---
 name: Zoo
+parents:
+  - Animals
 ---

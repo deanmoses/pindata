@@ -1,3 +1,5 @@
 ---
 name: Pageantry
+parents:
+  - Women
 ---

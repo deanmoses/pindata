@@ -1,3 +1,5 @@
 ---
 name: Affluence
+parents:
+  - Money
 ---

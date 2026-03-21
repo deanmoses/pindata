@@ -1,3 +1,5 @@
 ---
 name: Singing
+parents:
+  - Music
 ---

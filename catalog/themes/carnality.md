@@ -1,3 +1,5 @@
 ---
 name: Carnality
+parents:
+  - Adult
 ---

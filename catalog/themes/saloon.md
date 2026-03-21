@@ -1,3 +1,5 @@
 ---
 name: Saloon
+parents:
+  - Western
 ---

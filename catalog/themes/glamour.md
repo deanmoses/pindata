@@ -1,3 +1,5 @@
 ---
 name: Glamour
+parents:
+  - Women
 ---

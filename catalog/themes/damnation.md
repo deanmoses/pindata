@@ -1,3 +1,5 @@
 ---
 name: Damnation
+parents:
+  - Demonic
 ---

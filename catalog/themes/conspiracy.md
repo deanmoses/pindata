@@ -1,3 +1,5 @@
 ---
 name: Conspiracy
+parents:
+  - Crime
 ---

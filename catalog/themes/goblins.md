@@ -1,3 +1,5 @@
 ---
 name: Goblins
+parents:
+  - Fantasy
 ---

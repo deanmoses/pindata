@@ -1,3 +1,5 @@
 ---
 name: Cowboys
+parents:
+  - Western
 ---

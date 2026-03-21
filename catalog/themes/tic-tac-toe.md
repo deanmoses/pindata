@@ -1,3 +1,5 @@
 ---
-name: Tic Tac Toe
+name: Tic-tac-toe
+parents:
+  - Games
 ---

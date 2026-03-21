@@ -1,3 +1,5 @@
 ---
 name: Puppets
+parents:
+  - Toys
 ---

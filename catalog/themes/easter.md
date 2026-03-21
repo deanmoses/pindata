@@ -1,3 +1,5 @@
 ---
 name: Easter
+parents:
+  - Celebration
 ---

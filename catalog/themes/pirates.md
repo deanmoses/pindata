@@ -1,3 +1,5 @@
 ---
 name: Pirates
+parents:
+  - Crime
 ---

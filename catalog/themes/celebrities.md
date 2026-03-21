@@ -1,3 +1,5 @@
 ---
 name: Celebrities
+aliases:
+  - Celebrity
 ---

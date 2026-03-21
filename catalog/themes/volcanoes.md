@@ -1,3 +1,5 @@
 ---
 name: Volcanoes
+parents:
+  - Disasters
 ---

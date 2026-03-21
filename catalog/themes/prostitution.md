@@ -1,3 +1,5 @@
 ---
 name: Prostitution
+parents:
+  - Adult
 ---

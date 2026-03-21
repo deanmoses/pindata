@@ -1,3 +1,5 @@
 ---
 name: Girls
+aliases:
+  - Girl
 ---

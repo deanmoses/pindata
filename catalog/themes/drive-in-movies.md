@@ -1,3 +1,6 @@
 ---
-name: Drive In Movies
+name: Drive-in Movies
+parents:
+  - Movies
+  - Cars
 ---

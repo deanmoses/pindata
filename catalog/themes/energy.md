@@ -1,3 +1,5 @@
 ---
 name: Energy
+parents:
+  - Science
 ---

@@ -1,3 +1,5 @@
 ---
 name: Prospecting
+parents:
+  - Western
 ---

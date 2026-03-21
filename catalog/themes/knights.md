@@ -1,3 +1,5 @@
 ---
 name: Knights
+parents:
+  - Medieval
 ---

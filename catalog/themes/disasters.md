@@ -1,3 +1,5 @@
 ---
 name: Disasters
+aliases:
+  - Disaster
 ---

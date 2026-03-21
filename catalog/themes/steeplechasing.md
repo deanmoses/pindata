@@ -1,3 +1,5 @@
 ---
 name: Steeplechasing
+parents:
+  - Equestrian
 ---

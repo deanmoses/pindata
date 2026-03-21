@@ -1,3 +1,5 @@
 ---
 name: Government
+aliases:
+  - Politics
 ---

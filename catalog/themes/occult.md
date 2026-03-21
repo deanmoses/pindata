@@ -1,3 +1,5 @@
 ---
 name: Occult
+parents:
+  - Horror
 ---

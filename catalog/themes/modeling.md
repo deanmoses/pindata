@@ -1,3 +1,5 @@
 ---
 name: Modeling
+parents:
+  - Glamour
 ---

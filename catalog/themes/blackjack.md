@@ -1,3 +1,5 @@
 ---
 name: Blackjack
+parents:
+  - Gambling
 ---

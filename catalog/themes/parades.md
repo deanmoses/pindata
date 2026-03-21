@@ -1,3 +1,5 @@
 ---
 name: Parades
+parents:
+  - Celebration
 ---

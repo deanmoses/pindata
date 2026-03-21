@@ -1,3 +1,5 @@
 ---
 name: Hell
+parents:
+  - Demonic
 ---

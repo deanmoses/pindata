@@ -1,3 +1,5 @@
 ---
 name: Boats
+parents:
+  - Water
 ---

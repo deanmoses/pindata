@@ -1,3 +1,5 @@
 ---
 name: Disney
+parents:
+  - Cartoons
 ---

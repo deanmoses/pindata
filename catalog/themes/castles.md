@@ -1,3 +1,5 @@
 ---
 name: Castles
+parents:
+  - Medieval
 ---

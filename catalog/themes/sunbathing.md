@@ -1,3 +1,5 @@
 ---
 name: Sunbathing
+parents:
+  - Beach
 ---

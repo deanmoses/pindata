@@ -1,3 +1,5 @@
 ---
 name: Trapping
+parents:
+  - Hunting
 ---

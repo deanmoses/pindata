@@ -1,3 +1,5 @@
 ---
-name: Heros Journey
+name: "Hero's Journey"
+parents:
+  - Fantasy
 ---

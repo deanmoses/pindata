@@ -1,3 +1,5 @@
 ---
 name: Puzzles
+parents:
+  - Games
 ---

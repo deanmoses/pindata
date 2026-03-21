@@ -1,3 +1,5 @@
 ---
 name: America
+parents:
+  - Patriotism
 ---

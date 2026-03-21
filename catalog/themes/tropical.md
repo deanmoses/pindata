@@ -1,3 +1,5 @@
 ---
 name: Tropical
+aliases:
+  - Tropics
 ---
