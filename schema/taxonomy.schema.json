@@ -2,11 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "pinbase/taxonomy.schema.json",
   "title": "Pinbase Taxonomy",
-  "description": "Frontmatter for a Pinbase-authored taxonomy record (cabinet, credit_role, display_type, game_format, gameplay_feature, tag)",
+  "description": "Frontmatter for a Pinbase-authored taxonomy record (cabinet, credit_role, display_type, game_format, gameplay_feature, reward_type, tag)",
   "type": "object",
   "properties": {
     "name": { "type": "string", "minLength": 1 },
-    "display_order": { "type": "integer", "minimum": 0 }
+    "display_order": { "type": "integer", "minimum": 0 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    }
   },
   "required": ["name", "display_order"],
   "additionalProperties": false

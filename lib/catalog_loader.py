@@ -56,6 +56,7 @@ DIR_SCHEMA_MAP: dict[str, str] = {
     "display_types": "taxonomy",
     "game_formats": "taxonomy",
     "gameplay_features": "taxonomy",
+    "reward_types": "taxonomy",
     "tags": "taxonomy",
     # Taxonomy directories with parent-child schemas:
     "display_subtypes": "display_subtype",
@@ -80,6 +81,7 @@ _DIR_ENTITY_TYPE: dict[str, str] = {
     "display_subtypes": "display_subtype",
     "game_formats": "game_format",
     "gameplay_features": "gameplay_feature",
+    "reward_types": "reward_type",
     "tags": "tag",
     "technology_generations": "technology_generation",
     "technology_subgenerations": "technology_subgeneration",
