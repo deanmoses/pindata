@@ -6,11 +6,6 @@ from pathlib import Path
 
 import pytest
 
-import sys
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
-
 from apply_fields import apply_fields, main
 
 # All tests use a fake "titles" directory so apply_fields resolves the

@@ -7,13 +7,8 @@ from pathlib import Path
 
 import pytest
 
-# Allow importing from scripts/ and lib/
-import sys
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
-
-from apply_description import apply_description, main, parse_frontmatter
+from apply_description import apply_description, main
+from frontmatter import parse_frontmatter
 
 
 # ---------------------------------------------------------------------------
