@@ -197,3 +197,120 @@ class TestCLI:
 
         assert rc == 0
         assert "opdb_group_id: GNEW" in title_file_with_opdb.read_text()
+
+
+# ---------------------------------------------------------------------------
+# List fields
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture()
+def model_file(tmp_path: Path) -> Path:
+    """Create a minimal model markdown file."""
+    models_dir = tmp_path / "catalog" / "models"
+    models_dir.mkdir(parents=True)
+    md = models_dir / "medieval-madness.md"
+    md.write_text("---\nname: Medieval Madness\ntitle_slug: medieval-madness\n---\n")
+
+    schema_link = tmp_path / "schema"
+    schema_link.symlink_to(SCHEMA_DIR)
+
+    return md
+
+
+@pytest.fixture()
+def model_file_with_themes(tmp_path: Path) -> Path:
+    """Model file with theme_slugs already set."""
+    models_dir = tmp_path / "catalog" / "models"
+    models_dir.mkdir(parents=True)
+    md = models_dir / "medieval-madness.md"
+    md.write_text(
+        "---\nname: Medieval Madness\ntitle_slug: medieval-madness\n"
+        "theme_slugs:\n  - fantasy\n  - medieval\n---\n"
+    )
+
+    schema_link = tmp_path / "schema"
+    schema_link.symlink_to(SCHEMA_DIR)
+
+    return md
+
+
+class TestListFields:
+    def test_add_list_field(self, model_file: Path):
+        apply_fields(model_file, {"theme_slugs": ["fantasy", "medieval"]})
+
+        result = model_file.read_text()
+        assert "theme_slugs:" in result
+        assert "  - fantasy" in result
+        assert "  - medieval" in result
+
+    def test_list_field_ordering(self, model_file: Path):
+        """theme_slugs should appear after tag_slugs in schema order."""
+        apply_fields(model_file, {
+            "tag_slugs": ["widebody"],
+            "theme_slugs": ["fantasy"],
+        })
+
+        result = model_file.read_text()
+        assert result.index("tag_slugs:") < result.index("theme_slugs:")
+
+    def test_list_field_before_credit_refs(self, tmp_path: Path):
+        """theme_slugs should appear before credit_refs."""
+        models_dir = tmp_path / "catalog" / "models"
+        models_dir.mkdir(parents=True)
+        md = models_dir / "test.md"
+        md.write_text(
+            "---\nname: Test\ntitle_slug: test\ncredit_refs:\n"
+            "- person_slug: john\n  role: Design\n---\n"
+        )
+        (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+
+        apply_fields(md, {"theme_slugs": ["horror"]})
+
+        result = md.read_text()
+        assert result.index("theme_slugs:") < result.index("credit_refs:")
+
+    def test_empty_list(self, model_file: Path):
+        apply_fields(model_file, {"theme_slugs": []})
+
+        result = model_file.read_text()
+        assert "theme_slugs: []" in result
+
+    def test_overwrite_list_field(self, model_file_with_themes: Path):
+        apply_fields(
+            model_file_with_themes,
+            {"theme_slugs": ["horror", "zombies"]},
+            overwrite=True,
+        )
+
+        result = model_file_with_themes.read_text()
+        assert "  - horror" in result
+        assert "  - zombies" in result
+        assert "  - fantasy" not in result
+        assert "  - medieval" not in result
+
+    def test_refuses_overwrite_list_by_default(self, model_file_with_themes: Path):
+        with pytest.raises(RuntimeError, match="already has value"):
+            apply_fields(model_file_with_themes, {"theme_slugs": ["horror"]})
+
+    def test_list_field_via_cli(self, model_file: Path):
+        rc = main([str(model_file), "theme_slugs=fantasy,medieval"])
+
+        assert rc == 0
+        result = model_file.read_text()
+        assert "theme_slugs:" in result
+        assert "  - fantasy" in result
+        assert "  - medieval" in result
+
+    def test_preserves_body_with_list_field(self, tmp_path: Path):
+        models_dir = tmp_path / "catalog" / "models"
+        models_dir.mkdir(parents=True)
+        md = models_dir / "test.md"
+        md.write_text("---\nname: Test\ntitle_slug: test\n---\n\nA great machine.\n")
+        (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+
+        apply_fields(md, {"theme_slugs": ["fantasy"]})
+
+        result = md.read_text()
+        assert "  - fantasy" in result
+        assert "A great machine." in result

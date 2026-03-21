@@ -85,15 +85,25 @@ def _insert_field(frontmatter_lines: list[str], key: str, value: str, property_o
                     else:
                         break
 
-    new_line = f"{key}: {value}"
+    new_lines = _format_field(key, value)
     result = frontmatter_lines.copy()
-    result.insert(insert_after + 1, new_line)
+    for i, line in enumerate(new_lines):
+        result.insert(insert_after + 1 + i, line)
     return result
+
+
+def _format_field(key: str, value: str | list[str]) -> list[str]:
+    """Format a key/value pair as one or more YAML frontmatter lines."""
+    if isinstance(value, list):
+        if not value:
+            return [f"{key}: []"]
+        return [f"{key}:"] + [f"  - {item}" for item in value]
+    return [f"{key}: {value}"]
 
 
 def apply_fields(
     catalog_path: Path,
-    fields: dict[str, str],
+    fields: dict[str, str | list[str]],
     *,
     overwrite: bool = False,
 ) -> None:
@@ -141,11 +151,18 @@ def apply_fields(
 
     for key, value in fields.items():
         if key in existing_fm and existing_fm[key] is not None and str(existing_fm[key]) != "":
-            # Overwrite: find and replace the line
+            # Overwrite: remove the existing field (key line + continuation lines)
+            start = None
             for i, line in enumerate(lines):
                 if line.startswith(f"{key}:"):
-                    lines[i] = f"{key}: {value}"
+                    start = i
                     break
+            if start is not None:
+                end = start + 1
+                while end < len(lines) - 1 and (lines[end].startswith("  ") or lines[end].startswith("- ")):
+                    end += 1
+                new_lines = _format_field(key, value)
+                lines[start:end] = new_lines
         else:
             lines = _insert_field(lines, key, value, property_order)
 
@@ -190,14 +207,23 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    # Parse key=value pairs
-    field_dict: dict[str, str] = {}
+    # Parse key=value pairs. For array fields, split on commas.
+    schema_name = _resolve_schema_name(args.catalog_file)
+    schema_path = _SCHEMA_DIR / f"{schema_name}.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    schema_props = schema.get("properties", {})
+
+    field_dict: dict[str, str | list[str]] = {}
     for field_spec in args.fields:
         if "=" not in field_spec:
             print(f"Error: invalid field spec '{field_spec}' (expected key=value)", file=sys.stderr)
             return 1
         key, value = field_spec.split("=", 1)
-        field_dict[key] = value
+        prop_type = schema_props.get(key, {}).get("type")
+        if prop_type == "array":
+            field_dict[key] = [v.strip() for v in value.split(",") if v.strip()]
+        else:
+            field_dict[key] = value
 
     try:
         apply_fields(args.catalog_file, field_dict, overwrite=args.overwrite)
