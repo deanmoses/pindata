@@ -7,3 +7,5 @@ aliases:
 is_type_of:
   - bank-drop-targets
 ---
+
+A group of three [[gameplayfeature:drop-targets]] arranged in a [[gameplayfeature:bank-drop-targets]] — the most common bank size in pinball. Completing all three targets in the bank awards a bonus, lights a feature, or advances a game objective, then the targets reset for another round. The three-bank configuration appears on approximately 305 IPDB-cataloged machines, more than any other bank size, with notable examples including *[[title:flash]]* (1978), *[[title:gorgar]]* (1979), and *[[title:black-knight]]* (1980). Its compact footprint allowed designers to fit multiple banks on a single playfield, creating layered completion challenges across the layout.
