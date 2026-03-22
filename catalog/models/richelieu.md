@@ -10,7 +10,7 @@ player_count: 1
 display_type_slug: backglass-lights
 technology_generation_slug: electromechanical
 credit_refs:
-- person_slug: louis-lger
+- person_slug: louis-leger
   role: Art
 - person_slug: jacques-tremblay
   role: Design

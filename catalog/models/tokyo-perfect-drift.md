@@ -16,16 +16,16 @@ theme_slugs:
 credit_refs:
 - person_slug: gustavo-diaz-soler
   role: Art
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Design
 - person_slug: gustavo-diaz-soler
   role: Dots/Animation
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Mechanics
-- person_slug: cristobal-ortuo-nicolas
+- person_slug: cristobal-ortuno-nicolas
   role: Music
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Software
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Sound
 ---

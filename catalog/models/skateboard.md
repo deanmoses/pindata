@@ -3,7 +3,7 @@ name: Skateboard
 title_slug: skateboard
 opdb_id: Grewp-MDEOP
 ipdb_id: 4479
-corporate_entity_slug: industria-electromecnica-de-recreativos-sa
+corporate_entity_slug: industria-electromecanica-de-recreativos-sa
 year: 1980
 month: 1
 player_count: 4

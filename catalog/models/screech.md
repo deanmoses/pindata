@@ -1,7 +1,7 @@
 ---
 name: Screech
 title_slug: screech
-corporate_entity_slug: industria-electromecnica-de-recreativos-sa
+corporate_entity_slug: industria-electromecanica-de-recreativos-sa
 opdb_id: GPBBv-ME0x0
 ipdb_id: 3939
 display_type_slug: alphanumeric

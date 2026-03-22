@@ -1,6 +1,6 @@
 ---
 name: Torres-Macarrón
-manufacturer_slug: torres-macarrn
+manufacturer_slug: torres-macarron
 ipdb_manufacturer_id: 763
 headquarters_city: Madrid
 headquarters_country: Spain

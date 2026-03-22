@@ -12,8 +12,8 @@ technology_generation_slug: solid-state
 theme_slugs:
   - historical
 credit_refs:
-- person_slug: fermn-hernndez-garbayo
+- person_slug: fermin-hernandez-garbayo
   role: Art
-- person_slug: victor-manuel-martn-rubio
+- person_slug: victor-manuel-martin-rubio
   role: Music
 ---

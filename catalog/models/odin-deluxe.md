@@ -11,6 +11,6 @@ technology_generation_slug: solid-state
 theme_slugs:
   - norse-mythology
 credit_refs:
-- person_slug: eulogio-pingarrn
+- person_slug: eulogio-pingarron
   role: Design
 ---

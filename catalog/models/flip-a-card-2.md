@@ -2,7 +2,7 @@
 name: Flip a Card
 title_slug: flip-a-card
 ipdb_id: 5900
-corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
+corporate_entity_slug: procedimientos-electromagneticos-de-tanteo-y-color
 player_count: 1
 technology_generation_slug: electromechanical
 theme_slugs:

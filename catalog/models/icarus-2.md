@@ -3,7 +3,7 @@ name: Icarus
 title_slug: icarus-2
 opdb_id: G5pOY-MDbRK
 ipdb_id: 4370
-corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
+corporate_entity_slug: procedimientos-electromagneticos-de-tanteo-y-color
 year: 1972
 month: 1
 player_count: 1

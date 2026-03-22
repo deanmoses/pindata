@@ -3,7 +3,7 @@ name: Space Poker
 title_slug: alien-poker
 opdb_id: G4yen-MXrYj
 ipdb_id: 5886
-corporate_entity_slug: ltd-do-brasil-diverses-eletrnicas-ltda
+corporate_entity_slug: ltd-do-brasil-diversoes-eletronicas-ltda
 year: 1982
 month: 1
 player_count: 4

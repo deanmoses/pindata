@@ -2,7 +2,7 @@
 name: Time Machine
 title_slug: time-machine-2
 ipdb_id: 5887
-corporate_entity_slug: ltd-do-brasil-diverses-eletrnicas-ltda
+corporate_entity_slug: ltd-do-brasil-diversoes-eletronicas-ltda
 player_count: 4
 technology_generation_slug: solid-state
 theme_slugs:

@@ -3,7 +3,7 @@ name: Basketball
 title_slug: basketball
 opdb_id: GYWzL-Mx0x4
 ipdb_id: 5023
-corporate_entity_slug: ideas-y-diseos-sociedad-annima
+corporate_entity_slug: ideas-y-disenos-sociedad-anonima
 year: 1986
 month: 1
 player_count: 4

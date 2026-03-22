@@ -9,6 +9,6 @@ technology_generation_slug: solid-state
 converted_from: genie
 is_conversion: true
 credit_refs:
-- person_slug: agns-g-dusaugey
+- person_slug: agnes-g-dusaugey
   role: Art
 ---

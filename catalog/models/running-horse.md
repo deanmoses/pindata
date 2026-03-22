@@ -3,7 +3,7 @@ name: Running Horse
 title_slug: running-horse
 opdb_id: G4ev3-MQdqY
 ipdb_id: 4414
-corporate_entity_slug: industria-electromecnica-de-recreativos-sa
+corporate_entity_slug: industria-electromecanica-de-recreativos-sa
 year: 1976
 month: 1
 player_count: 1

@@ -14,7 +14,7 @@ theme_slugs:
 credit_refs:
 - person_slug: adriano-nardi
   role: Art
-- person_slug: solf
+- person_slug: solfe
   role: Art
 - person_slug: paul-daniel
   role: Design

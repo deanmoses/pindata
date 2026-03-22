@@ -3,7 +3,7 @@ name: Metal Man
 title_slug: metal-man
 opdb_id: G4x3Y-MDznw
 ipdb_id: 4092
-corporate_entity_slug: industria-electromecnica-de-recreativos-sa
+corporate_entity_slug: industria-electromecanica-de-recreativos-sa
 year: 1992
 month: 1
 player_count: 4

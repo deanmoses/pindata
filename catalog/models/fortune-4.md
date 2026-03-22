@@ -3,7 +3,7 @@ name: Fortune
 title_slug: fortune
 opdb_id: GrEEy-MQ5pv
 ipdb_id: 4380
-corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
+corporate_entity_slug: procedimientos-electromagneticos-de-tanteo-y-color
 year: 1972
 month: 1
 player_count: 1

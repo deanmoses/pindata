@@ -12,6 +12,6 @@ theme_slugs:
   - amusement-parks
   - roller-coasters
 credit_refs:
-- person_slug: agns-g-dusaugey
+- person_slug: agnes-g-dusaugey
   role: Art
 ---

@@ -15,16 +15,16 @@ credit_refs:
   role: Art
 - person_slug: ruben-lavado-orts
   role: Art
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Design
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Dots/Animation
 - person_slug: gustavo-diaz-soler
   role: Dots/Animation
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Mechanics
 - person_slug: kevin-macleod
   role: Music
-- person_slug: antonio-ortuo-nicolas
+- person_slug: antonio-ortuno-nicolas
   role: Software
 ---

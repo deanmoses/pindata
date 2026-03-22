@@ -3,7 +3,7 @@ name: King Game
 title_slug: high-hand-capt-card
 opdb_id: GRYbJ-ML0Ny
 ipdb_id: 4390
-corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
+corporate_entity_slug: procedimientos-electromagneticos-de-tanteo-y-color
 year: 1974
 month: 1
 player_count: 1

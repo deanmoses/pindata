@@ -12,10 +12,10 @@ technology_generation_slug: solid-state
 theme_slugs:
   - outer-space
 credit_refs:
-- person_slug: fermn-hernndez-garbayo
+- person_slug: fermin-hernandez-garbayo
   role: Art
-- person_slug: jos-montero-carrizosa
+- person_slug: jose-montero-carrizosa
   role: Design
-- person_slug: victor-manuel-martn-rubio
+- person_slug: victor-manuel-martin-rubio
   role: Music
 ---

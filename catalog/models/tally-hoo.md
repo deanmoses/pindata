@@ -13,6 +13,6 @@ theme_slugs:
   - fox-hunting
   - sports
 credit_refs:
-- person_slug: eulogio-pingarrn
+- person_slug: eulogio-pingarron
   role: Design
 ---

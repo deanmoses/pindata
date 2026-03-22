@@ -3,7 +3,7 @@ name: Black Magic
 title_slug: black-magic
 opdb_id: GryXn-MQkl5
 ipdb_id: 6013
-corporate_entity_slug: procedimientos-electromagnticos-de-tanteo-y-color
+corporate_entity_slug: procedimientos-electromagneticos-de-tanteo-y-color
 year: 1980
 month: 6
 player_count: 1
