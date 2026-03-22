@@ -1,5 +1,5 @@
 ---
-name: Torres-Macarr�n
+name: Torres-Macarrón
 manufacturer_slug: torres-macarrn
 ipdb_manufacturer_id: 763
 headquarters_city: Madrid

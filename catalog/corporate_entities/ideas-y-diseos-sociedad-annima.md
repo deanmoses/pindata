@@ -1,5 +1,5 @@
 ---
-name: Ideas y Dise�os, Sociedad An�nima
+name: Ideas y Diseños, Sociedad Anónima
 manufacturer_slug: idsa
 ipdb_manufacturer_id: 465
 headquarters_city: Madrid

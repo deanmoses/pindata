@@ -1,3 +1,3 @@
 ---
-name: Automatenbau F�rster
+name: Automatenbau Förster
 ---

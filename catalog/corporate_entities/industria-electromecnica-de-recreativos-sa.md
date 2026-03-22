@@ -1,5 +1,5 @@
 ---
-name: Industria (Electromec�nica) de Recreativos S.A
+name: Industria (Electromecánica) de Recreativos S.A
 manufacturer_slug: inder
 ipdb_manufacturer_id: 156
 headquarters_city: Madrid

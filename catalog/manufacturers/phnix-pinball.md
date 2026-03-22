@@ -1,3 +1,3 @@
 ---
-name: Ph�nix Pinball
+name: Phénix Pinball
 ---

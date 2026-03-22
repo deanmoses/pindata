@@ -1,7 +1,7 @@
 ---
-name: Divers�es Eletr�nicas Industria E Comercio LTDA
+name: Diversões Eletrônicas Industria E Comercio LTDA
 manufacturer_slug: diverama
 ipdb_manufacturer_id: 423
-headquarters_city: S�o Paulo
+headquarters_city: São Paulo
 headquarters_country: Brazil
 ---

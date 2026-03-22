@@ -1,7 +1,7 @@
 ---
-name: Rowamet Ind�stria Eletrometal�rgica LTDA
+name: Rowamet Indústria Eletrometalúrgica LTDA
 manufacturer_slug: rowamet
 ipdb_manufacturer_id: 458
-headquarters_city: S�o Paulo
+headquarters_city: São Paulo
 headquarters_country: Brazil
 ---

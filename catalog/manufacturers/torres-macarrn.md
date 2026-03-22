@@ -1,3 +1,3 @@
 ---
-name: Torres-Macarr�n
+name: Torres-Macarrón
 ---
