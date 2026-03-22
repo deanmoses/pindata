@@ -42,3 +42,8 @@ from slugify import slugify
 )
 def test_slugify(input_name: str, expected_slug: str) -> None:
     assert slugify(input_name) == expected_slug
+
+
+def test_slugify_rejects_mojibake() -> None:
+    with pytest.raises(ValueError, match="mojibake"):
+        slugify("F\ufffdrster")
