@@ -1,3 +1,3 @@
 ---
-name: Antonio Ortu�o Nicolas
+name: Antonio Ortuño Nicolas
 ---

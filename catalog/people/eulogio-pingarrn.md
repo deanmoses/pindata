@@ -1,3 +1,3 @@
 ---
-name: Eulogio Pingarr�n
+name: Eulogio Pingarrón
 ---

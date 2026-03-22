@@ -1,3 +1,3 @@
 ---
-name: Cristobal Ortu�o Nicolas
+name: Cristobal Ortuño Nicolas
 ---

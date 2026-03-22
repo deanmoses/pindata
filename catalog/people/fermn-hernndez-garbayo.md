@@ -1,3 +1,3 @@
 ---
-name: Ferm�n Hern�ndez Garbayo
+name: Fermín Hernández Garbayo
 ---

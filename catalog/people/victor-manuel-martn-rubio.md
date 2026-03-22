@@ -1,3 +1,3 @@
 ---
-name: Victor Manuel Mart�n Rubio
+name: Victor Manuel Martín Rubio
 ---

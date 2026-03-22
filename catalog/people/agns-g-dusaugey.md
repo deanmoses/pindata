@@ -1,3 +1,3 @@
 ---
-name: Agn�s G. Dusaugey
+name: Agnès G. Dusaugey
 ---
