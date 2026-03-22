@@ -1,3 +1,5 @@
 ---
 name: ERBÜ
+aliases:
+  - ERB�
 ---

@@ -1,3 +1,5 @@
 ---
 name: Solfè
+aliases:
+  - Solf�
 ---
