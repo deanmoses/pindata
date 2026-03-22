@@ -69,6 +69,12 @@
       "uniqueItems": true,
       "default": []
     },
+    "gameplay_feature_slugs": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+      "uniqueItems": true,
+      "default": []
+    },
     "theme_slugs": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
