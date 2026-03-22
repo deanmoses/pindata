@@ -55,7 +55,7 @@ DIR_SCHEMA_MAP: dict[str, str] = {
     "credit_roles": "taxonomy",
     "display_types": "taxonomy",
     "game_formats": "taxonomy",
-    "gameplay_features": "taxonomy",
+    "gameplay_features": "gameplay_feature",
     "reward_types": "taxonomy",
     "tags": "taxonomy",
     # Taxonomy directories with parent-child schemas:

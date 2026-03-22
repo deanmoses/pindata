@@ -132,6 +132,58 @@ class TestOverwrite:
 
 
 # ---------------------------------------------------------------------------
+# apply_fields — delete fields
+# ---------------------------------------------------------------------------
+
+
+class TestDeleteFields:
+    def test_delete_existing_scalar_field(self, title_file_with_opdb: Path):
+        apply_fields(title_file_with_opdb, delete_fields=["opdb_group_id"])
+
+        result = title_file_with_opdb.read_text()
+        assert "opdb_group_id" not in result
+        assert "name: Batman" in result
+
+    def test_delete_nonexistent_field_is_noop(self, title_file: Path):
+        original = title_file.read_text()
+        apply_fields(title_file, delete_fields=["franchise_slug"])
+        assert title_file.read_text() == original
+
+    def test_delete_list_field(self, model_file_with_themes: Path):
+        apply_fields(model_file_with_themes, delete_fields=["theme_slugs"])
+
+        result = model_file_with_themes.read_text()
+        assert "theme_slugs" not in result
+        assert "  - fantasy" not in result
+        assert "  - medieval" not in result
+
+    def test_delete_preserves_other_fields(self, title_file_with_opdb: Path):
+        apply_fields(title_file_with_opdb, delete_fields=["opdb_group_id"])
+
+        result = title_file_with_opdb.read_text()
+        assert "name: Batman" in result
+
+    def test_delete_preserves_body(self, title_file_with_body: Path):
+        apply_fields(title_file_with_body, {"opdb_group_id": "G1234"})
+        apply_fields(title_file_with_body, delete_fields=["opdb_group_id"])
+
+        result = title_file_with_body.read_text()
+        assert "opdb_group_id" not in result
+        assert "A classic franchise." in result
+
+    def test_delete_and_add_in_one_call(self, title_file_with_opdb: Path):
+        apply_fields(
+            title_file_with_opdb,
+            {"franchise_slug": "batman"},
+            delete_fields=["opdb_group_id"],
+        )
+
+        result = title_file_with_opdb.read_text()
+        assert "franchise_slug: batman" in result
+        assert "opdb_group_id" not in result
+
+
+# ---------------------------------------------------------------------------
 # apply_fields — error handling
 # ---------------------------------------------------------------------------
 
@@ -192,6 +244,12 @@ class TestCLI:
 
         assert rc == 0
         assert "opdb_group_id: GNEW" in title_file_with_opdb.read_text()
+
+    def test_delete_field_via_cli(self, title_file_with_opdb: Path):
+        rc = main([str(title_file_with_opdb), "--delete", "opdb_group_id"])
+
+        assert rc == 0
+        assert "opdb_group_id" not in title_file_with_opdb.read_text()
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pinbase/gameplay_feature.schema.json",
+  "title": "Pinbase Gameplay Feature",
+  "description": "Frontmatter for a Pinbase-authored gameplay feature taxonomy record",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "is_type_of": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["name"],
+  "additionalProperties": false
+}

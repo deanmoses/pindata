@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Set YAML frontmatter fields on a catalog markdown file.
+"""Set or delete YAML frontmatter fields on a catalog markdown file.
 
 Reads a catalog markdown file, inserts or updates one or more frontmatter
 fields in canonical schema order, and writes the result back. Validates
@@ -15,6 +15,7 @@ Usage:
     uv run python scripts/apply_fields.py catalog/titles/alien.md franchise_slug=alien
     uv run python scripts/apply_fields.py catalog/titles/foo.md franchise_slug=alien series_slug=bar
     uv run python scripts/apply_fields.py --overwrite catalog/titles/alien.md franchise_slug=new
+    uv run python scripts/apply_fields.py catalog/gameplay_features/spinners.md --delete display_order
 """
 
 from __future__ import annotations
@@ -120,19 +121,23 @@ def _format_field(key: str, value: str | list[str]) -> list[str]:
 
 def apply_fields(
     catalog_path: Path,
-    fields: dict[str, str | list[str]],
+    fields: dict[str, str | list[str]] | None = None,
     *,
+    delete_fields: list[str] | None = None,
     overwrite: bool = False,
 ) -> None:
-    """Set frontmatter fields on *catalog_path*.
+    """Set or delete frontmatter fields on *catalog_path*.
 
     Preserves existing frontmatter and body. Inserts fields in canonical
-    schema order. Validates the result against the JSON schema.
+    schema order. Fields listed in *delete_fields* are removed; fields not
+    present in the file are silently skipped. Validates the result against
+    the JSON schema.
 
     Raises ``FileNotFoundError`` if the file or schema doesn't exist,
     ``ValueError`` if a field isn't in the schema or frontmatter is invalid,
     and ``RuntimeError`` if a field already has a value and *overwrite* is False.
     """
+    fields = fields or {}
     if not catalog_path.is_file():
         raise FileNotFoundError(f"Catalog file not found: {catalog_path}")
 
@@ -183,6 +188,19 @@ def apply_fields(
         else:
             lines = _insert_field(lines, key, value, property_order)
 
+    # Delete fields
+    for key in (delete_fields or []):
+        start = None
+        for i, line in enumerate(lines):
+            if line.startswith(f"{key}:"):
+                start = i
+                break
+        if start is not None:
+            end = start + 1
+            while end < len(lines) - 1 and (lines[end].startswith("  ") or lines[end].startswith("- ")):
+                end += 1
+            del lines[start:end]
+
     new_frontmatter = "\n".join(lines) + "\n"
 
     # Reassemble
@@ -205,7 +223,7 @@ def apply_fields(
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Set YAML frontmatter fields on a catalog markdown file.",
+        description="Set or delete YAML frontmatter fields on a catalog markdown file.",
     )
     parser.add_argument(
         "catalog_file",
@@ -214,8 +232,15 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "fields",
-        nargs="+",
+        nargs="*",
         help="Fields to set as key=value pairs (e.g., franchise_slug=alien)",
+    )
+    parser.add_argument(
+        "--delete",
+        nargs="+",
+        metavar="FIELD",
+        dest="delete_fields",
+        help="Field names to remove from the frontmatter",
     )
     parser.add_argument(
         "--overwrite",
@@ -231,7 +256,7 @@ def main(argv: list[str] | None = None) -> int:
     schema_props = schema.get("properties", {})
 
     field_dict: dict[str, str | list[str]] = {}
-    for field_spec in args.fields:
+    for field_spec in (args.fields or []):
         if "=" not in field_spec:
             print(f"Error: invalid field spec '{field_spec}' (expected key=value)", file=sys.stderr)
             return 1
@@ -243,13 +268,17 @@ def main(argv: list[str] | None = None) -> int:
             field_dict[key] = value
 
     try:
-        apply_fields(args.catalog_file, field_dict, overwrite=args.overwrite)
+        apply_fields(args.catalog_file, field_dict, delete_fields=args.delete_fields, overwrite=args.overwrite)
     except (FileNotFoundError, ValueError, RuntimeError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
 
-    field_summary = ", ".join(f"{k}={v}" for k, v in field_dict.items())
-    print(f"Applied {field_summary} to {args.catalog_file}")
+    parts = []
+    if field_dict:
+        parts.append(", ".join(f"{k}={v}" for k, v in field_dict.items()))
+    if args.delete_fields:
+        parts.append(f"deleted {', '.join(args.delete_fields)}")
+    print(f"Applied {'; '.join(parts)} to {args.catalog_file}")
     return 0
 
 
