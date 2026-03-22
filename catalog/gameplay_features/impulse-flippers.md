@@ -1,6 +1,5 @@
 ---
 name: Impulse Flippers
-display_order: 49
 aliases:
   - Impulse flipper
 is_type_of:

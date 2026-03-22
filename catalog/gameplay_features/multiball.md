@@ -1,6 +1,5 @@
 ---
 name: Multiball
-display_order: 8
 aliases:
   - Multi-ball
 ---

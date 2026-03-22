@@ -1,6 +1,5 @@
 ---
 name: Pop-Up Targets
-display_order: 78
 aliases:
   - Pop-up target
   - Pop-up targets

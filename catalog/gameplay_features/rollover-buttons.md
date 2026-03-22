@@ -1,6 +1,5 @@
 ---
 name: Rollover Buttons
-display_order: 25
 aliases:
   - Rollover button
   - Mini-rollover buttons

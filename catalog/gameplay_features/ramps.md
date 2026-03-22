@@ -1,6 +1,5 @@
 ---
 name: Ramps
-display_order: 7
 aliases:
   - Ramp
 ---

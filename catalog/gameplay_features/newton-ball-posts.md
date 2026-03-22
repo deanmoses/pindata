@@ -1,6 +1,5 @@
 ---
 name: Newton Ball Posts
-display_order: 59
 aliases:
   - Newton ball post
   - Newton ball posts

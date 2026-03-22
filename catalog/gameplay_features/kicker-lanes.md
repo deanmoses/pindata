@@ -1,6 +1,5 @@
 ---
 name: Kicker Lanes
-display_order: 81
 aliases:
   - Kicker lane
 is_type_of:

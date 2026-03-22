@@ -1,6 +1,5 @@
 ---
 name: Roto-Targets
-display_order: 31
 aliases:
   - Roto-target
 is_type_of:

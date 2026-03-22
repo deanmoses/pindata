@@ -1,6 +1,5 @@
 ---
 name: Hanging Targets
-display_order: 34
 aliases:
   - Hanging target
 is_type_of:

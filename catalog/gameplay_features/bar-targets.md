@@ -1,6 +1,5 @@
 ---
 name: Bar Targets
-display_order: 43
 aliases:
   - Bar target
 is_type_of:

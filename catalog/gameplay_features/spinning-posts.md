@@ -1,6 +1,5 @@
 ---
 name: Spinning Posts
-display_order: 85
 aliases:
   - Spinning post
 ---

@@ -1,6 +1,5 @@
 ---
 name: Flip Flags
-display_order: 46
 aliases:
   - Flip flag
 ---

@@ -1,6 +1,5 @@
 ---
 name: Spinners
-display_order: 6
 aliases:
   - Spinner
 ---

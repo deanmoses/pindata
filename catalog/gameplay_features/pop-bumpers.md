@@ -1,6 +1,5 @@
 ---
 name: Pop Bumpers
-display_order: 2
 aliases:
   - Pop bumper
 is_type_of:

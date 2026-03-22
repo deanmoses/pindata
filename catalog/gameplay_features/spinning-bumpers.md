@@ -1,6 +1,5 @@
 ---
 name: Spinning Bumpers
-display_order: 73
 aliases:
   - Spinning bumper
 is_type_of:

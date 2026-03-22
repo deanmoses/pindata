@@ -1,6 +1,5 @@
 ---
 name: Flex-Save Lanes
-display_order: 90
 aliases:
   - Flex-save lanes
   - Flex-save lane

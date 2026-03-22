@@ -1,6 +1,5 @@
 ---
 name: Targets
-display_order: 62
 aliases:
   - Target
 ---

@@ -1,6 +1,5 @@
 ---
 name: Catapults
-display_order: 87
 aliases:
   - Catapult
 is_type_of:

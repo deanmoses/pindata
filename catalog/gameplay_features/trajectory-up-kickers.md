@@ -1,6 +1,5 @@
 ---
 name: Trajectory Up-Kickers
-display_order: 99
 aliases:
   - Trajectory up-kicker
 is_type_of:

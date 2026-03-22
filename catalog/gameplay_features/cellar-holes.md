@@ -1,6 +1,5 @@
 ---
 name: Cellar Holes
-display_order: 48
 aliases:
   - Cellar hole
 ---

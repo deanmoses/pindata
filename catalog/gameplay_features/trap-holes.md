@@ -1,6 +1,5 @@
 ---
 name: Trap Holes
-display_order: 23
 aliases:
   - Trap hole
 ---

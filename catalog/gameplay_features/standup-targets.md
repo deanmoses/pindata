@@ -1,6 +1,5 @@
 ---
 name: Standup Targets
-display_order: 5
 aliases:
   - Standup target
   - Stand-up targets

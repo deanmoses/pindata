@@ -1,6 +1,5 @@
 ---
 name: Permanent Magnets
-display_order: 95
 aliases:
   - Permanent magnet
 is_type_of:

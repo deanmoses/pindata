@@ -1,6 +1,5 @@
 ---
 name: Linear Targets
-display_order: 65
 aliases:
   - Linear target
 is_type_of:

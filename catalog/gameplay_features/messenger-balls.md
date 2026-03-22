@@ -1,6 +1,5 @@
 ---
 name: Messenger Balls
-display_order: 32
 aliases:
   - Messenger ball
 is_type_of:

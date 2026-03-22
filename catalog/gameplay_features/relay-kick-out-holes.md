@@ -1,6 +1,5 @@
 ---
 name: Relay Kick-Out Holes
-display_order: 58
 aliases:
   - Relay kick-out hole
 is_type_of:

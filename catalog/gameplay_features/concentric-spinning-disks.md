@@ -1,6 +1,5 @@
 ---
 name: Concentric Spinning Disks
-display_order: 93
 aliases:
   - Concentric spinning disk
 is_type_of:

@@ -1,6 +1,5 @@
 ---
 name: Captive Ball
-display_order: 9
 aliases:
   - Captive balls
 ---

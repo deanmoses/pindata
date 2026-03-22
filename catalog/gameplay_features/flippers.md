@@ -1,6 +1,5 @@
 ---
 name: Flippers
-display_order: 1
 aliases:
   - Flipper
   - Flippes

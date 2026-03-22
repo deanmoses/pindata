@@ -1,6 +1,5 @@
 ---
 name: Swivel Targets
-display_order: 47
 aliases:
   - Swivel target
 is_type_of:

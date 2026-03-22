@@ -1,6 +1,5 @@
 ---
 name: Mechanical Flippers
-display_order: 80
 aliases:
   - Mechanical flipper
 is_type_of:

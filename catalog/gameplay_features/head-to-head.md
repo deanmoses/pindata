@@ -1,6 +1,5 @@
 ---
 name: Head-to-Head
-display_order: 20
 aliases:
   - Head-to-head play
 ---

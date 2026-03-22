@@ -1,6 +1,5 @@
 ---
 name: Horseshoe Lanes
-display_order: 29
 aliases:
   - Horseshoe lane
 ---

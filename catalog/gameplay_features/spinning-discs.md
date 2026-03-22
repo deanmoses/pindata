@@ -1,6 +1,5 @@
 ---
 name: Spinning Discs
-display_order: 38
 aliases:
   - Spinning disc
   - Spinning disk

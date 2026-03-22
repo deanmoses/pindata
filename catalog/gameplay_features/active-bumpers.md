@@ -1,6 +1,5 @@
 ---
 name: Active Bumpers
-display_order: 69
 aliases:
   - Active bumper
 is_type_of:

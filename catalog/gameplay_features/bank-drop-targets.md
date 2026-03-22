@@ -1,6 +1,5 @@
 ---
 name: Bank Drop Targets
-display_order: 92
 aliases:
   - Bank drop target
 is_type_of:

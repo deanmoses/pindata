@@ -1,6 +1,5 @@
 ---
 name: Jet Bumpers
-display_order: 64
 aliases:
   - Jet bumper
 is_type_of:

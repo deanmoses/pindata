@@ -1,6 +1,5 @@
 ---
 name: Horseshoe Diverters
-display_order: 57
 aliases:
   - Horseshoe diverter
 is_type_of:

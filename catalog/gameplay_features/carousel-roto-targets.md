@@ -1,6 +1,5 @@
 ---
 name: Carousel Roto-Targets
-display_order: 72
 aliases:
   - Carousel roto-target
 is_type_of:

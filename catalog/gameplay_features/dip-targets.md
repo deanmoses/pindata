@@ -1,6 +1,5 @@
 ---
 name: Dip Targets
-display_order: 44
 aliases:
   - Dip target
 is_type_of:

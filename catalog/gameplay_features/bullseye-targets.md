@@ -1,6 +1,5 @@
 ---
 name: Bullseye Targets
-display_order: 39
 aliases:
   - Bullseye target
 is_type_of:

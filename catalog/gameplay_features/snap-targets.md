@@ -1,6 +1,5 @@
 ---
 name: Snap Targets
-display_order: 77
 aliases:
   - Snap target
 is_type_of:

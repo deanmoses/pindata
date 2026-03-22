@@ -1,6 +1,5 @@
 ---
 name: Diverter Ramps
-display_order: 89
 aliases:
   - Diverter ramp
 is_type_of:

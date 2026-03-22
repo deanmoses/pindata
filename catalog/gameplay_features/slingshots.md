@@ -1,6 +1,5 @@
 ---
 name: Slingshots
-display_order: 3
 aliases:
   - Slingshot
   - Slingshts

@@ -1,6 +1,5 @@
 ---
 name: Vari-Targets
-display_order: 30
 aliases:
   - Vari-target
   - Varo-targets

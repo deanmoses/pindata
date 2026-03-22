@@ -1,6 +1,5 @@
 ---
 name: Passive Bumpers
-display_order: 21
 aliases:
   - Passive bumper
   - Inert bumpers

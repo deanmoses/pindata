@@ -1,6 +1,5 @@
 ---
 name: Stop Magnets
-display_order: 60
 aliases:
   - Stop magnet
 is_type_of:

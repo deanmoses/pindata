@@ -1,6 +1,5 @@
 ---
 name: Whirlpools
-display_order: 86
 aliases:
   - Whirlpool
   - Whirlpool funnel

@@ -1,6 +1,5 @@
 ---
 name: Kick-Out Saucers
-display_order: 91
 aliases:
   - Kick-out saucer
 is_type_of:

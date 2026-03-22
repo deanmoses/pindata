@@ -1,6 +1,5 @@
 ---
 name: Bidirectional Thrust Magnets
-display_order: 98
 aliases:
   - Bidirectional thrust magnet
 is_type_of:

@@ -1,6 +1,5 @@
 ---
 name: Ball Kickers
-display_order: 55
 aliases:
   - Ball kicker
 ---

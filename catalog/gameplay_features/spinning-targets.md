@@ -1,6 +1,5 @@
 ---
 name: Spinning Targets
-display_order: 22
 aliases:
   - Spinning target
   - Rollunder spinner

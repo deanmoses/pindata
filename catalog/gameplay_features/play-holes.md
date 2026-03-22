@@ -1,6 +1,5 @@
 ---
 name: Play Holes
-display_order: 96
 aliases:
   - Play hole
 ---

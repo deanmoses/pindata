@@ -1,6 +1,5 @@
 ---
 name: Up-Posts
-display_order: 42
 aliases:
   - Up-post
 ---

@@ -1,6 +1,5 @@
 ---
 name: Reversed Flippers
-display_order: 61
 aliases:
   - Reversed flipper
   - Reverse flippers

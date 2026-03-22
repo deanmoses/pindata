@@ -1,6 +1,5 @@
 ---
 name: Disappearing Bumpers
-display_order: 75
 aliases:
   - Disappearing bumper
 is_type_of:

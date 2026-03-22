@@ -1,6 +1,5 @@
 ---
 name: Drop Targets
-display_order: 4
 aliases:
   - Drop target
   - Other drop targets

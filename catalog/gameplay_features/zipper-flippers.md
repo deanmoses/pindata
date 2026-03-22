@@ -1,6 +1,5 @@
 ---
 name: Zipper Flippers
-display_order: 40
 aliases:
   - Zipper flipper
 is_type_of:

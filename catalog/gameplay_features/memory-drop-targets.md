@@ -1,6 +1,5 @@
 ---
 name: Memory Drop Targets
-display_order: 53
 aliases:
   - Memory drop target
   - Single memory drop target

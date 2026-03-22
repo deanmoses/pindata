@@ -1,6 +1,5 @@
 ---
 name: Scoops
-display_order: 33
 aliases:
   - Scoop
 ---

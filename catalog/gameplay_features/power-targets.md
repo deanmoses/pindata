@@ -1,6 +1,5 @@
 ---
 name: Power Targets
-display_order: 66
 aliases:
   - Power target
 is_type_of:

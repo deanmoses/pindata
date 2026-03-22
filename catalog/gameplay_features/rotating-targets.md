@@ -1,6 +1,5 @@
 ---
 name: Rotating Targets
-display_order: 67
 aliases:
   - Rotating target
 is_type_of:

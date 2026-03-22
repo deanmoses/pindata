@@ -1,6 +1,5 @@
 ---
 name: Tower Bumpers
-display_order: 74
 aliases:
   - Tower bumper
 is_type_of:

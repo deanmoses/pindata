@@ -1,6 +1,5 @@
 ---
 name: Solitary Drop Targets
-display_order: 52
 aliases:
   - Solitary drop target
   - Single drop target

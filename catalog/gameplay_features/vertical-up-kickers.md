@@ -1,6 +1,5 @@
 ---
 name: Vertical Up-Kickers
-display_order: 35
 aliases:
   - Vertical up-kicker
   - Up-kickers

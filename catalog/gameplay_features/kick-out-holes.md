@@ -1,6 +1,5 @@
 ---
 name: Kick-Out Holes
-display_order: 10
 aliases:
   - Kick-out hole
   - Kickout holes

@@ -1,6 +1,5 @@
 ---
 name: Kickers
-display_order: 51
 aliases:
   - Kicker
 ---

@@ -1,6 +1,5 @@
 ---
 name: Mushroom Bumpers
-display_order: 27
 aliases:
   - Mushroom bumper
 is_type_of:

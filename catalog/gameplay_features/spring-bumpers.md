@@ -1,6 +1,5 @@
 ---
 name: Spring Bumpers
-display_order: 26
 aliases:
   - Spring bumper
 is_type_of:

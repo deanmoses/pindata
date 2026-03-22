@@ -1,6 +1,5 @@
 ---
 name: Knock-Down Targets
-display_order: 76
 aliases:
   - Knock-down target
   - Knock-down targets

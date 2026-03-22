@@ -1,6 +1,5 @@
 ---
 name: Turbo Bumpers
-display_order: 71
 aliases:
   - Turbo bumper
 is_type_of:

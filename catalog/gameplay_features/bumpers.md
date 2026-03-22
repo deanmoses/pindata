@@ -1,6 +1,5 @@
 ---
 name: Bumpers
-display_order: 63
 aliases:
   - Bumper
 ---

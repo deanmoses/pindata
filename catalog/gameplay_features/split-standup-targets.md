@@ -1,6 +1,5 @@
 ---
 name: Split Standup Targets
-display_order: 94
 aliases:
   - Split standup target
 is_type_of:

@@ -1,6 +1,5 @@
 ---
 name: Thrust Magnets
-display_order: 84
 aliases:
   - Thrust magnet
   - Thrust magnets

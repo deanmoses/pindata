@@ -1,6 +1,5 @@
 ---
 name: Diverters
-display_order: 50
 aliases:
   - Diverter
   - Diverters

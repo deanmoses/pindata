@@ -1,6 +1,5 @@
 ---
 name: Compression Spring Bumpers
-display_order: 97
 aliases:
   - Compression spring bumper
   - Spring compression bumpers

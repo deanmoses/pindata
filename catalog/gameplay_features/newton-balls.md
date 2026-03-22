@@ -1,6 +1,5 @@
 ---
 name: Newton Balls
-display_order: 41
 aliases:
   - Newton ball
 is_type_of:

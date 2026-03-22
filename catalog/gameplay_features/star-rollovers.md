@@ -1,6 +1,5 @@
 ---
 name: Star Rollovers
-display_order: 24
 aliases:
   - Star rollover
   - Star rollover buttons

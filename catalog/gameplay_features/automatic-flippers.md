@@ -1,6 +1,5 @@
 ---
 name: Automatic Flippers
-display_order: 79
 aliases:
   - Automatic flipper
 is_type_of:

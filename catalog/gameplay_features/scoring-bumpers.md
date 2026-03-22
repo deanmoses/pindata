@@ -1,6 +1,5 @@
 ---
 name: Scoring Bumpers
-display_order: 54
 aliases:
   - Scoring bumper
 is_type_of:

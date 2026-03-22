@@ -1,6 +1,5 @@
 ---
 name: Thumper Bumpers
-display_order: 70
 aliases:
   - Thumper bumper
 is_type_of:

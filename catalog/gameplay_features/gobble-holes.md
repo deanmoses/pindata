@@ -1,6 +1,5 @@
 ---
 name: Gobble Holes
-display_order: 11
 aliases:
   - Gobble hole
 ---

@@ -1,6 +1,5 @@
 ---
 name: Free Play Holes
-display_order: 56
 aliases:
   - Free play hole
 is_type_of:

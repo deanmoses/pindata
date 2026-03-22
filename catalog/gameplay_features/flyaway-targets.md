@@ -1,6 +1,5 @@
 ---
 name: Flyaway Targets
-display_order: 45
 aliases:
   - Flyaway target
 is_type_of:

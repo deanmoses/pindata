@@ -1,6 +1,5 @@
 ---
 name: Snap Traps
-display_order: 36
 aliases:
   - Snap trap
 is_type_of:

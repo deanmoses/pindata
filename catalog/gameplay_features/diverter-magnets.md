@@ -1,6 +1,5 @@
 ---
 name: Diverter Magnets
-display_order: 83
 aliases:
   - Diverter magnet
   - Diverter magnets

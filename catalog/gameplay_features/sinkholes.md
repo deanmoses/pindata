@@ -1,6 +1,5 @@
 ---
 name: Sinkholes
-display_order: 88
 aliases:
   - Sinkhole
 ---

@@ -1,6 +1,5 @@
 ---
 name: Magnets
-display_order: 17
 aliases:
   - Magnet
   - Electromagnet

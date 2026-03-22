@@ -1,6 +1,5 @@
 ---
 name: Hold-Over Vari-Targets
-display_order: 68
 aliases:
   - Hold-over vari-target
 is_type_of:

@@ -1,6 +1,5 @@
 ---
 name: Habitrails
-display_order: 82
 aliases:
   - Habitrail
 ---

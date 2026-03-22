@@ -1,6 +1,5 @@
 ---
 name: Swinging Targets
-display_order: 37
 aliases:
   - Swinging target
 is_type_of:
