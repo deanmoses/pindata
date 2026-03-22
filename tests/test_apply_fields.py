@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from apply_fields import apply_fields, main
+from apply_fields import apply_fields, main, rename_credit_slug
 
 # All tests use a fake "titles" directory so apply_fields resolves the
 # title schema.  The schema file must exist at the expected path relative
@@ -367,3 +367,110 @@ class TestListFields:
         result = md.read_text()
         assert "  - fantasy" in result
         assert "A great machine." in result
+
+
+# ---------------------------------------------------------------------------
+# rename_credit_slug
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture()
+def model_with_credits(tmp_path: Path) -> Path:
+    """Model file with credit_refs."""
+    models_dir = tmp_path / "catalog" / "models"
+    models_dir.mkdir(parents=True)
+    md = models_dir / "nemesis.md"
+    md.write_text(
+        "---\nname: Nemesis\ntitle_slug: nemesis\n"
+        "credit_refs:\n"
+        "- person_slug: old-slug\n"
+        "  role: Design\n"
+        "---\n"
+    )
+    (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+    return md
+
+
+class TestRenameCreditSlug:
+    def test_renames_matching_slug(self, model_with_credits: Path):
+        rename_credit_slug(model_with_credits, "old-slug", "new-slug")
+
+        result = model_with_credits.read_text()
+        assert "person_slug: new-slug" in result
+        assert "old-slug" not in result
+
+    def test_raises_when_slug_not_found(self, model_with_credits: Path):
+        original = model_with_credits.read_text()
+
+        with pytest.raises(ValueError, match="not found in credit_refs"):
+            rename_credit_slug(model_with_credits, "no-such-slug", "new-slug")
+
+        assert model_with_credits.read_text() == original
+
+    def test_raises_when_no_credit_refs(self, model_file: Path):
+        with pytest.raises(ValueError, match="not found in credit_refs"):
+            rename_credit_slug(model_file, "old-slug", "new-slug")
+
+    def test_renames_only_matching_in_multiple_credits(self, tmp_path: Path):
+        models_dir = tmp_path / "catalog" / "models"
+        models_dir.mkdir(parents=True)
+        md = models_dir / "test.md"
+        md.write_text(
+            "---\nname: Test\ntitle_slug: test\n"
+            "credit_refs:\n"
+            "- person_slug: old-slug\n"
+            "  role: Design\n"
+            "- person_slug: keep-this\n"
+            "  role: Art\n"
+            "---\n"
+        )
+        (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+
+        rename_credit_slug(md, "old-slug", "new-slug")
+
+        result = md.read_text()
+        assert "person_slug: new-slug" in result
+        assert "person_slug: keep-this" in result
+        assert "old-slug" not in result
+
+    def test_does_not_corrupt_slug_that_shares_prefix(self, tmp_path: Path):
+        """Renaming 'bob' must not corrupt 'bob-smith'."""
+        models_dir = tmp_path / "catalog" / "models"
+        models_dir.mkdir(parents=True)
+        md = models_dir / "test.md"
+        md.write_text(
+            "---\nname: Test\ntitle_slug: test\n"
+            "credit_refs:\n"
+            "- person_slug: bob\n"
+            "  role: Design\n"
+            "- person_slug: bob-smith\n"
+            "  role: Art\n"
+            "---\n"
+        )
+        (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+
+        rename_credit_slug(md, "bob", "alice")
+
+        result = md.read_text()
+        assert "person_slug: alice" in result
+        assert "person_slug: bob-smith" in result
+        assert "person_slug: alice-smith" not in result
+
+    def test_preserves_body(self, tmp_path: Path):
+        models_dir = tmp_path / "catalog" / "models"
+        models_dir.mkdir(parents=True)
+        md = models_dir / "test.md"
+        md.write_text(
+            "---\nname: Test\ntitle_slug: test\n"
+            "credit_refs:\n"
+            "- person_slug: old-slug\n"
+            "  role: Art\n"
+            "---\n\nA great pinball machine.\n"
+        )
+        (tmp_path / "schema").symlink_to(SCHEMA_DIR)
+
+        rename_credit_slug(md, "old-slug", "new-slug")
+
+        result = md.read_text()
+        assert "person_slug: new-slug" in result
+        assert "A great pinball machine." in result

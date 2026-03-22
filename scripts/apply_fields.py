@@ -31,7 +31,7 @@ import yaml  # noqa: E402
 from catalog_loader import DIR_SCHEMA_MAP  # noqa: E402
 from frontmatter import SCHEMA_DIR, parse_frontmatter, validate_frontmatter, yaml_quote  # noqa: E402
 
-__all__ = ["apply_fields"]
+__all__ = ["apply_fields", "rename_credit_slug"]
 
 
 def _load_schema_properties(schema_name: str) -> list[str]:
@@ -217,6 +217,63 @@ def apply_fields(
         raise ValueError(
             f"Validation failed after applying fields:\n" + "\n".join(errors)
         )
+
+    catalog_path.write_text(new_content, encoding="utf-8")
+
+
+def rename_credit_slug(
+    catalog_path: Path,
+    old_slug: str,
+    new_slug: str,
+) -> None:
+    """Rename a ``person_slug`` inside ``credit_refs`` in a catalog file.
+
+    Scans the ``credit_refs`` list for entries whose ``person_slug`` matches
+    *old_slug* and replaces them with *new_slug*.  Uses string replacement
+    on the raw frontmatter text to preserve formatting.
+
+    Raises ``FileNotFoundError`` if the file doesn't exist,
+    ``ValueError`` if *old_slug* is not found in any ``credit_refs`` entry
+    or if validation fails after the rename.
+    """
+    if not catalog_path.is_file():
+        raise FileNotFoundError(f"Catalog file not found: {catalog_path}")
+
+    original = catalog_path.read_text(encoding="utf-8")
+    frontmatter_block, body = parse_frontmatter(original)
+
+    fm_text = frontmatter_block.strip().removeprefix("---").removesuffix("---").strip()
+    existing_fm = yaml.safe_load(fm_text) or {}
+
+    # Check that old_slug actually appears in credit_refs
+    credit_refs = existing_fm.get("credit_refs", [])
+    found = any(cr.get("person_slug") == old_slug for cr in credit_refs)
+    if not found:
+        raise ValueError(
+            f"{catalog_path}: person_slug '{old_slug}' not found in credit_refs"
+        )
+
+    # String replacement on the frontmatter text, anchored to line boundaries
+    # so that renaming "bob" doesn't corrupt "bob-smith".
+    target = f"person_slug: {old_slug}\n"
+    replacement = f"person_slug: {new_slug}\n"
+    new_frontmatter = frontmatter_block.replace(target, replacement)
+
+    # Validate before writing
+    schema_name = _resolve_schema_name(catalog_path)
+    new_fm_text = new_frontmatter.strip().removeprefix("---").removesuffix("---").strip()
+    new_fm = yaml.safe_load(new_fm_text) or {}
+    errors = validate_frontmatter(new_fm, schema_name, catalog_path)
+    if errors:
+        raise ValueError(
+            f"Validation failed after renaming credit slug:\n" + "\n".join(errors)
+        )
+
+    # Reassemble and write
+    if body:
+        new_content = new_frontmatter + "\n" + body + "\n"
+    else:
+        new_content = new_frontmatter
 
     catalog_path.write_text(new_content, encoding="utf-8")
 

@@ -42,8 +42,8 @@ from frontmatter import yaml_quote
         ("", '""'),
         # Leading/trailing whitespace
         ("  padded  ", '"  padded  "'),
-        # Newline
-        ("line1\nline2", '"line1\nline2"'),
+        # Newline — must be escaped so YAML round-trips correctly
+        ("line1\nline2", '"line1\\nline2"'),
         # Backslash — safe as bare YAML scalar
         ("back\\slash", "back\\slash"),
     ],
@@ -64,6 +64,7 @@ def test_yaml_quote(value: str, expected: str) -> None:
         "Circus & Carnival",
         "'quoted'",
         "back\\slash",
+        "line1\nline2",
     ],
 )
 def test_yaml_quote_roundtrips(value: str) -> None:

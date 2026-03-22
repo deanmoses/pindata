@@ -57,7 +57,7 @@ def yaml_quote(value: str) -> str:
     returned unchanged.  Empty strings are always quoted.
     """
     if not value or _YAML_NEEDS_QUOTING.search(value):
-        escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+        escaped = value.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
         return f'"{escaped}"'
     return value
 
