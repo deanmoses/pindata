@@ -3,6 +3,7 @@ name: Slingshots
 aliases:
   - Slingshot
   - Slingshts
+  - Sling shots
 is_type_of:
   - kickers
 ---

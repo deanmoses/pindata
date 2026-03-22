@@ -2,6 +2,7 @@
 name: Drop Targets
 aliases:
   - Drop target
+  - Drop-targets
   - Other drop targets
 is_type_of:
   - targets

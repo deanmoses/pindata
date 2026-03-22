@@ -3,6 +3,7 @@ name: Eater Targets
 aliases:
   - Eater target
   - Ball Eater targets
+  - Ball eater target
 is_type_of:
   - targets
 ---
