@@ -105,6 +105,10 @@ Pre-commit hooks auto-regenerate `CLAUDE.md` and `AGENTS.md` when `docs/AGENTS.s
 - For any change, run `make validate` to check catalog integrity.
 - When adding or editing catalog records, validate cross-references resolve correctly.
 
+## Test-Driven Development (TDD)
+
+This project follows Test-Driven Development. When fixing a bug, you MUST write failing test(s) that exercise the bug **before** writing the fix. Confirm the test fails for the expected reason, then implement the fix and verify the test passes.
+
 ## Rules
 
 - Don't silence linter warnings — fix the underlying issue
