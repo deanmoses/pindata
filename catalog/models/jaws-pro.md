@@ -8,4 +8,6 @@ month: 1
 player_count: 4
 display_type_slug: lcd
 technology_generation_slug: solid-state
+gameplay_feature_slugs:
+  - subway-kickbacks
 ---

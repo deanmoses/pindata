@@ -11,6 +11,8 @@ production_quantity: '6600'
 display_type_slug: dot-matrix
 technology_generation_slug: solid-state
 system_slug: williams-wpc-s
+gameplay_feature_slugs:
+  - magnetic-kickbacks
 theme_slugs:
   - magic-wizards
   - show-business

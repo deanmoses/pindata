@@ -4,4 +4,6 @@ title_slug: jaws
 opdb_id: GLWll-M1r8O-A1KkX
 corporate_entity_slug: stern-pinball-incorporated
 variant_of: jaws-premium
+gameplay_feature_slugs:
+  - subway-kickbacks
 ---
