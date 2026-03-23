@@ -1,5 +1,5 @@
 ---
-name: Automatic Games Company
+name: Automatic Games Company (Inglewood)
 manufacturer_slug: automatic-games
 ipdb_manufacturer_id: 40
 headquarters_city: Inglewood
