@@ -1,0 +1,5 @@
+---
+name: Slovenia
+divisions:
+  - city
+---

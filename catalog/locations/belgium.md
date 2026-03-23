@@ -1,0 +1,5 @@
+---
+name: Belgium
+divisions:
+  - city
+---
