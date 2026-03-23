@@ -5,7 +5,7 @@
   "description": "Frontmatter for a country-level location record",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "aliases": {
       "type": "array",
       "description": "Alternate names and known variants (e.g. England, Britain, UK for United Kingdom; West Germany for Germany)",
@@ -15,9 +15,10 @@
     },
     "divisions": {
       "type": "array",
+      "description": "Ordered list of administrative levels. Each entry is one type or a comma-separated set of allowed types at that level (e.g. 'state,district' to allow both states and DC-style districts).",
       "items": {
         "type": "string",
-        "enum": ["city", "country", "county", "department", "district", "prefecture", "province", "region", "state"]
+        "pattern": "^(city|community|country|county|department|district|prefecture|province|region|state)(,(city|community|country|county|department|district|prefecture|province|region|state))*$"
       },
       "minItems": 1
     }

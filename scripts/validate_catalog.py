@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
-from catalog_loader import CatalogRecord, iter_all  # noqa: E402
+from catalog_loader import CatalogRecord, LocationStructureError, iter_all  # noqa: E402
 
 
 def _collect_records(catalog_dir: Path | None) -> list[CatalogRecord]:
@@ -41,18 +41,28 @@ def _check_slug_filename_match(records: list[CatalogRecord]) -> list[str]:
 
 
 def _check_uniqueness(records: list[CatalogRecord]) -> list[str]:
-    """Check slug uniqueness within each entity type."""
+    """Check slug uniqueness within each entity type.
+
+    For location records, uniqueness is scoped to the parent directory
+    (e.g. two cities named 'portland' are fine if they sit under
+    different subdivisions).
+    """
     errors = []
     by_type: dict[str, dict[str, Path]] = {}
     for r in records:
         bucket = by_type.setdefault(r.entity_type, {})
-        if r.slug in bucket:
+        if r.entity_type == "location":
+            # Use the parent directory path + slug as the uniqueness key.
+            key = f"{r.file_path.parent}:{r.slug}"
+        else:
+            key = r.slug
+        if key in bucket:
             errors.append(
                 f"Duplicate {r.entity_type} slug '{r.slug}': "
-                f"{bucket[r.slug]} and {r.file_path}"
+                f"{bucket[key]} and {r.file_path}"
             )
         else:
-            bucket[r.slug] = r.file_path
+            bucket[key] = r.file_path
     return errors
 
 
@@ -192,7 +202,11 @@ def main() -> int:
     parser.add_argument("--quiet", action="store_true", help="Only print errors")
     args = parser.parse_args()
 
-    records = _collect_records(args.catalog_dir)
+    try:
+        records = _collect_records(args.catalog_dir)
+    except LocationStructureError as exc:
+        print(f"Location structure error: {exc}", file=sys.stderr)
+        return 1
 
     if not args.quiet:
         # Summary by type.

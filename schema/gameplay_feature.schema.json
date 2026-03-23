@@ -5,7 +5,7 @@
   "description": "Frontmatter for a Pinbase-authored gameplay feature taxonomy record",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "aliases": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },

@@ -5,7 +5,7 @@
   "description": "Frontmatter for a subdivision-level location record (state, province, department, county, region, etc.). The filename slug must be the lowercase abbreviation code (e.g., il for Illinois, bo for Bologna province).",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "type": {
       "type": "string",
       "enum": ["community", "country", "county", "department", "district", "prefecture", "province", "region", "state"]

@@ -5,7 +5,7 @@
   "description": "Frontmatter for a city-level location record",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "type": {
       "type": "string",
       "const": "city"

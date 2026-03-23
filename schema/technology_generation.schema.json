@@ -5,7 +5,7 @@
   "description": "Frontmatter for a Pinbase-authored technology generation record",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "display_order": { "type": "integer", "minimum": 0 }
   },
   "required": ["name", "display_order"],

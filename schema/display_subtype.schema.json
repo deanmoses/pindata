@@ -5,7 +5,7 @@
   "description": "Frontmatter for a Pinbase-authored display subtype record",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "display_order": { "type": "integer", "minimum": 0 },
     "display_type_slug": {
       "type": "string",
