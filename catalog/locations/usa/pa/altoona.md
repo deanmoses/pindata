@@ -1,0 +1,5 @@
+---
+name: Altoona
+type: city
+---
+

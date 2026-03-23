@@ -1,0 +1,5 @@
+---
+name: Nashville
+type: city
+---
+

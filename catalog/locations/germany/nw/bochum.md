@@ -1,0 +1,5 @@
+---
+name: Bochum
+type: city
+---
+

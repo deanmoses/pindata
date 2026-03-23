@@ -1,0 +1,5 @@
+---
+name: Hollywood
+type: city
+---
+

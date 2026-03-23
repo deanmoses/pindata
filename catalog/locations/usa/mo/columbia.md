@@ -1,0 +1,5 @@
+---
+name: Columbia
+type: city
+---
+

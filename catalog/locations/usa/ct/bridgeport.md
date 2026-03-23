@@ -1,0 +1,5 @@
+---
+name: Bridgeport
+type: city
+---
+

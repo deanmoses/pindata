@@ -1,0 +1,5 @@
+---
+name: Migennes
+type: city
+---
+

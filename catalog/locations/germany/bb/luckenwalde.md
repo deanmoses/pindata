@@ -1,0 +1,5 @@
+---
+name: Luckenwalde
+type: city
+---
+

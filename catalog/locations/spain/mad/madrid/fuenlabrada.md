@@ -1,0 +1,5 @@
+---
+name: Fuenlabrada
+type: city
+---
+

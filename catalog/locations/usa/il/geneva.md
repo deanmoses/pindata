@@ -1,0 +1,5 @@
+---
+name: Geneva
+type: city
+---
+

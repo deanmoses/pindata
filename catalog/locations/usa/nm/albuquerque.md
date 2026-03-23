@@ -1,0 +1,5 @@
+---
+name: Albuquerque
+type: city
+---
+

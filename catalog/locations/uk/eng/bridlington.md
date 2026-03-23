@@ -1,0 +1,5 @@
+---
+name: Bridlington
+type: city
+---
+

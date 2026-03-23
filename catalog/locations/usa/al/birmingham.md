@@ -1,0 +1,5 @@
+---
+name: Birmingham
+type: city
+---
+

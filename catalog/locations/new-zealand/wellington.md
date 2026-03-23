@@ -1,0 +1,5 @@
+---
+name: Wellington
+type: city
+---
+

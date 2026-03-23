@@ -1,0 +1,5 @@
+---
+name: Verona
+type: city
+---
+

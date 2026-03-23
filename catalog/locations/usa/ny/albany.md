@@ -1,0 +1,5 @@
+---
+name: Albany
+type: city
+---
+

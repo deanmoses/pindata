@@ -1,0 +1,5 @@
+---
+name: Coldwater
+type: city
+---
+

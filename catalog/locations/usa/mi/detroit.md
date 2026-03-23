@@ -1,0 +1,5 @@
+---
+name: Detroit
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Berlin
+type: city
+---
+

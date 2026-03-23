@@ -1,0 +1,5 @@
+---
+name: Bingen
+type: city
+---
+

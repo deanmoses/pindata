@@ -1,0 +1,5 @@
+---
+name: Fano
+type: city
+---
+

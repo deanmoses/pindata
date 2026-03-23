@@ -1,0 +1,5 @@
+---
+name: Ljubljana
+type: city
+---
+

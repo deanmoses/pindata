@@ -1,0 +1,5 @@
+---
+name: Cardiff
+type: city
+---
+

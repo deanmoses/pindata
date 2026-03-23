@@ -1,0 +1,5 @@
+---
+name: Beverly
+type: city
+---
+

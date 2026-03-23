@@ -1,0 +1,5 @@
+---
+name: London
+type: city
+---
+

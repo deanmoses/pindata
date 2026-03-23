@@ -1,0 +1,5 @@
+---
+name: Chicago
+type: city
+---
+

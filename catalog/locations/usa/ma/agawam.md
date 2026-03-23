@@ -1,0 +1,5 @@
+---
+name: Agawam
+type: city
+---
+

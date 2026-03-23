@@ -1,0 +1,5 @@
+---
+name: Tokyo
+type: city
+---
+

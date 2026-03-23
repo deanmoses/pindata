@@ -1,0 +1,5 @@
+---
+name: Novi
+type: city
+---
+

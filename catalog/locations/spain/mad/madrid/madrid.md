@@ -1,0 +1,5 @@
+---
+name: Madrid
+type: city
+---
+

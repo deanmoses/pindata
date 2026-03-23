@@ -1,0 +1,5 @@
+---
+name: Bologna
+type: city
+---
+

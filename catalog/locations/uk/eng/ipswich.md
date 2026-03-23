@@ -1,0 +1,5 @@
+---
+name: Ipswich
+type: city
+---
+

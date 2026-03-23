@@ -1,0 +1,5 @@
+---
+name: Barcelona
+type: city
+---
+

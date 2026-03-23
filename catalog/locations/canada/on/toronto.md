@@ -1,0 +1,5 @@
+---
+name: Toronto
+type: city
+---
+

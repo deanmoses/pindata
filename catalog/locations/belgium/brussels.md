@@ -1,0 +1,5 @@
+---
+name: Brussels
+type: city
+---
+

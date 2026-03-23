@@ -1,0 +1,5 @@
+---
+name: Rochester
+type: city
+---
+

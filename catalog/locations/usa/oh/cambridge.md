@@ -1,0 +1,5 @@
+---
+name: Cambridge
+type: city
+---
+

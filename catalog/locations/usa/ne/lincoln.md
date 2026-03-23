@@ -1,0 +1,5 @@
+---
+name: Lincoln
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Tarragona
+type: city
+---
+

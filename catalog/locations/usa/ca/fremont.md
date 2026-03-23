@@ -1,0 +1,5 @@
+---
+name: Fremont
+type: city
+---
+

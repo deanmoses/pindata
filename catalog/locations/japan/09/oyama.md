@@ -1,0 +1,5 @@
+---
+name: Oyama
+type: city
+---
+

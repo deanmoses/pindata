@@ -1,0 +1,5 @@
+---
+name: Hoboken
+type: city
+---
+

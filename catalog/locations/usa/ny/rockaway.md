@@ -1,0 +1,5 @@
+---
+name: Rockaway
+type: city
+---
+

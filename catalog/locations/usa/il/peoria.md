@@ -1,0 +1,5 @@
+---
+name: Peoria
+type: city
+---
+

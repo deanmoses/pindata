@@ -1,0 +1,5 @@
+---
+name: Frankfurt
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Pittsburgh
+type: city
+---
+

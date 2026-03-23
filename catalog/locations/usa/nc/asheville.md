@@ -1,0 +1,5 @@
+---
+name: Asheville
+type: city
+---
+

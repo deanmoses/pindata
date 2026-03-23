@@ -1,0 +1,5 @@
+---
+name: Newark
+type: city
+---
+

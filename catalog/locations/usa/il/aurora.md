@@ -1,0 +1,5 @@
+---
+name: Aurora
+type: city
+---
+

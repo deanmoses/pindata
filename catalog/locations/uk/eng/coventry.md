@@ -1,0 +1,5 @@
+---
+name: Coventry
+type: city
+---
+

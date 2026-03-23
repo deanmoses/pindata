@@ -1,0 +1,5 @@
+---
+name: Miami
+type: city
+---
+

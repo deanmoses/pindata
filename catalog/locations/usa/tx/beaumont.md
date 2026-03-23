@@ -1,0 +1,5 @@
+---
+name: Beaumont
+type: city
+---
+

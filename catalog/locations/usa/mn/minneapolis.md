@@ -1,0 +1,5 @@
+---
+name: Minneapolis
+type: city
+---
+

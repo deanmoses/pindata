@@ -1,0 +1,5 @@
+---
+name: Benton
+type: city
+---
+

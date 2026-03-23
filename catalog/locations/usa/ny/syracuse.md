@@ -1,0 +1,5 @@
+---
+name: Syracuse
+type: city
+---
+

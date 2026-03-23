@@ -1,0 +1,5 @@
+---
+name: Hamburg
+type: city
+---
+

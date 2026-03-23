@@ -1,0 +1,5 @@
+---
+name: Boston
+type: city
+---
+

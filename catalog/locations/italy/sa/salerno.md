@@ -1,0 +1,5 @@
+---
+name: Salerno
+type: city
+---
+

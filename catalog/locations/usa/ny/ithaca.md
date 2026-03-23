@@ -1,0 +1,5 @@
+---
+name: Ithaca
+type: city
+---
+

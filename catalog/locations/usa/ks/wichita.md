@@ -1,0 +1,5 @@
+---
+name: Wichita
+type: city
+---
+

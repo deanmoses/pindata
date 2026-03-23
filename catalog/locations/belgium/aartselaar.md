@@ -1,0 +1,5 @@
+---
+name: Aartselaar
+type: city
+---
+

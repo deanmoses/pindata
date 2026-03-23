@@ -1,0 +1,5 @@
+---
+name: Campinas
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Seattle
+type: city
+---
+

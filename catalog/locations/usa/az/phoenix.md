@@ -1,0 +1,5 @@
+---
+name: Phoenix
+type: city
+---
+

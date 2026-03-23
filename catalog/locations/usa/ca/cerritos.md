@@ -1,0 +1,5 @@
+---
+name: Cerritos
+type: city
+---
+

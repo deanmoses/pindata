@@ -1,0 +1,5 @@
+---
+name: Gumpoldskirchen
+type: city
+---
+

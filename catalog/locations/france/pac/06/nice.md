@@ -1,0 +1,5 @@
+---
+name: Nice
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Paris
+type: city
+---
+

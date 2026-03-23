@@ -1,0 +1,5 @@
+---
+name: Baltimore
+type: city
+---
+

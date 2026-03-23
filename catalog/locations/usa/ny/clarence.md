@@ -1,0 +1,5 @@
+---
+name: Clarence
+type: city
+---
+

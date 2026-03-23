@@ -1,0 +1,5 @@
+---
+name: Kobe
+type: city
+---
+

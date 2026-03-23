@@ -1,0 +1,5 @@
+---
+name: Dijon
+type: city
+---
+

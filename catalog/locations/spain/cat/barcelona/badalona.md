@@ -1,0 +1,5 @@
+---
+name: Badalona
+type: city
+---
+

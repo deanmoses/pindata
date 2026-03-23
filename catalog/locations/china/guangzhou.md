@@ -1,0 +1,5 @@
+---
+name: Guangzhou
+type: city
+---
+

@@ -1,0 +1,5 @@
+---
+name: Marysville
+type: city
+---
+

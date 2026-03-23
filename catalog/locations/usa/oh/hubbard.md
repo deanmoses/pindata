@@ -1,0 +1,5 @@
+---
+name: Hubbard
+type: city
+---
+

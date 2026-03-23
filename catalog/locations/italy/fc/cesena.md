@@ -1,0 +1,5 @@
+---
+name: Cesena
+type: city
+---
+

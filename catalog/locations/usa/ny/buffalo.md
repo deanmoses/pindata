@@ -1,0 +1,5 @@
+---
+name: Buffalo
+type: city
+---
+

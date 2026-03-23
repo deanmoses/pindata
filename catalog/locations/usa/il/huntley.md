@@ -1,0 +1,5 @@
+---
+name: Huntley
+type: city
+---
+

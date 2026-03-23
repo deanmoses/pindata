@@ -1,0 +1,5 @@
+---
+name: Pasadena
+type: city
+---
+

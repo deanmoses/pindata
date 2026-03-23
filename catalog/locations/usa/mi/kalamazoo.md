@@ -1,0 +1,5 @@
+---
+name: Kalamazoo
+type: city
+---
+

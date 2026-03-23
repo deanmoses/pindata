@@ -1,0 +1,5 @@
+---
+name: Washington
+type: city
+---
+

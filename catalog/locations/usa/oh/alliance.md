@@ -1,0 +1,5 @@
+---
+name: Alliance
+type: city
+---
+
