@@ -1,6 +1,6 @@
 ---
 name: Mustang
-title_slug: mustang-3
+title_slug: mustang-2
 ipdb_id: 1644
 corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1964

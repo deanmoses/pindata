@@ -1,6 +1,6 @@
 ---
 name: Gun Smoke
-title_slug: gun-smoke-2
+title_slug: gun-smoke
 ipdb_id: 4808
 corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1968

@@ -1,6 +1,6 @@
 ---
 name: Kicker
-title_slug: kicker-3
+title_slug: kicker
 ipdb_id: 6946
 corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1966

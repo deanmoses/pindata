@@ -1,6 +1,6 @@
 ---
 name: Gold Rush
-title_slug: gold-rush-5
+title_slug: gold-rush
 ipdb_id: 6134
 corporate_entity_slug: bally-manufacturing-corporation
 year: 1966

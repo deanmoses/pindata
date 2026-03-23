@@ -1,6 +1,6 @@
 ---
 name: Trio
-title_slug: trio-3
+title_slug: trio
 ipdb_id: 6135
 corporate_entity_slug: bally-manufacturing-corporation
 year: 1965

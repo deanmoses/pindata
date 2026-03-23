@@ -1,6 +1,6 @@
 ---
 name: Playtime
-title_slug: playtime-6
+title_slug: playtime
 ipdb_id: 6905
 corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1968

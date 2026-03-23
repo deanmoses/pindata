@@ -1,6 +1,6 @@
 ---
 name: Surfers
-title_slug: surfers-2
+title_slug: surfers
 ipdb_id: 6136
 corporate_entity_slug: bally-manufacturing-corporation
 year: 1967

@@ -1,6 +1,6 @@
 ---
 name: Royal Flash
-title_slug: royal-flash-2
+title_slug: royal-flash
 ipdb_id: 2033
 corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1964
