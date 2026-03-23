@@ -1,6 +1,6 @@
 ---
 name: Automatic Games Company
-manufacturer_slug: automatic-games-company
+manufacturer_slug: automatic-games
 ipdb_manufacturer_id: 40
 headquarters_city: Inglewood
 headquarters_state: California

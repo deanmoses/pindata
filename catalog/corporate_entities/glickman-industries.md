@@ -1,6 +1,6 @@
 ---
 name: Glickman Industries
-manufacturer_slug: glickman-industries
+manufacturer_slug: glickman
 ipdb_manufacturer_id: 680
 headquarters_city: Philadelphia
 headquarters_state: Pennsylvania
