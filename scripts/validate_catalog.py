@@ -130,6 +130,15 @@ def _check_cross_references(records: list[CatalogRecord]) -> list[str]:
             if ts not in tag_slugs:
                 errors.append(f"{r.file_path}: tag_slug '{ts}' not found in tags/")
 
+    # Check model reward_type_slugs -> reward_type.
+    reward_type_slugs = slugs_by_type.get("reward_type", set())
+    for r in records:
+        if r.entity_type != "model":
+            continue
+        for rs in r.frontmatter.get("reward_type_slugs", []):
+            if rs not in reward_type_slugs:
+                errors.append(f"{r.file_path}: reward_type_slug '{rs}' not found in reward_types/")
+
     # Check credit_refs person_slug -> person.
     person_slugs = slugs_by_type.get("person", set())
     for r in records:
