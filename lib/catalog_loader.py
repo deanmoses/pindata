@@ -291,6 +291,9 @@ def _iter_locations(
         )
 
     # Phase 2 & 3: Walk each country's subdirectory.
+    # `countries` is fully populated here: even though this is a generator,
+    # Python generators are sequential — the first loop above ran to completion
+    # (all country records yielded) before execution reaches this point.
     for country_slug, divisions in countries.items():
         country_dir = locations_dir / country_slug
         if not country_dir.is_dir():
@@ -389,14 +392,15 @@ def _walk_location_subtree(
         if not is_leaf:
             subdir = directory / slug
             if subdir.is_dir():
+                # Build the parent slug key for this level, e.g. "state_slug" or
+                # "district_slug". When there's only one allowed type, record_type
+                # may be absent from the file — fall back to the single allowed type.
+                type_key = f"{record_type or sorted(allowed_types)[0]}_slug"
                 yield from _walk_location_subtree(
                     subdir,
                     divisions=divisions,
                     depth=depth + 1,
-                    parent_slugs={
-                        **parent_slugs,
-                        f"{record_type or sorted(allowed_types)[0]}_slug": slug,
-                    },
+                    parent_slugs={**parent_slugs, type_key: slug},
                     path_prefix=location_path,
                     country_slug=country_slug,
                     validate=validate,

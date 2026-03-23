@@ -6,6 +6,6 @@ aliases:
   - UK
   - U.K.
 divisions:
-  - country
+  - constituent_country
   - city
 ---

@@ -1,6 +1,6 @@
 ---
 name: England
-type: country
+type: constituent_country
 code: ENG
 ---
 

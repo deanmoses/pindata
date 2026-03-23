@@ -1,6 +1,6 @@
 ---
 name: Wales
-type: country
+type: constituent_country
 code: WAL
 ---
 
