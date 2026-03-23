@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pinbase/location_subdivision.schema.json",
+  "title": "Pinbase Location Subdivision",
+  "description": "Frontmatter for a subdivision-level location record (state, province, department, county, region, etc.). The filename slug must be the lowercase abbreviation code (e.g., il for Illinois, bo for Bologna province).",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": ["community", "country", "county", "department", "district", "prefecture", "province", "region", "state"]
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+$"
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Alternate names and known misspellings or typos (e.g. NewYork for New York, SouthCarolina for South Carolina)",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": []
+    }
+  },
+  "required": ["name", "type", "code"],
+  "additionalProperties": false
+}

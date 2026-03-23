@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pinbase/location_city.schema.json",
+  "title": "Pinbase Location City",
+  "description": "Frontmatter for a city-level location record",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "const": "city"
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Alternate names, alternate-language names, and known misspellings (e.g. Firenze for Florence, Pittsburg for Pittsburgh)",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": []
+    }
+  },
+  "required": ["name", "type"],
+  "additionalProperties": false
+}
