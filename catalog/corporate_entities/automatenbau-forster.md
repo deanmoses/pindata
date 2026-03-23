@@ -4,6 +4,6 @@ aliases:
   - Automatenbau F�rster
 manufacturer_slug: automatenbau-forster
 ipdb_manufacturer_id: 123
-headquarters_city: Furth
+headquarters_city: Fürth
 headquarters_country: Germany
 ---
