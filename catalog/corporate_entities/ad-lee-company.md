@@ -1,6 +1,6 @@
 ---
 name: Ad-Lee Company
-manufacturer_slug: ad-lee-company
+manufacturer_slug: ad-lee
 ipdb_manufacturer_id: 520
 headquarters_city: Chicago
 headquarters_state: Illinois
