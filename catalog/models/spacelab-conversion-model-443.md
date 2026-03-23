@@ -9,6 +9,8 @@ month: 7
 player_count: 1
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - add-a-ball
 theme_slugs:
   - space-exploration
 credit_refs:

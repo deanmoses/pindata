@@ -7,4 +7,5 @@ year: 1932
 month: 5
 player_count: 1
 technology_generation_slug: pure-mechanical
+cabinet_slug: tabletop
 ---

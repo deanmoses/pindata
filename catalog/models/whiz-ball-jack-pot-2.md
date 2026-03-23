@@ -7,4 +7,6 @@ year: 1932
 month: 4
 player_count: 1
 technology_generation_slug: pure-mechanical
+reward_type_slugs:
+  - cash-payout
 ---

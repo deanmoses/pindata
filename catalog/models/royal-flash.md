@@ -6,6 +6,8 @@ corporate_entity_slug: chicago-coin-machine-manufacturing-company
 year: 1964
 player_count: 2
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - replay
 theme_slugs:
   - cards
   - poker

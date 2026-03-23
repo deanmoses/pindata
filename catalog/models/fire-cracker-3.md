@@ -7,6 +7,8 @@ year: 1963
 month: 12
 player_count: 2
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - add-a-ball
 credit_refs:
 - person_slug: roy-parker
   role: Art

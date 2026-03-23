@@ -7,6 +7,8 @@ year: 1938
 month: 11
 player_count: 1
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - replay
 credit_refs:
 - person_slug: wendell-bartelt
   role: Design

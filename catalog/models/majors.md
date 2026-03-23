@@ -8,6 +8,8 @@ month: 1
 player_count: 1
 production_quantity: '1610'
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - novelty
 theme_slugs:
   - baseball
   - sports

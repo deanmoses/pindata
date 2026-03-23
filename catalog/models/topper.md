@@ -8,6 +8,8 @@ month: 4
 player_count: 1
 production_quantity: '1702'
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - replay
 theme_slugs:
   - dancing
   - girls

@@ -7,6 +7,8 @@ year: 1964
 month: 10
 player_count: 2
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - replay
 theme_slugs:
   - car-culture
 credit_refs:

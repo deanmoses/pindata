@@ -8,6 +8,8 @@ month: 6
 player_count: 1
 production_quantity: '256'
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - free-play
 theme_slugs:
   - amusement-parks
   - roller-coasters

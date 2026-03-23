@@ -7,6 +7,9 @@ year: 2022
 month: 5
 player_count: 1
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - add-a-ball
+  - novelty
 theme_slugs:
   - fantasy
   - mythology

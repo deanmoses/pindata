@@ -7,6 +7,8 @@ year: 1965
 month: 11
 player_count: 1
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - add-a-ball
 theme_slugs:
   - dancing
   - music

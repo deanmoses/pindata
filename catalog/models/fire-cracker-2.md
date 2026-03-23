@@ -9,6 +9,8 @@ month: 10
 player_count: 2
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - replay
 credit_refs:
 - person_slug: roy-parker
   role: Art

@@ -7,4 +7,5 @@ year: 1932
 month: 4
 player_count: 1
 technology_generation_slug: pure-mechanical
+cabinet_slug: countertop
 ---

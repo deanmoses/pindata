@@ -10,6 +10,8 @@ player_count: 1
 production_quantity: '1750'
 display_type_slug: score-reels
 technology_generation_slug: electromechanical
+reward_type_slugs:
+  - add-a-ball
 theme_slugs:
   - cards
   - college-life
