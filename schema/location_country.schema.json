@@ -13,12 +13,17 @@
       "uniqueItems": true,
       "default": []
     },
+    "short_name": {
+      "type": "string",
+      "description": "Abbreviated display name for condensed contexts (e.g. USA, UK)",
+      "minLength": 1
+    },
     "divisions": {
       "type": "array",
       "description": "Ordered list of administrative levels. Each entry is one type or a comma-separated set of allowed types at that level (e.g. 'state,district' to allow both states and DC-style districts).",
       "items": {
         "type": "string",
-        "pattern": "^(city|community|constituent_country|country|county|department|district|prefecture|province|region|state)(,(city|community|constituent_country|country|county|department|district|prefecture|province|region|state))*$"
+        "pattern": "^(city|community|constituent_country|county|department|district|prefecture|province|region|state)(,(city|community|constituent_country|county|department|district|prefecture|province|region|state))*$"
       },
       "minItems": 1
     }

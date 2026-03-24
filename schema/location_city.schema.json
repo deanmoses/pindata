@@ -10,6 +10,11 @@
       "type": "string",
       "const": "city"
     },
+    "short_name": {
+      "type": "string",
+      "description": "Abbreviated display name for condensed contexts",
+      "minLength": 1
+    },
     "aliases": {
       "type": "array",
       "description": "Alternate names, alternate-language names, and known misspellings (e.g. Firenze for Florence, Pittsburg for Pittsburgh)",

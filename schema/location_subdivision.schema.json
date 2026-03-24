@@ -8,11 +8,16 @@
     "name": { "type": "string", "minLength": 1, "pattern": "^[^\\uFFFD]*$" },
     "type": {
       "type": "string",
-      "enum": ["community", "country", "county", "department", "district", "prefecture", "province", "region", "state"]
+      "enum": ["community", "constituent_country", "county", "department", "district", "prefecture", "province", "region", "state"]
     },
     "code": {
       "type": "string",
       "pattern": "^[A-Z0-9]+$"
+    },
+    "short_name": {
+      "type": "string",
+      "description": "Abbreviated display name for condensed contexts",
+      "minLength": 1
     },
     "aliases": {
       "type": "array",
