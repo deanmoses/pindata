@@ -4,6 +4,5 @@ aliases:
   - Industria (Electromec�nica) de Recreativos S.A
 manufacturer_slug: inder
 ipdb_manufacturer_id: 156
-headquarters_city: Madrid
-headquarters_country: Spain
+headquarters_location: spain/mad/madrid/madrid
 ---

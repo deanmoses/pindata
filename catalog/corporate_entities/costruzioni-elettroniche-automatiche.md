@@ -2,6 +2,5 @@
 name: Costruzioni Elettroniche Automatiche
 manufacturer_slug: cea
 ipdb_manufacturer_id: 71
-headquarters_city: Bologna
-headquarters_country: Italy
+headquarters_location: italy/bo/bologna
 ---

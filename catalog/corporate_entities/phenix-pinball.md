@@ -4,6 +4,5 @@ aliases:
   - Ph�nix Pinball
 manufacturer_slug: phenix-pinball
 ipdb_manufacturer_id: 785
-headquarters_city: Vienne-le-Château
-headquarters_country: France
+headquarters_location: france/gre/marne/vienne-le-chateau
 ---

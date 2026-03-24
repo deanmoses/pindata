@@ -19,9 +19,10 @@
     "ipdb_manufacturer_id": { "type": ["integer", "null"] },
     "year_start": { "type": ["integer", "null"] },
     "year_end": { "type": ["integer", "null"] },
-    "headquarters_city": { "type": ["string", "null"] },
-    "headquarters_state": { "type": ["string", "null"] },
-    "headquarters_country": { "type": ["string", "null"] }
+    "headquarters_location": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+    }
   },
   "required": ["name", "manufacturer_slug"],
   "additionalProperties": false

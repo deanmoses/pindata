@@ -2,6 +2,5 @@
 name: Stella Baby-Foot
 manufacturer_slug: stella-baby-foot
 ipdb_manufacturer_id: 753
-headquarters_city: Tourcoing
-headquarters_country: France
+headquarters_location: france/hdf/nord/tourcoing
 ---
