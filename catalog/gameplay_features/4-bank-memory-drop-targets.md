@@ -6,4 +6,4 @@ is_type_of:
   - memory-drop-targets
 ---
 
-A bank of four [[gameplayfeature:memory-drop-targets]] — [[gameplayfeature:drop-targets]] that retain their dropped state between turns, allowing the player to complete the bank incrementally across multiple balls. IPDB catalogs approximately 5 machines with this configuration, including *[[title:bad-girls]]* (1988) and the *[[title:stranger-things]]* (2019) series by [[manufacturer:stern]]. The four-target memory bank extended the carry-over mechanic to a slightly longer sequence, rewarding persistent play across the entire game.
+A bank of four [[gameplayfeature:memory-drop-targets]] — [[gameplayfeature:drop-targets]] that retain their dropped state between turns, allowing the player to complete the bank incrementally across multiple balls. IPDB catalogs approximately 5 machines with this configuration, including *[[title:bad-girls]]* (1988) and the *[[title:stranger-things]]* (2019) series by [[manufacturer:stern-pinball]]. The four-target memory bank extended the carry-over mechanic to a slightly longer sequence, rewarding persistent play across the entire game.
