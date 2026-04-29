@@ -72,10 +72,12 @@ See [docs/Catalog.md](Catalog.md) for full details on the catalog format.
 - YAML frontmatter holds structured fields; optional Markdown body for prose
 - Filename = slug (no `slug` field in frontmatter)
 - Omit optional fields — don't set them to null
-- Cross-references in prose use `[[<entity-type>:<public-id>]]` wikilink syntax
+- Cross-references in prose use `[[<entity-type>:<public-id>]]` wikilink syntax — `<entity-type>` is the **kebab-case singular** form (e.g. `[[manufacturer:bally]]`, `[[gameplay-feature:multiball]]`, `[[display-type:dot-matrix]]`)
 - Schemas in `schema/` define valid frontmatter per entity type
 
-**Entity types:** models, titles, manufacturers, corporate_entities, people, themes, franchises, systems, series, cabinets, credit_roles, display_types, display_subtypes, game_formats, gameplay_features, tags, technology_generations, technology_subgenerations
+**Entity types** (the form to use as a wikilink prefix — kebab-case singular): cabinet, corporate-entity, credit-role, display-subtype, display-type, franchise, game-format, gameplay-feature, location, manufacturer, model, person, reward-type, series, system, tag, technology-generation, technology-subgeneration, theme, title
+
+The `catalog/` filesystem uses the snake_case plural form as the directory name (`catalog/gameplay_features/`); the wikilink prefix is always the kebab-case singular form (`[[gameplay-feature:...]]`).
 
 ## Validation
 
@@ -85,7 +87,7 @@ make validate
 python3 scripts/validate_catalog.py
 ```
 
-Validates: YAML parsing, JSON schema conformance, slug/filename match, slug uniqueness, OPDB ID uniqueness, cross-entity reference integrity, and self-referential variant checks.
+Validates: YAML parsing, JSON schema conformance, slug/filename match, slug uniqueness, OPDB ID uniqueness, cross-entity reference integrity, wikilink prefix canonicalization, and self-referential variant checks.
 
 ## Environment Setup (Codex Cloud)
 
