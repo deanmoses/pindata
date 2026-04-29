@@ -23,7 +23,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
 from catalog_loader import (  # noqa: E402
-    _DIR_ENTITY_TYPE,
     CatalogRecord,
     LocationStructureError,
     iter_all,
@@ -174,9 +173,15 @@ def _check_cross_references(records: list[CatalogRecord]) -> list[str]:
 _WIKILINK_RE = re.compile(r"\[\[([a-z][a-z0-9_-]*):")
 
 
-def _canonical_link_prefixes() -> set[str]:
-    """Canonical wikilink prefixes — kebab-case form of every entity_type."""
-    return {etype.replace("_", "-") for etype in _DIR_ENTITY_TYPE.values()}
+def _canonical_link_prefixes(records: list[CatalogRecord]) -> set[str]:
+    """Canonical wikilink prefixes — kebab-case form of every loaded entity_type.
+
+    Derived from the loaded records (not from a static map) so the set
+    automatically covers types like `location` that the loader yields via
+    a separate iterator, and so any new entity type picked up by the
+    loader is honored without a parallel update here.
+    """
+    return {r.entity_type.replace("_", "-") for r in records}
 
 
 def _check_wikilink_prefixes(records: list[CatalogRecord]) -> list[str]:
@@ -188,7 +193,7 @@ def _check_wikilink_prefixes(records: list[CatalogRecord]) -> list[str]:
     snake_case forms like `gameplay_feature` will silently fail to resolve.
     """
     errors = []
-    canonical = _canonical_link_prefixes()
+    canonical = _canonical_link_prefixes(records)
     canonical_by_normalized = {
         c.replace("-", ""): c for c in canonical
     }
