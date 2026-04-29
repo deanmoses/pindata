@@ -55,8 +55,10 @@ Syntax notes:
 - **Optional fields are omitted.** If a field is null, empty, or false, it simply
   doesn't appear in frontmatter.
 - **Prose uses wikilinks.** Cross-references in the Markdown body use
-  `[[entity-type:slug]]` syntax, e.g. `[[manufacturer:bally]]`,
-  `[[person:steve-ritchie]]`, `[[title:attack-from-mars]]`.
+  `[[<entity-type>:<public-id>]]` syntax, e.g. `[[manufacturer:bally]]`,
+  `[[person:steve-ritchie]]`, `[[title:attack-from-mars]]`. For most
+  entity types the public-id is a slug; Location uses a multi-segment
+  path (e.g. `[[location:usa/il/chicago]]`).
 
 ## Schemas
 

@@ -53,7 +53,7 @@ Medieval Madness is widely regarded as one of the defining
 
 - **Filename = slug** — `models/medieval-madness.md` has slug `medieval-madness`
 - **Omit empty fields** — don't set them to null
-- **Wikilinks** for cross-references — `[[entity-type:slug]]`
+- **Wikilinks** for cross-references — `[[<entity-type>:<public-id>]]`
 
 See [docs/Catalog.md](docs/Catalog.md) for full details.
 

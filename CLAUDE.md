@@ -72,7 +72,7 @@ See [docs/Catalog.md](Catalog.md) for full details on the catalog format.
 - YAML frontmatter holds structured fields; optional Markdown body for prose
 - Filename = slug (no `slug` field in frontmatter)
 - Omit optional fields — don't set them to null
-- Cross-references in prose use `[[entity-type:slug]]` wikilink syntax
+- Cross-references in prose use `[[<entity-type>:<public-id>]]` wikilink syntax
 - Schemas in `schema/` define valid frontmatter per entity type
 
 **Entity types:** models, titles, manufacturers, corporate_entities, people, themes, franchises, systems, series, cabinets, credit_roles, display_types, display_subtypes, game_formats, gameplay_features, tags, technology_generations, technology_subgenerations
