@@ -6,4 +6,4 @@ is_type_of:
   - messenger-balls
 ---
 
-Two [[gameplayfeature:messenger-balls]] arranged in a line — a [[gameplayfeature:captive-ball]] assembly in which the ball-in-play strikes the first captive ball, which relays its momentum to the second. IPDB catalogs a single machine with this configuration: *[[title:combination-rotation]]* by [[manufacturer:gottlieb]]. The two-ball chain created a compact Newton's cradle effect, requiring a firm shot to transmit enough force through the first ball to register the scoring switch behind the second.
+Two [[gameplay-feature:messenger-balls]] arranged in a line — a [[gameplay-feature:captive-ball]] assembly in which the ball-in-play strikes the first captive ball, which relays its momentum to the second. IPDB catalogs a single machine with this configuration: *[[title:combination-rotation]]* by [[manufacturer:gottlieb]]. The two-ball chain created a compact Newton's cradle effect, requiring a firm shot to transmit enough force through the first ball to register the scoring switch behind the second.

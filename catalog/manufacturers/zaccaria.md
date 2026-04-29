@@ -3,7 +3,7 @@ name: Zaccaria
 opdb_manufacturer_id: 11
 ---
 
-Zaccaria was the preeminent Italian pinball manufacturer and one of the most significant European producers in the history of the medium. Founded in Bologna in 1974 by the Zaccaria family, the company produced pinball machines for nearly two decades, building a catalog of more than one hundred titles that ranged across the [[technologygeneration:electromechanical]] and [[technologygeneration:solid-state]] eras.
+Zaccaria was the preeminent Italian pinball manufacturer and one of the most significant European producers in the history of the medium. Founded in Bologna in 1974 by the Zaccaria family, the company produced pinball machines for nearly two decades, building a catalog of more than one hundred titles that ranged across the [[technology-generation:electromechanical]] and [[technology-generation:solid-state]] eras.
 
 What distinguished Zaccaria was not merely volume but aesthetic ambition. The company's machines featured backglass and playfield artwork with a vivid, sometimes surreal quality that set them apart from American contemporaries — scenes of science fiction, mythology, and fantasy rendered with an Italian graphic sensibility that was entirely its own. Gameplay was often inventive, with Zaccaria designers willing to experiment with unusual playfield layouts and mechanisms that their American counterparts rarely attempted.
 

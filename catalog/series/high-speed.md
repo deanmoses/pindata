@@ -7,4 +7,4 @@ credit_refs:
   role: Art
 ---
 
-[[manufacturer:williams]]' street-racing series. [[title:high-speed]] (1986) pioneered the use of a narrative story in pinball; [[title:the-getaway-high-speed-ii]] (1992) added a [[gameplayfeature:multiball]] frenzy.
+[[manufacturer:williams]]' street-racing series. [[title:high-speed]] (1986) pioneered the use of a narrative story in pinball; [[title:the-getaway-high-speed-ii]] (1992) added a [[gameplay-feature:multiball]] frenzy.

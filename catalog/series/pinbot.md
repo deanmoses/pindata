@@ -9,4 +9,4 @@ credit_refs:
   role: Mechanics
 ---
 
-[[manufacturer:williams]]' robot-themed series. [[title:pinbot]] (1986) was a landmark [[technologygeneration:solid-state]] design; [[title:bride-of-pinbot]] (1991) continued the storyline.
+[[manufacturer:williams]]' robot-themed series. [[title:pinbot]] (1986) was a landmark [[technology-generation:solid-state]] design; [[title:bride-of-pinbot]] (1991) continued the storyline.

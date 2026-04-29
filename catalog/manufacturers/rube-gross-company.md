@@ -2,7 +2,7 @@
 name: Rube Gross & Company
 ---
 
-Rube Gross & Company was a short-lived pinball manufacturer based in Seattle, Washington, active from 1934 to 1935. The firm produced at least three known games during its brief existence, working across both the [[technologygeneration:pure-mechanical]] and [[technologygeneration:electromechanical]] technologies that coexisted in pinball's earliest years.
+Rube Gross & Company was a short-lived pinball manufacturer based in Seattle, Washington, active from 1934 to 1935. The firm produced at least three known games during its brief existence, working across both the [[technology-generation:pure-mechanical]] and [[technology-generation:electromechanical]] technologies that coexisted in pinball's earliest years.
 
 The company's first known game, *[[title:torpedo-5]]* (1934), was an electromechanical table with a military-nautical theme featuring trap holes, free play holes, and kickers — including a bottom-of-playfield kicker that repeatedly returned balls to play until they landed in a score hole. The following month brought *[[title:the-mystery-six]]* (1934), a pure mechanical game advertised as requiring no batteries, with a "mystery" ball-advance system that the company promoted with sixty-day location test results. The company's final known title, *[[title:fury]]* (1935), returned to electromechanical design.
 

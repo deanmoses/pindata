@@ -3,7 +3,7 @@ name: United
 opdb_manufacturer_id: 26
 ---
 
-United Manufacturing Company was a Chicago-based producer of pinball machines and coin-operated amusements active from the 1930s through the early 1960s. Operating from facilities on Diversey Avenue and later other Chicago locations, United built a catalog of over one hundred [[technologygeneration:electromechanical]] games that found steady placement in arcades, taverns, and bowling alleys across the United States.
+United Manufacturing Company was a Chicago-based producer of pinball machines and coin-operated amusements active from the 1930s through the early 1960s. Operating from facilities on Diversey Avenue and later other Chicago locations, United built a catalog of over one hundred [[technology-generation:electromechanical]] games that found steady placement in arcades, taverns, and bowling alleys across the United States.
 
 United occupied a distinctive niche in the postwar amusement market, producing not only conventional pinball machines but also a significant line of pitch-and-bat baseball games and bingo-style payout machines — categories that generated substantial operator revenue during the 1940s and 1950s. Designers [[person:gordon-horlick]] and [[person:iggy-wolverton]] contributed to a catalog that prioritized reliable earning potential over design innovation, a strategy that served United's operator customer base well during the industry's middle decades.
 
