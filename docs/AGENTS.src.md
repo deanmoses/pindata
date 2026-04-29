@@ -133,9 +133,9 @@ make export       # Export to JSON
 
 END_AGENTS
 
-## Pre-commit Hooks
+## Generated Files
 
-Pre-commit hooks auto-regenerate `CLAUDE.md` and `AGENTS.md` when `docs/AGENTS.src.md` changes, and block direct edits to those generated files. Hooks also run prettier and markdownlint on documentation, and validate catalog records when `catalog/` or `schema/` files change. Do not edit `CLAUDE.md` or `AGENTS.md` directly — edit `docs/AGENTS.src.md` instead.
+`CLAUDE.md` and `AGENTS.md` are generated from `docs/AGENTS.src.md`. Do not edit them directly — edit the source file and run `make agent-docs` to regenerate.
 
 ## Testing
 
