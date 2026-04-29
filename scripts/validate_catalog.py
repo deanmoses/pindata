@@ -6,6 +6,7 @@ Checks:
 - Frontmatter validates against the entity's JSON schema
 - Slug in frontmatter matches the filename
 - Cross-entity reference integrity (model->title, title->model, etc.)
+- Wikilink prefixes in prose use the canonical kebab-case entity_type form
 
 Usage:
     python scripts/validate_catalog.py
@@ -15,12 +16,18 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 
-from catalog_loader import CatalogRecord, LocationStructureError, iter_all  # noqa: E402
+from catalog_loader import (  # noqa: E402
+    _DIR_ENTITY_TYPE,
+    CatalogRecord,
+    LocationStructureError,
+    iter_all,
+)
 
 
 def _collect_records(catalog_dir: Path | None) -> list[CatalogRecord]:
@@ -164,6 +171,49 @@ def _check_cross_references(records: list[CatalogRecord]) -> list[str]:
     return errors
 
 
+_WIKILINK_RE = re.compile(r"\[\[([a-z][a-z0-9_-]*):")
+
+
+def _canonical_link_prefixes() -> set[str]:
+    """Canonical wikilink prefixes — kebab-case form of every entity_type."""
+    return {etype.replace("_", "-") for etype in _DIR_ENTITY_TYPE.values()}
+
+
+def _check_wikilink_prefixes(records: list[CatalogRecord]) -> list[str]:
+    """Check that every [[prefix:id]] in record bodies uses a canonical entity_type.
+
+    The wikilink prefix on the left of the colon must be the kebab-case singular
+    form of an entity_type (e.g. `[[gameplay-feature:multiball]]`). The pinbase
+    renderer keys on entity_type; un-hyphenated forms like `gameplayfeature` or
+    snake_case forms like `gameplay_feature` will silently fail to resolve.
+    """
+    errors = []
+    canonical = _canonical_link_prefixes()
+    canonical_by_normalized = {
+        c.replace("-", ""): c for c in canonical
+    }
+    for r in records:
+        seen: set[str] = set()
+        for match in _WIKILINK_RE.finditer(r.description):
+            prefix = match.group(1)
+            if prefix in canonical or prefix in seen:
+                continue
+            seen.add(prefix)
+            suggestion = canonical_by_normalized.get(
+                prefix.replace("-", "").replace("_", "")
+            )
+            if suggestion:
+                errors.append(
+                    f"{r.file_path}: unknown wikilink prefix '[[{prefix}:...]]' "
+                    f"(use '[[{suggestion}:...]]')"
+                )
+            else:
+                errors.append(
+                    f"{r.file_path}: unknown wikilink prefix '[[{prefix}:...]]'"
+                )
+    return errors
+
+
 def _check_self_referential(records: list[CatalogRecord]) -> list[str]:
     """Check for self-referential or chained variant_of relationships."""
     errors = []
@@ -222,6 +272,7 @@ def main() -> int:
     all_errors.extend(_check_uniqueness(records))
     all_errors.extend(_check_opdb_id_uniqueness(records))
     all_errors.extend(_check_cross_references(records))
+    all_errors.extend(_check_wikilink_prefixes(records))
     all_errors.extend(_check_self_referential(records))
 
     if all_errors:
