@@ -2,11 +2,11 @@
 """Push exported catalog JSON files to Cloudflare R2.
 
 Exports catalog markdown to JSON, then uploads all files under the
-``pinbase/`` prefix using boto3 (S3-compatible API).  The same
+``pindata/`` prefix using boto3 (S3-compatible API).  The same
 R2 bucket holds raw ingest sources (IPDB, OPDB, etc.) at the root, so
 the prefix keeps catalog exports separate.
 
-Writes its own manifest at ``pinbase/manifest.json``.  The
+Writes its own manifest at ``pindata/manifest.json``.  The
 root-level ``manifest.json`` is owned by pinexplore's push script and
 covers only non-prefixed ingest source files.
 
@@ -118,7 +118,7 @@ def main() -> int:
     manifest_path.write_text(json.dumps(entries, indent=2) + "\n", encoding="utf-8")
     print(f"  {len(entries)} files in manifest")
 
-    # Step 3: Upload to R2 under pinbase/ prefix
+    # Step 3: Upload to R2 under pindata/ prefix
     print("Uploading to R2...")
     endpoint = f"https://{account_id}.r2.cloudflarestorage.com"
     s3 = boto3.client(
@@ -133,7 +133,7 @@ def main() -> int:
     skipped = 0
     for entry in entries:
         local_path = EXPORT_DIR / entry["path"]
-        key = f"pinbase/{entry['path']}"
+        key = f"pindata/{entry['path']}"
 
         # Skip if remote file matches size AND content hash.
         try:
@@ -152,7 +152,7 @@ def main() -> int:
         uploaded += 1
 
     # Upload manifest last so consumers never see stale references
-    s3.upload_file(str(manifest_path), bucket, "pinbase/manifest.json")
+    s3.upload_file(str(manifest_path), bucket, "pindata/manifest.json")
 
     print(f"Done. {uploaded} uploaded, {skipped} unchanged.")
     return 0
