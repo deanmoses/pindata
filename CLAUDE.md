@@ -13,7 +13,8 @@ Pindata is a standalone data catalog for pinball machines. It contains **only da
 **What lives here:**
 
 - Catalog data as Markdown files with YAML frontmatter (one file per entity)
-- JSON schemas for validating frontmatter
+- Data patches (`patches/*.yaml`) — source-attributed corrections shipped to downstream consumers
+- JSON schemas for validating frontmatter and patches
 - Python scripts for validation, JSON export, and R2 upload
 - Documentation
 
@@ -45,9 +46,9 @@ uv sync
 ## Development Commands
 
 ```bash
-make validate     # Validate catalog records against schemas
+make validate     # Validate catalog records and data patches against schemas
 make export       # Export catalog to JSON in export/
-make push         # Export + push JSON to Cloudflare R2
+make push         # Export + push JSON (and data patches) to Cloudflare R2
 make clean        # Remove export/ directory
 make agent-docs   # Regenerate CLAUDE.md and AGENTS.md
 ```
@@ -56,7 +57,8 @@ make agent-docs   # Regenerate CLAUDE.md and AGENTS.md
 
 ```text
 catalog/          Markdown entity files — one file per pinball entity
-schema/           JSON Schema files for frontmatter validation
+patches/          Data patches — NNNN-slug.yaml claim corrections for downstream
+schema/           JSON Schema files for frontmatter and patch validation
 scripts/          Python tooling (loader, validator, exporter, R2 push)
 docs/             Documentation source files
 export/           (gitignored) JSON build artifacts from `make export`
@@ -88,6 +90,17 @@ python3 scripts/validate_catalog.py
 ```
 
 Validates: YAML parsing, JSON schema conformance, slug/filename match, slug uniqueness, OPDB ID uniqueness, cross-entity reference integrity, wikilink prefix canonicalization, and self-referential variant checks.
+
+## Data Patches
+
+See [docs/Patches.md](Patches.md) for the full patch file format and authoring guide.
+
+**Key points:**
+
+- `patches/` holds **data patches** — small, source-attributed YAML files named `NNNN-slug.yaml` that correct or extend catalog data in downstream databases **without a full re-ingest**.
+- Pindata is only the **transport**: it validates patch files and ships them to R2. The authoritative apply model (attribution, assert/create/retract, the ledger, immutability) lives in the consumer that applies them (flipcommons' `ingest_patches`), not here.
+- `scripts/validate_patches.py` (run by `make validate`) is a structural gate: filename format, unique numeric prefixes, strict JSON-shaped YAML, and conformance to `schema/patch.schema.json`.
+- `make push` ships `patches/*.yaml` verbatim under the R2 `pindata/patches/` prefix.
 
 ## Tool Usage
 

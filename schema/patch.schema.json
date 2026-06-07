@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "patch.schema.json",
+  "title": "Flipcommons data patch",
+  "description": "A small, source-attributed set of catalog claims. Filename is NNNN-slug.yaml; the stem is the patch id. Authoritative validation happens in flipcommons' ingest_patches; this schema gives editors and CI an early structural check.",
+  "type": "object",
+  "required": ["attribution", "claims"],
+  "additionalProperties": false,
+  "properties": {
+    "attribution": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Source slug; must already exist in flipcommons. A patch attributes to the source the fact came from (e.g. flip-museum, flipcommons-catalog, ipdb, opdb) and supersedes or retracts that source's own claim."
+    },
+    "description": {
+      "type": "string",
+      "description": "Freeform rationale (the why). Copied to the IngestRun note."
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ordered list of operations; each entry is a single-key mapping (entity ref -> fields).",
+      "items": {
+        "type": "object",
+        "minProperties": 1,
+        "maxProperties": 1,
+        "additionalProperties": false,
+        "patternProperties": {
+          "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9/-]*$": {
+            "type": "object",
+            "minProperties": 1,
+            "description": "Fields to assert on this entity. Reserved keys: create, expect, retract.",
+            "not": {
+              "required": ["create", "retract"],
+              "description": "create and retract are mutually exclusive on one entry."
+            },
+            "properties": {
+              "create": {
+                "type": "boolean",
+                "description": "Opt-in to create the entity when its public_id does not resolve."
+              },
+              "expect": {
+                "type": "object",
+                "description": "Drift guard: resolved scalar/FK values the target must already have."
+              },
+              "retract": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Scalar/FK field names whose claim from this patch's source should be removed. Not valid with create."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

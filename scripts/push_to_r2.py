@@ -6,6 +6,10 @@ Exports catalog markdown to JSON, then uploads all files under the
 R2 bucket holds raw ingest sources (IPDB, OPDB, etc.) at the root, so
 the prefix keeps catalog exports separate.
 
+Raw data patches under ``patches/`` ride along verbatim at
+``pindata/patches/`` (no JSON conversion) so flipcommons' ``ingest_patches``
+can parse the YAML directly.
+
 Writes its own manifest at ``pindata/manifest.json``.  The
 root-level ``manifest.json`` is owned by pinexplore's push script and
 covers only non-prefixed ingest source files.
@@ -32,6 +36,11 @@ from dotenv import load_dotenv
 REPO_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(REPO_ROOT / ".env")
 EXPORT_DIR = REPO_ROOT / "export"
+# Data patches ship verbatim (no JSON conversion) under pindata/patches/.
+# flipcommons' ingest_patches consumes the raw YAML; the manifest sha256 is
+# for download integrity only (immutability uses a separate normalized-content
+# hash computed at apply time).
+PATCHES_DIR = REPO_ROOT / "patches"
 EXCLUDE = {
     "manifest.json",
     ".DS_Store",
@@ -46,8 +55,13 @@ def _sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def _collect_files(src: Path) -> list[dict]:
-    """Walk src and return manifest entries, excluding dotfiles and stale files."""
+def _collect_files(src: Path, path_prefix: str = "") -> list[dict]:
+    """Walk src and return manifest entries, excluding dotfiles and stale files.
+
+    Each entry carries a transient ``_local`` absolute path (stripped before
+    the manifest is written) so callers can mix sources rooted at different
+    directories (e.g. ``export/`` and ``patches/``).
+    """
     entries = []
     for root, dirs, files in os.walk(src):
         dirs[:] = [d for d in dirs if not d.startswith(".")]
@@ -58,9 +72,10 @@ def _collect_files(src: Path) -> list[dict]:
             rel = full.relative_to(src).as_posix()
             entries.append(
                 {
-                    "path": rel,
+                    "path": path_prefix + rel,
                     "size": full.stat().st_size,
                     "sha256": _sha256(full),
+                    "_local": full,
                 }
             )
     entries.sort(key=lambda e: e["path"])
@@ -111,11 +126,21 @@ def main() -> int:
             print("ERROR: export_catalog_json.py failed", file=sys.stderr)
             return 1
 
-    # Step 2: Build manifest
+    # Step 2: Build manifest (catalog JSON + raw data patches)
     print("Building manifest...")
     entries = _collect_files(EXPORT_DIR)
+    if PATCHES_DIR.is_dir():
+        patch_entries = _collect_files(PATCHES_DIR, path_prefix="patches/")
+        entries += patch_entries
+        entries.sort(key=lambda e: e["path"])
+        print(f"  {len(patch_entries)} patch files")
     manifest_path = EXPORT_DIR / "manifest.json"
-    manifest_path.write_text(json.dumps(entries, indent=2) + "\n", encoding="utf-8")
+    manifest_entries = [
+        {k: v for k, v in e.items() if k != "_local"} for e in entries
+    ]
+    manifest_path.write_text(
+        json.dumps(manifest_entries, indent=2) + "\n", encoding="utf-8"
+    )
     print(f"  {len(entries)} files in manifest")
 
     # Step 3: Upload to R2 under pindata/ prefix
@@ -132,7 +157,7 @@ def main() -> int:
     uploaded = 0
     skipped = 0
     for entry in entries:
-        local_path = EXPORT_DIR / entry["path"]
+        local_path = entry["_local"]
         key = f"pindata/{entry['path']}"
 
         # Skip if remote file matches size AND content hash.

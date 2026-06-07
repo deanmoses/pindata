@@ -86,6 +86,16 @@ make validate
 3. **Push**: `make push` uploads the JSON to Cloudflare R2.
 4. **Downstream**: Consumer projects ([Pinexplore](https://github.com/deanmoses/pinexplore), [Pinbase](https://github.com/deanmoses/pinbase)) pull the JSON from R2.
 
+## Data patches vs. catalog records
+
+The catalog under `catalog/` is the canonical baseline. Targeted **corrections**
+and source-attributed updates that need to reach already-seeded downstream
+databases live separately, as YAML **data patches** under `patches/`
+(`NNNN-slug.yaml`) — not as edits to catalog records. They ride the same
+`make push` → R2 path but are shipped verbatim rather than exported to JSON, and
+are applied downstream without a full re-ingest. See [Patches.md](Patches.md)
+for the patch file format and pindata's transport role.
+
 ## Rationale
 
 ### Why Markdown files with frontmatter?

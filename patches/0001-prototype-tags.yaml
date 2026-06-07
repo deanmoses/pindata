@@ -1,0 +1,23 @@
+attribution: flip-museum
+description: >
+  Tag known unreleased prototypes that never reached commercial production.
+  Source: The Flip museum mfgtimeline curation (the UNRELEASED set). Each
+  entry carries an `expect: { year }` guard, resolved against the catalog at
+  authoring time, so the tag lands on the unreleased original rather than a
+  same-named later remake.
+claims:
+  - model.mazatron:
+      expect: { year: 1990 }
+      tag: [prototype]
+  - model.the-pinball-circus:
+      expect: { year: 1994 }
+      tag: [prototype]
+  - model.king-kong:
+      expect: { year: 1990 }
+      tag: [prototype]
+  - model.big-bang-bar:
+      expect: { year: 1996 }
+      tag: [prototype]
+  - model.kingpin:
+      expect: { year: 1996 }
+      tag: [prototype]
