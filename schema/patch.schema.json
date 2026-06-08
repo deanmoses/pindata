@@ -29,7 +29,7 @@
           "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9/-]*$": {
             "type": "object",
             "minProperties": 1,
-            "description": "Fields to assert on this entity. Reserved keys: create, expect, retract.",
+            "description": "Fields to assert on this entity. Reserved keys: create, expect, retract, note, cite.",
             "not": {
               "required": ["create", "retract"],
               "description": "create and retract are mutually exclusive on one entry."
@@ -47,6 +47,16 @@
                 "type": "array",
                 "items": { "type": "string" },
                 "description": "Scalar/FK field names whose claim from this patch's source should be removed. Not valid with create."
+              },
+              "note": {
+                "type": "string",
+                "maxLength": 1000,
+                "description": "Per-entry reason for the change; becomes the entity's ChangeSet note. One provenance-bearing entry per entity."
+              },
+              "cite": {
+                "type": "string",
+                "pattern": "^(ipdb|opdb):.{1,200}$",
+                "description": "External source as scheme:identifier (e.g. ipdb:4443). Identifier capped at 200 chars to mirror the backend. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
               }
             }
           }
