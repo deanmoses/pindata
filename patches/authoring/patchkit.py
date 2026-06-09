@@ -89,6 +89,62 @@ def _fold(text: str, width: int = 92) -> list[str]:
 
 
 # --------------------------------------------------------------------------- #
+# source-text extraction (classify.py side)                                   #
+# --------------------------------------------------------------------------- #
+#
+# These run on the pinexplore side, against DuckDB free text - patchkit is pure
+# stdlib, so a classify.py can `import patchkit` too (add the authoring dir to
+# sys.path, as gen.py does). They were re-derived in every classify.py; pull the
+# next one's from here instead.
+
+_IPD_HEADER = re.compile(r"^\s*\d+\s*/[^.]*?\bPlayers?\b\s*")
+
+
+def sentences(text: str) -> list[str]:
+    """Split free text into sentences, normalizing CR/LF and runs of whitespace."""
+    text = text.replace("\r\n", " ").replace("\r", " ").replace("\n", " ")
+    text = re.sub(r"\s+", " ", text).strip()
+    return [p.strip() for p in re.split(r"(?<=[.!?])\s+", text) if p.strip()]
+
+
+def sentence_with(blob: str, needle: str) -> str:
+    """The first sentence in `blob` containing `needle` (case-insensitive), or ''.
+
+    The needle pattern that pins a quote: freeze a unique substring of the evidence
+    sentence in your classify map, re-extract the live sentence here so the quote
+    stays faithful to the current source text. Assert the result still contains the
+    keyword you classified on (see DataPatchAuthoring.md's faithfulness-guard gotcha).
+    """
+    for s in sentences(blob):
+        if needle.lower() in s.lower():
+            return s
+    return ""
+
+
+_QUOTE_INTRO = re.compile(r'^.*?:\s*"(.+?)"?$')
+
+
+def clean_ipdb_quote(text: str, limit: int = 240) -> str:
+    """ASCII-clean an IPDB sentence, strip its framing and bound its length.
+
+    IPDB glues a punctuation-less header ('6022 / 1946 / 1 Player') onto the first
+    sentence, so the splitter keeps it; this drops it. It also frames quoted passages
+    with an introducer ('... translates as follows: "<text>'); this keeps the inner
+    passage and drops the framing, so we quote the evidence itself rather than a
+    dangling open-quote that reads as complete. Over-long run-ons are cut at a word
+    boundary with a marked ` [...]` omission (DataPatches.md requires marking
+    omissions). Idempotent on already-clean text.
+    """
+    text = _IPD_HEADER.sub("", ascii_clean(text)).strip()
+    intro = _QUOTE_INTRO.match(text)
+    if intro:
+        text = intro.group(1).strip()
+    if len(text) > limit:
+        text = text[:limit].rsplit(" ", 1)[0].rstrip(",;:") + " [...]"
+    return text
+
+
+# --------------------------------------------------------------------------- #
 # guards / resolution                                                         #
 # --------------------------------------------------------------------------- #
 
@@ -210,58 +266,6 @@ def write_patch(
 
 
 # --------------------------------------------------------------------------- #
-# review worksheet                                                            #
-# --------------------------------------------------------------------------- #
-
-
-def md_table(headers: Sequence[str], rows: Iterable[Sequence[object]]) -> str:
-    """Render a GitHub-flavored markdown table."""
-    out = ["| " + " | ".join(headers) + " |", "| " + " | ".join(["---"] * len(headers)) + " |"]
-    for r in rows:
-        out.append("| " + " | ".join("" if c is None else str(c) for c in r) + " |")
-    return "\n".join(out)
-
-
-class Worksheet:
-    """Builder for the standard review worksheet (the durable audit trail).
-
-    Canonical sections, in order: Status -> patch list -> semantics -> Searches
-    tried (incl. dead-ends) -> Included tables -> Flagged -> Rejected -> Totals.
-    The Searches table is the most valuable artifact: it proves which signals you
-    ruled out, which is what justifies the one you relied on.
-    """
-
-    def __init__(self, title: str, status: str, patch_lines: Sequence[str] = ()):
-        self.parts: list[str] = [f"# {title}\n", f"Status: **{status}**\n"]
-        if patch_lines:
-            self.parts += list(patch_lines) + [""]
-
-    def text(self, md: str) -> "Worksheet":
-        self.parts.append(md.rstrip() + "\n")
-        return self
-
-    def section(self, title: str, body: str) -> "Worksheet":
-        self.parts.append(f"## {title}\n")
-        self.parts.append(body.rstrip() + "\n")
-        return self
-
-    def searches(self, rows: Iterable[Sequence[object]]) -> "Worksheet":
-        """rows of (pattern, corpus, hits, verdict). Record dead-ends too."""
-        return self.section(
-            "Searches tried (did / did NOT yield)",
-            md_table(["pattern", "corpus", "hits", "verdict"], rows),
-        )
-
-    def table_section(self, title: str, headers: Sequence[str], rows: Iterable[Sequence[object]]) -> "Worksheet":
-        return self.section(title, md_table(headers, rows))
-
-    def write(self, path: str | Path) -> Path:
-        p = Path(path)
-        p.write_text("\n".join(self.parts) + "\n")
-        return p
-
-
-# --------------------------------------------------------------------------- #
 # self-test                                                                   #
 # --------------------------------------------------------------------------- #
 
@@ -269,6 +273,15 @@ if __name__ == "__main__":
     # smoke test - run `python patchkit.py`
     assert yamlq("a'b") == "'a''b'"
     assert ascii_clean("“flasher” — ok") == '"flasher" - ok'
+    # source-text extraction
+    assert sentences("One. Two? Three!") == ["One.", "Two?", "Three!"]
+    assert sentence_with("Foo bar. Baz qux.", "baz") == "Baz qux."
+    assert sentence_with("Foo bar.", "nope") == ""
+    assert clean_ipdb_quote("6022 / 1946 / 1 Player This is a bagatelle.") == "This is a bagatelle."
+    assert clean_ipdb_quote("“Plain” quote.") == '"Plain" quote.'  # also ascii-cleans
+    # drops the framing introducer, keeps the quoted passage itself
+    assert clean_ipdb_quote('The backglass translates as follows: "Win a prize."') == "Win a prize."
+    assert clean_ipdb_quote("a " * 200, limit=20).endswith("[...]")  # marks truncation
     assert guard({"year": None, "ipdb_id": 42}) == {"ipdb_id": 42}
     assert guard({"year": 1990, "ipdb_id": None}) == {"year": 1990}
     assert guard({"corporate_entity__slug": "bally", "year": None, "ipdb_id": None}) == {
@@ -303,16 +316,6 @@ if __name__ == "__main__":
             raise AssertionError("expected ValueError")
         except ValueError:
             pass
-    # worksheet builder
-    md = "\n".join(
-        Worksheet("T", "PROVISIONAL")
-        .searches([("re-themed", "IPDB", "36", "gold")])
-        .table_section("Included", ["slug"], [["mazatron"]])
-        .parts
-    )
-    assert "Searches tried" in md
-    assert "| --- |" in md
-    assert "mazatron" in md
     print("patchkit self-test OK")
     print(e)
     print(v)
