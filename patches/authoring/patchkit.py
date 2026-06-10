@@ -31,15 +31,17 @@ _SMART = {
 }
 
 
-def ascii_clean(s: str) -> str:
-    """Smart quotes/dashes -> ASCII; drop any remaining non-ASCII (mojibake).
+def clean_text(s: str) -> str:
+    """Normalize copy-paste typography; strip only mojibake. Preserves real non-ASCII.
 
-    Patch notes must be plain ASCII (DataPatches.md). IPDB/OPDB free text is full
-    of curly quotes and the U+FFFD replacement character.
+    IPDB/OPDB free text is full of curly quotes, en/em dashes and the U+FFFD
+    replacement character. This straightens that typography and drops U+FFFD, but
+    keeps legitimate non-ASCII letters (umlauts, accents) verbatim - notes are stored
+    as UTF-8 and quotes must stay faithful to the source (DataPatches.md).
     """
     for k, v in _SMART.items():
         s = s.replace(k, v)
-    return s.encode("ascii", "ignore").decode("ascii")
+    return s.replace("�", "")
 
 
 def yamlq(s: str) -> str:
@@ -48,7 +50,7 @@ def yamlq(s: str) -> str:
     A single-quoted YAML scalar is literal except `'`, which is doubled. This
     safely carries both the double quotes in `... says "<verbatim>"` and the
     apostrophes in the verbatim text - no backslashes, unlike json.dumps. Always
-    pass ascii_clean()ed text.
+    pass clean_text()ed text.
     """
     return "'" + s.replace("'", "''") + "'"
 
@@ -57,9 +59,10 @@ def source_note(source: str, verbatim: str, tail: str = "") -> str:
     """The canonical evidence note: `<Source> says "<verbatim>"<tail>`.
 
     Quote the source verbatim; mark your own omissions inside `verbatim` with
-    ` [...] `. Output is ASCII. Feed the return value straight to entry(note=...).
+    ` [...] `. Normalizes typography but preserves the source's own letters
+    (umlauts, accents). Feed the return value straight to entry(note=...).
     """
-    return ascii_clean(f'{source} says "{verbatim.strip()}"{tail}')
+    return clean_text(f'{source} says "{verbatim.strip()}"{tail}')
 
 
 _SAFE_SCALAR = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _./()&'-]*$")
@@ -125,7 +128,7 @@ _QUOTE_INTRO = re.compile(r'^.*?:\s*"(.+?)"?$')
 
 
 def clean_ipdb_quote(text: str, limit: int = 240) -> str:
-    """ASCII-clean an IPDB sentence, strip its framing and bound its length.
+    """Normalize an IPDB sentence's typography, strip its framing and bound its length.
 
     IPDB glues a punctuation-less header ('6022 / 1946 / 1 Player') onto the first
     sentence, so the splitter keeps it; this drops it. It also frames quoted passages
@@ -135,7 +138,7 @@ def clean_ipdb_quote(text: str, limit: int = 240) -> str:
     boundary with a marked ` [...]` omission (DataPatches.md requires marking
     omissions). Idempotent on already-clean text.
     """
-    text = _IPD_HEADER.sub("", ascii_clean(text)).strip()
+    text = _IPD_HEADER.sub("", clean_text(text)).strip()
     intro = _QUOTE_INTRO.match(text)
     if intro:
         text = intro.group(1).strip()
@@ -232,14 +235,14 @@ def entry(
         inner = ", ".join(f"{k}: {_scalar(v)}" for k, v in expect.items())
         lines.append(f"{sub}expect: {{ {inner} }}")
     if note is not None:
-        lines.append(f"{sub}note: {yamlq(ascii_clean(note))}")
+        lines.append(f"{sub}note: {yamlq(clean_text(note))}")
     if cite:
         lines.append(f"{sub}cite: {cite}")
     for k, v in (fields or {}).items():
         lines.append(f"{sub}{k}: {_scalar(v)}")
     if description is not None:
         lines.append(f"{sub}description: >")
-        for line in _fold(ascii_clean(description)):
+        for line in _fold(clean_text(description)):
             lines.append(f"{sub}  {line}")
     if tags:
         lines.append(f"{sub}tag: [{', '.join(tags)}]")
@@ -272,13 +275,15 @@ def write_patch(
 if __name__ == "__main__":
     # smoke test - run `python patchkit.py`
     assert yamlq("a'b") == "'a''b'"
-    assert ascii_clean("“flasher” — ok") == '"flasher" - ok'
+    assert clean_text("“flasher” — ok") == '"flasher" - ok'
+    assert clean_text("Günter Wulff — gegründet") == "Günter Wulff - gegründet"  # keeps umlauts
+    assert clean_text("bad�char") == "badchar"  # drops only mojibake
     # source-text extraction
     assert sentences("One. Two? Three!") == ["One.", "Two?", "Three!"]
     assert sentence_with("Foo bar. Baz qux.", "baz") == "Baz qux."
     assert sentence_with("Foo bar.", "nope") == ""
     assert clean_ipdb_quote("6022 / 1946 / 1 Player This is a bagatelle.") == "This is a bagatelle."
-    assert clean_ipdb_quote("“Plain” quote.") == '"Plain" quote.'  # also ascii-cleans
+    assert clean_ipdb_quote("“Plain” quote.") == '"Plain" quote.'  # also normalizes typography
     # drops the framing introducer, keeps the quoted passage itself
     assert clean_ipdb_quote('The backglass translates as follows: "Win a prize."') == "Win a prize."
     assert clean_ipdb_quote("a " * 200, limit=20).endswith("[...]")  # marks truncation
