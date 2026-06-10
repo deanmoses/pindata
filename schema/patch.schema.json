@@ -2,10 +2,21 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "patch.schema.json",
   "title": "Flipcommons data patch",
-  "description": "A small, source-attributed set of catalog claims. Filename is NNNN-slug.yaml; the stem is the patch id. Authoritative validation happens in flipcommons' ingest_patches; this schema gives editors and CI an early structural check.",
+  "description": "A small, source-attributed set of catalog claims and/or citation-source roots. Filename is NNNN-slug.yaml; the stem is the patch id. Authoritative validation happens in flipcommons' ingest_patches; this schema gives editors and CI an early structural check.",
   "type": "object",
-  "required": ["attribution", "claims"],
+  "required": ["attribution"],
   "additionalProperties": false,
+  "anyOf": [
+    {
+      "description": "A patch must carry a non-empty 'claims' or 'sources'.",
+      "required": ["claims"],
+      "properties": { "claims": { "minItems": 1 } }
+    },
+    {
+      "required": ["sources"],
+      "properties": { "sources": { "minItems": 1 } }
+    }
+  ],
   "properties": {
     "attribution": {
       "type": "string",
@@ -18,7 +29,6 @@
     },
     "claims": {
       "type": "array",
-      "minItems": 1,
       "description": "Ordered list of operations; each entry is a single-key mapping (entity ref -> fields).",
       "items": {
         "type": "object",
@@ -29,7 +39,7 @@
           "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9/-]*$": {
             "type": "object",
             "minProperties": 1,
-            "description": "Fields to assert on this entity. Reserved keys: create, expect, retract, note, cite.",
+            "description": "Fields to assert on this entity. Reserved keys (directives, not claim fields): create, delete, expect, retract, remove, note, cite.",
             "not": {
               "required": ["create", "retract"],
               "description": "create and retract are mutually exclusive on one entry."
@@ -38,6 +48,10 @@
               "create": {
                 "type": "boolean",
                 "description": "Opt-in to create the entity when its public_id does not resolve."
+              },
+              "delete": {
+                "type": "boolean",
+                "description": "Soft-delete the entity (status -> deleted) through the delete planner. Not valid with create."
               },
               "expect": {
                 "type": "object",
@@ -48,6 +62,14 @@
                 "items": { "type": "string" },
                 "description": "Scalar/FK field names whose claim from this patch's source should be removed. Not valid with create."
               },
+              "remove": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "description": "Relationship members to remove: a mapping of relationship namespace to a list of member public_ids (e.g. {location: [germany]})."
+              },
               "note": {
                 "type": "string",
                 "maxLength": 1000,
@@ -55,8 +77,58 @@
               },
               "cite": {
                 "type": "string",
-                "pattern": "^(ipdb|opdb):.{1,200}$",
-                "description": "External source as scheme:identifier (e.g. ipdb:4443). Identifier capped at 200 chars to mirror the backend. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
+                "maxLength": 2000,
+                "anyOf": [
+                  { "pattern": "^(ipdb|opdb):.{1,200}$" },
+                  { "pattern": "^https?://.+$" }
+                ],
+                "description": "External evidence, either as scheme:identifier (ipdb:4443, opdb:GRhX5) or an http(s):// URL (a standalone or domain-nested web source). Capped at 2000 chars to mirror the link column. A URL matching a known scheme's record pattern is rejected by ingest_patches in favor of the scheme:identifier form. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "Citation-source roots to upsert (the `sources:` block) — books, magazines or websites that later `cite:` entries hang under. Each is flat (no nested children); create child sources via `cite:` on a claim. Field values are validated authoritatively against the model in ingest_patches.",
+      "items": {
+        "type": "object",
+        "required": ["name", "source_type"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "source_type": {
+            "type": "string",
+            "enum": ["book", "magazine", "web"]
+          },
+          "author": { "type": "string" },
+          "publisher": { "type": "string" },
+          "year": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+          "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "day": { "type": "integer", "minimum": 1, "maximum": 31 },
+          "date_note": { "type": "string" },
+          "isbn": { "type": "string" },
+          "description": { "type": "string" },
+          "identifier_key": {
+            "type": "string",
+            "enum": ["", "ipdb", "opdb"],
+            "description": "Marks a scheme root whose children carry structured identifiers (ipdb/opdb). Root web sources only."
+          },
+          "links": {
+            "type": "array",
+            "description": "URLs where a reader can inspect the source. A root needs a 'homepage' link for domain-based URL recognition.",
+            "items": {
+              "type": "object",
+              "required": ["url", "link_type"],
+              "additionalProperties": false,
+              "properties": {
+                "url": { "type": "string", "minLength": 1 },
+                "link_type": {
+                  "type": "string",
+                  "enum": ["homepage", "catalog", "publisher", "reference", "archive"]
+                },
+                "label": { "type": "string" }
               }
             }
           }

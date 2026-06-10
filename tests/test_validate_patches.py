@@ -136,6 +136,112 @@ def test_malformed_entity_refs_rejected(schema_validator, ref):
     assert _has_error(schema_validator, data)
 
 
+# --- Schema: cite accepts scheme:identifier and http(s) URL -----------------
+
+
+@pytest.mark.parametrize(
+    "cite",
+    [
+        "ipdb:4443",
+        "opdb:GRhX5",
+        "https://en.wikipedia.org/wiki/Bally_Manufacturing",
+        "http://example.com/a",
+    ],
+)
+def test_cite_forms_accepted(schema_validator, cite):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [{"corporate-entity.foo": {"year_start": 1990, "cite": cite}}],
+    }
+    assert not _has_error(schema_validator, data)
+
+
+@pytest.mark.parametrize(
+    "cite",
+    [
+        "ipdb",  # scheme without identifier
+        "bogus:4443",  # unknown scheme
+        "ftp://example.com",  # non-http(s) URL
+        "just some text",  # neither form
+    ],
+)
+def test_malformed_cite_rejected(schema_validator, cite):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [{"corporate-entity.foo": {"year_start": 1990, "cite": cite}}],
+    }
+    assert _has_error(schema_validator, data)
+
+
+# --- Schema: the sources: block ---------------------------------------------
+
+
+def test_sources_only_patch_is_valid(schema_validator):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "sources": [
+            {
+                "name": "Wikipedia",
+                "source_type": "web",
+                "description": "Free encyclopedia.",
+                "links": [
+                    {"url": "https://en.wikipedia.org/", "link_type": "homepage"}
+                ],
+            }
+        ],
+    }
+    assert not _has_error(schema_validator, data)
+
+
+def test_patch_without_claims_or_sources_rejected(schema_validator):
+    # Neither block, and an empty sources block, are both rejected.
+    assert _has_error(schema_validator, {"attribution": "ipdb"})
+    assert _has_error(schema_validator, {"attribution": "ipdb", "sources": []})
+
+
+@pytest.mark.parametrize(
+    "source",
+    [
+        {"source_type": "web"},  # missing name
+        {"name": "X"},  # missing source_type
+        {"name": "X", "source_type": "blog"},  # source_type not in enum
+        {"name": "X", "source_type": "web", "bogus": 1},  # unknown key
+        {  # nested children unsupported (v1 sources are flat)
+            "name": "X",
+            "source_type": "web",
+            "children": [{"name": "Y", "source_type": "web"}],
+        },
+        {  # link_type not in enum
+            "name": "X",
+            "source_type": "web",
+            "links": [{"url": "https://x/", "link_type": "bogus"}],
+        },
+        {  # link missing url
+            "name": "X",
+            "source_type": "web",
+            "links": [{"link_type": "homepage"}],
+        },
+    ],
+)
+def test_malformed_source_rejected(schema_validator, source):
+    data = {"attribution": "flipcommons-catalog", "sources": [source]}
+    assert _has_error(schema_validator, data)
+
+
+# --- Schema: delete / remove directives -------------------------------------
+
+
+def test_delete_and_remove_directives_valid(schema_validator):
+    data = {
+        "attribution": "flip-museum",
+        "claims": [
+            {"model.foo": {"delete": True}},
+            {"corporate-entity.bar": {"remove": {"location": ["germany"]}}},
+        ],
+    }
+    assert not _has_error(schema_validator, data)
+
+
 # --- The shipped patches validate cleanly ----------------------------------
 
 
