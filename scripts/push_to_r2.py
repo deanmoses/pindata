@@ -82,6 +82,30 @@ def _collect_files(src: Path, path_prefix: str = "") -> list[dict]:
     return entries
 
 
+def _collect_patch_files(src: Path, path_prefix: str = "patches/") -> list[dict]:
+    """Collect top-level data patch files (``NNNN-slug.yaml``) only.
+
+    Patches ship verbatim under ``pindata/patches/``.  Unlike the catalog
+    export, the ``patches/`` tree is NOT walked recursively: subdirectories
+    such as ``authoring/`` hold scratch tooling (generators, worksheets,
+    caches) that must never be shipped to downstream consumers.
+    """
+    entries = []
+    for full in src.glob("*.yaml"):
+        if not full.is_file() or full.name in EXCLUDE:
+            continue
+        entries.append(
+            {
+                "path": path_prefix + full.name,
+                "size": full.stat().st_size,
+                "sha256": _sha256(full),
+                "_local": full,
+            }
+        )
+    entries.sort(key=lambda e: e["path"])
+    return entries
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Push catalog exports to R2.")
     parser.add_argument(
@@ -130,7 +154,7 @@ def main() -> int:
     print("Building manifest...")
     entries = _collect_files(EXPORT_DIR)
     if PATCHES_DIR.is_dir():
-        patch_entries = _collect_files(PATCHES_DIR, path_prefix="patches/")
+        patch_entries = _collect_patch_files(PATCHES_DIR, path_prefix="patches/")
         entries += patch_entries
         entries.sort(key=lambda e: e["path"])
         print(f"  {len(patch_entries)} patch files")
