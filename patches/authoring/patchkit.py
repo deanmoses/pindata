@@ -251,16 +251,57 @@ def entry(
     return "\n".join(lines)
 
 
+def source_root(
+    name: str,
+    *,
+    source_type: str = "web",
+    description: str | None = None,
+    links: Sequence[tuple[str, str, str]],
+) -> str:
+    """Emit one `sources:` block entry: a citation-source root (header + links).
+
+    Seeds the website/book/magazine root a later `cite:` URL nests under (a web
+    `cite:` errors unless its domain matches a seeded homepage link — DataPatches.md).
+    Same escaping safety as entry(): name/label/url go through _scalar so a stray
+    apostrophe or colon in a description or label can't break the YAML.
+
+    name:        source name; identity is (name, source_type), so keep it stable.
+    source_type: 'web' | 'book' | 'magazine'.
+    description: optional folded `>` blurb.
+    links:       (url, label, link_type) tuples; link_type is 'homepage' for the
+                 root's domain link (what later cites domain-match against),
+                 else 'reference' / 'archive'.
+    """
+    out = [f"  - name: {_scalar(name)}", f"    source_type: {source_type}"]
+    if description:
+        out.append("    description: >")
+        out += [f"      {line}" for line in _fold(clean_text(description))]
+    out.append("    links:")
+    for url, label, link_type in links:
+        out.append(
+            f"      - {{ url: {_scalar(url)}, label: {_scalar(label)}, link_type: {link_type} }}"
+        )
+    return "\n".join(out)
+
+
 def write_patch(
     path: str | Path,
     *,
     attribution: str,
     description: str,
     entries: Sequence[str],
+    sources: Sequence[str] = (),
 ) -> Path:
-    """Write a complete patch file (header + folded description + claims)."""
+    """Write a complete patch file (header + folded description + sources + claims).
+
+    `sources` is a sequence of source_root() blocks, emitted before `claims:` so a
+    `cite:` URL below can nest under a root created here.
+    """
     out = [f"attribution: {attribution}", "description: >"]
     out += [f"  {line}" for line in _fold(description)]
+    if sources:
+        out.append("sources:")
+        out += list(sources)
     out.append("claims:")
     out += list(entries)
     p = Path(path)
@@ -321,6 +362,23 @@ if __name__ == "__main__":
             raise AssertionError("expected ValueError")
         except ValueError:
             pass
+    # source_root: header + folded description + escaped flow-map links
+    sr = source_root(
+        "Arcade Heroes",
+        description="Arcade & amusement industry news.",
+        links=[("https://arcadeheroes.com/", "Arcade Heroes", "homepage")],
+    )
+    assert "  - name: Arcade Heroes" in sr
+    assert "    source_type: web" in sr
+    assert "url: 'https://arcadeheroes.com/'" in sr  # url quoted (has ':')
+    assert "label: Arcade Heroes, link_type: homepage" in sr
+    # write_patch emits a sources: block before claims:
+    import tempfile
+    with tempfile.NamedTemporaryFile("r", suffix=".yaml", delete=False) as fh:
+        write_patch(fh.name, attribution="flipcommons-catalog", description="x",
+                    entries=[e], sources=[sr])
+        body = Path(fh.name).read_text()
+    assert body.index("sources:") < body.index("claims:") < body.index("- model.mazatron")
     print("patchkit self-test OK")
     print(e)
     print(v)
