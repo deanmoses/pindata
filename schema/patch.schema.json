@@ -68,7 +68,7 @@
                   "type": "array",
                   "items": { "type": "string" }
                 },
-                "description": "Relationship members to remove: a mapping of relationship namespace to a list of member public_ids (e.g. {location: [germany]})."
+                "description": "Relationship members to remove: a mapping of relationship namespace to a list of member values — FK public_ids (e.g. {location: [germany]}) or bare strings for aliases/abbreviations (e.g. {manufacturer_alias: [Stern Inc]})."
               },
               "note": {
                 "type": "string",

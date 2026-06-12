@@ -202,6 +202,8 @@ def entry(
     fields: Mapping[str, object] | None = None,
     description: str | None = None,
     tags: Sequence[str] | None = None,
+    relationships: Mapping[str, Sequence[str]] | None = None,
+    remove: Mapping[str, Sequence[str]] | None = None,
     retract: Sequence[str] | None = None,
     comment: str | None = None,
     commented: bool = False,
@@ -216,6 +218,13 @@ def entry(
     fields: scalar/FK claims; value used as-is for scalars, target public_id for FKs.
     description: folded `>` block (for vocab creation).
     tags / retract: lists -> `tag: [...]` / `retract: [...]`.
+    relationships: namespace -> members, the general relationship emitter
+        (`tags=` is the `tag` shorthand). Members are bare strings — FK
+        public_ids (`theme: [medieval]`) or string members for aliases /
+        abbreviations (`manufacturer_alias: [Stern Pinball, Stern Inc]`). Each
+        member is escaped, so free-text alias strings with commas/colons are safe.
+    remove: namespace -> members to drop, emits `remove: { ns: [...] }` (the
+        relationship counterpart of `retract`).
     commented: prefix every line with '# ' (FLAGGED rows kept in-file for a human call).
     comment: trailing `# ...` on the ref line.
     """
@@ -246,6 +255,15 @@ def entry(
             lines.append(f"{sub}  {line}")
     if tags:
         lines.append(f"{sub}tag: [{', '.join(tags)}]")
+    for namespace, members in (relationships or {}).items():
+        inner = ", ".join(_scalar(m) for m in members)
+        lines.append(f"{sub}{namespace}: [{inner}]")
+    if remove:
+        inner = ", ".join(
+            f"{ns}: [{', '.join(_scalar(m) for m in members)}]"
+            for ns, members in remove.items()
+        )
+        lines.append(f"{sub}remove: {{ {inner} }}")
     if retract:
         lines.append(f"{sub}retract: [{', '.join(retract)}]")
     return "\n".join(lines)
