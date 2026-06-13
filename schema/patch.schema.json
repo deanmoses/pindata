@@ -39,7 +39,7 @@
           "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9/-]*$": {
             "type": "object",
             "minProperties": 1,
-            "description": "Fields to assert on this entity. Reserved keys (directives, not claim fields): create, delete, expect, retract, remove, note, cite.",
+            "description": "Fields to assert on this entity. Reserved keys (directives, not claim fields): create, delete, expect, retract, remove, note, cite, cites.",
             "not": {
               "required": ["create", "retract"],
               "description": "create and retract are mutually exclusive on one entry."
@@ -83,6 +83,44 @@
                   { "pattern": "^https?://.+$" }
                 ],
                 "description": "External evidence, either as scheme:identifier (ipdb:4443, opdb:GRhX5) or an http(s):// URL (a standalone or domain-nested web source). Capped at 2000 chars to mirror the link column. A URL matching a known scheme's record pattern is rejected by ingest_patches in favor of the scheme:identifier form. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
+              },
+              "cites": {
+                "type": "object",
+                "minProperties": 1,
+                "propertyNames": {
+                  "pattern": "^[0-9]+$",
+                  "description": "A numeric handle, quoted as a string ('1'). Ephemeral authoring label wiring a [[cite:N]] marker to its source; minted to a durable citation at apply time."
+                },
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 2000,
+                      "anyOf": [
+                        { "pattern": "^(ipdb|opdb):.{1,200}$" },
+                        { "pattern": "^https?://.+$" }
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["url"],
+                      "properties": {
+                        "url": {
+                          "type": "string",
+                          "maxLength": 2000,
+                          "pattern": "^https?://.+$"
+                        },
+                        "archive": {
+                          "type": "string",
+                          "maxLength": 2000,
+                          "pattern": "^https?://.+$"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "description": "Inline-citation map declaring the NEW footnotes referenced from a markdown field (e.g. description) via [[cite:N]] markers. Each key is a numeric handle quoted as a string ('1'); each value is a cite-spec in the same grammar as 'cite:' — scheme:identifier, an http(s):// URL, or a { url, archive } map of URLs. Existing-footnote markers ([[cite:<slug>]]) self-resolve and take no entry here. Marker<->map correspondence and cite resolution are validated authoritatively by ingest_patches."
               }
             }
           }
