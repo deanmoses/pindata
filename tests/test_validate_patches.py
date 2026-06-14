@@ -349,6 +349,100 @@ def test_delete_and_remove_directives_valid(schema_validator):
     assert not _has_error(schema_validator, data)
 
 
+# --- Schema: grouped changesets: form ---------------------------------------
+
+
+def test_grouped_pure_wrapper_valid(schema_validator):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [
+            {
+                "model.foo": {
+                    "expect": {"ipdb_id": 4443},
+                    "changesets": [
+                        {"note": "first", "cite": "ipdb:4443", "year": 1970},
+                        {"note": "second", "production_status": "unreleased"},
+                    ],
+                }
+            }
+        ],
+    }
+    assert not _has_error(schema_validator, data)
+
+
+def test_grouped_create_header_plus_companions_valid(schema_validator):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [
+            {
+                "manufacturer.western-products": {
+                    "create": True,
+                    "name": "Western Products",
+                    "changesets": [
+                        {"website": "https://westernproducts.example", "cite": "ipdb:1234"}
+                    ],
+                }
+            }
+        ],
+    }
+    assert not _has_error(schema_validator, data)
+
+
+def test_delete_with_changesets_rejected(schema_validator):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [
+            {"model.foo": {"delete": True, "changesets": [{"note": "orphan"}]}}
+        ],
+    }
+    assert _has_error(schema_validator, data)
+
+
+@pytest.mark.parametrize(
+    "item",
+    [
+        {"create": True},
+        {"delete": True},
+        {"expect": {"year": 1990}},
+        {"changesets": [{"note": "nested"}]},
+    ],
+)
+def test_grouped_item_header_only_key_rejected(schema_validator, item):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [{"model.foo": {"expect": {"year": 1990}, "changesets": [item]}}],
+    }
+    assert _has_error(schema_validator, data)
+
+
+@pytest.mark.parametrize("changesets", [[], "not-a-list"])
+def test_grouped_empty_or_nonlist_changesets_rejected(schema_validator, changesets):
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [{"model.foo": {"expect": {"year": 1990}, "changesets": changesets}}],
+    }
+    assert _has_error(schema_validator, data)
+
+
+@pytest.mark.parametrize(
+    "item",
+    [
+        {"cite": "not-a-valid-cite", "year": 1970},
+        {"cites": {"1": "not-a-valid-cite"}, "year": 1970},
+        {"retract": "year"},
+        {"remove": {"location": "germany"}},
+    ],
+)
+def test_grouped_item_reuses_shared_subschemas(schema_validator, item):
+    # The note/cite/cites/retract/remove sub-schemas are shared with the header
+    # via $ref; a changeset item must enforce them, not silently accept garbage.
+    data = {
+        "attribution": "flipcommons-catalog",
+        "claims": [{"model.foo": {"expect": {"year": 1990}, "changesets": [item]}}],
+    }
+    assert _has_error(schema_validator, data)
+
+
 # --- The shipped patches validate cleanly ----------------------------------
 
 
