@@ -120,6 +120,38 @@ def test_retract_only_is_valid(schema_validator):
     assert not _has_error(schema_validator, data)
 
 
+@pytest.mark.parametrize(
+    "body",
+    [
+        # create is exclusive with delete and the edit-only guards.
+        {"create": True, "delete": True},
+        {"create": True, "expect": {"year": 1990}, "name": "Foo"},
+        {"create": True, "remove": {"location": ["germany"]}, "name": "Foo"},
+        # delete is footprint-exclusive — no retract/remove companions.
+        {"delete": True, "retract": ["year"]},
+        {"delete": True, "remove": {"location": ["germany"]}},
+    ],
+)
+def test_illegal_directive_combinations_rejected(schema_validator, body):
+    data = {"attribution": "ipdb", "claims": [{"model.foo": body}]}
+    assert _has_error(schema_validator, data)
+
+
+@pytest.mark.parametrize(
+    "body",
+    [
+        # delete keeps its drift guard and provenance.
+        {"delete": True, "expect": {"year": 1990}},
+        {"delete": True, "note": "dup", "cite": "ipdb:4443"},
+        # create carries fields and provenance, just not the edit-only guards.
+        {"create": True, "name": "Foo", "note": "new", "cite": "ipdb:4443"},
+    ],
+)
+def test_legal_directive_combinations_accepted(schema_validator, body):
+    data = {"attribution": "ipdb", "claims": [{"model.foo": body}]}
+    assert not _has_error(schema_validator, data)
+
+
 # --- Schema: entity-reference key pattern -----------------------------------
 
 

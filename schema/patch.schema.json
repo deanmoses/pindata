@@ -110,15 +110,34 @@
             "allOf": [
               {
                 "not": {
-                  "required": ["create", "retract"]
+                  "allOf": [
+                    { "required": ["create"] },
+                    {
+                      "anyOf": [
+                        { "required": ["delete"] },
+                        { "required": ["expect"] },
+                        { "required": ["retract"] },
+                        { "required": ["remove"] }
+                      ]
+                    }
+                  ]
                 },
-                "description": "create and retract are mutually exclusive on one entry."
+                "description": "create is exclusive with delete and the edit-only guards (expect/retract/remove)."
               },
               {
                 "not": {
-                  "required": ["delete", "changesets"]
+                  "allOf": [
+                    { "required": ["delete"] },
+                    {
+                      "anyOf": [
+                        { "required": ["retract"] },
+                        { "required": ["remove"] },
+                        { "required": ["changesets"] }
+                      ]
+                    }
+                  ]
                 },
-                "description": "delete is footprint-exclusive — it can't carry companion changesets."
+                "description": "delete is footprint-exclusive — no retract/remove/changesets companions."
               }
             ],
             "properties": {
