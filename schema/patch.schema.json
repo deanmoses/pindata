@@ -17,6 +17,73 @@
       "properties": { "sources": { "minItems": 1 } }
     }
   ],
+  "definitions": {
+    "note": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Reason for the change; becomes a ChangeSet note. Shared by a flat entry and each `changesets:` item."
+    },
+    "cite": {
+      "type": "string",
+      "maxLength": 2000,
+      "anyOf": [
+        { "pattern": "^(ipdb|opdb):.{1,200}$" },
+        { "pattern": "^https?://.+$" }
+      ],
+      "description": "External evidence, either as scheme:identifier (ipdb:4443, opdb:GRhX5) or an http(s):// URL (a standalone or domain-nested web source). Capped at 2000 chars to mirror the link column. A URL matching a known scheme's record pattern is rejected by ingest_patches in favor of the scheme:identifier form. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
+    },
+    "cites": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[0-9]+$",
+        "description": "A numeric handle, quoted as a string ('1'). Ephemeral authoring label wiring a [[cite:N]] marker to its source; minted to a durable citation at apply time."
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string",
+            "maxLength": 2000,
+            "anyOf": [
+              { "pattern": "^(ipdb|opdb):.{1,200}$" },
+              { "pattern": "^https?://.+$" }
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url"],
+            "properties": {
+              "url": {
+                "type": "string",
+                "maxLength": 2000,
+                "pattern": "^https?://.+$"
+              },
+              "archive": {
+                "type": "string",
+                "maxLength": 2000,
+                "pattern": "^https?://.+$"
+              }
+            }
+          }
+        ]
+      },
+      "description": "Inline-citation map declaring the NEW footnotes referenced from a markdown field (e.g. description) via [[cite:N]] markers. Each key is a numeric handle quoted as a string ('1'); each value is a cite-spec in the same grammar as 'cite:' — scheme:identifier, an http(s):// URL, or a { url, archive } map of URLs. Existing-footnote markers ([[cite:<slug>]]) self-resolve and take no entry here. Marker<->map correspondence and cite resolution are validated authoritatively by ingest_patches."
+    },
+    "retract": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Scalar/FK field names whose claim from this patch's source should be removed. Not valid with create."
+    },
+    "remove": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "description": "Relationship members to remove: a mapping of relationship namespace to a list of member values — FK public_ids (e.g. {location: [germany]}) or bare strings for aliases/abbreviations (e.g. {manufacturer_alias: [Stern Inc]})."
+    }
+  },
   "properties": {
     "attribution": {
       "type": "string",
@@ -29,7 +96,7 @@
     },
     "claims": {
       "type": "array",
-      "description": "Ordered list of operations; each entry is a single-key mapping (entity ref -> fields).",
+      "description": "Ordered list of operations; each entry is a single-key mapping (entity ref -> fields). An entry may group several changesets on one record under a single header via `changesets:` (the ref and `expect:` declared once).",
       "items": {
         "type": "object",
         "minProperties": 1,
@@ -39,11 +106,40 @@
           "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9/-]*$": {
             "type": "object",
             "minProperties": 1,
-            "description": "Fields to assert on this entity. Reserved keys (directives, not claim fields): create, delete, expect, retract, remove, note, cite.",
-            "not": {
-              "required": ["create", "retract"],
-              "description": "create and retract are mutually exclusive on one entry."
-            },
+            "description": "Fields to assert on this entity. Reserved keys (directives, not claim fields): create, delete, expect, retract, remove, note, cite, cites, changesets.",
+            "allOf": [
+              {
+                "not": {
+                  "allOf": [
+                    { "required": ["create"] },
+                    {
+                      "anyOf": [
+                        { "required": ["delete"] },
+                        { "required": ["expect"] },
+                        { "required": ["retract"] },
+                        { "required": ["remove"] }
+                      ]
+                    }
+                  ]
+                },
+                "description": "create is exclusive with delete and the edit-only guards (expect/retract/remove)."
+              },
+              {
+                "not": {
+                  "allOf": [
+                    { "required": ["delete"] },
+                    {
+                      "anyOf": [
+                        { "required": ["retract"] },
+                        { "required": ["remove"] },
+                        { "required": ["changesets"] }
+                      ]
+                    }
+                  ]
+                },
+                "description": "delete is footprint-exclusive — no retract/remove/changesets companions."
+              }
+            ],
             "properties": {
               "create": {
                 "type": "boolean",
@@ -55,34 +151,36 @@
               },
               "expect": {
                 "type": "object",
-                "description": "Drift guard: resolved scalar/FK values the target must already have."
+                "description": "Drift guard: resolved scalar/FK values the target must already have. On a grouped header it guards every changeset below."
               },
-              "retract": {
+              "retract": { "$ref": "#/definitions/retract" },
+              "remove": { "$ref": "#/definitions/remove" },
+              "note": { "$ref": "#/definitions/note" },
+              "cite": { "$ref": "#/definitions/cite" },
+              "cites": { "$ref": "#/definitions/cites" },
+              "changesets": {
                 "type": "array",
-                "items": { "type": "string" },
-                "description": "Scalar/FK field names whose claim from this patch's source should be removed. Not valid with create."
-              },
-              "remove": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "array",
-                  "items": { "type": "string" }
-                },
-                "description": "Relationship members to remove: a mapping of relationship namespace to a list of member public_ids (e.g. {location: [germany]})."
-              },
-              "note": {
-                "type": "string",
-                "maxLength": 1000,
-                "description": "Per-entry reason for the change; becomes the entity's ChangeSet note. One provenance-bearing entry per entity."
-              },
-              "cite": {
-                "type": "string",
-                "maxLength": 2000,
-                "anyOf": [
-                  { "pattern": "^(ipdb|opdb):.{1,200}$" },
-                  { "pattern": "^https?://.+$" }
-                ],
-                "description": "External evidence, either as scheme:identifier (ipdb:4443, opdb:GRhX5) or an http(s):// URL (a standalone or domain-nested web source). Capped at 2000 chars to mirror the link column. A URL matching a known scheme's record pattern is rejected by ingest_patches in favor of the scheme:identifier form. Attaches a citation to this entry's authored field claims (not create-owned slug/status)."
+                "minItems": 1,
+                "description": "Companion changesets on the same record. Each item is edit-shaped (note/cite/cites/retract/remove + authored fields) and becomes its own ChangeSet, inheriting the header's ref and `expect:`. Lifecycle (create/delete) and the drift guard (expect) live on the header, not here.",
+                "items": {
+                  "type": "object",
+                  "minProperties": 1,
+                  "not": {
+                    "anyOf": [
+                      { "required": ["create"] },
+                      { "required": ["delete"] },
+                      { "required": ["expect"] },
+                      { "required": ["changesets"] }
+                    ]
+                  },
+                  "properties": {
+                    "retract": { "$ref": "#/definitions/retract" },
+                    "remove": { "$ref": "#/definitions/remove" },
+                    "note": { "$ref": "#/definitions/note" },
+                    "cite": { "$ref": "#/definitions/cite" },
+                    "cites": { "$ref": "#/definitions/cites" }
+                  }
+                }
               }
             }
           }

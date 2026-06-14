@@ -84,7 +84,7 @@ make validate
 1. **Authoring**: Records are edited in `catalog/` as markdown files.
 2. **Export**: `make export` converts markdown to JSON in `export/`.
 3. **Push**: `make push` uploads the JSON to Cloudflare R2.
-4. **Downstream**: Consumer projects ([Pinexplore](https://github.com/deanmoses/pinexplore), [Pinbase](https://github.com/deanmoses/pinbase)) pull the JSON from R2.
+4. **Downstream**: Consumer projects ([Pinexplore](https://github.com/deanmoses/pinexplore), [Flipcommons](https://github.com/The-Flip/flipcommons)) pull the JSON from R2.
 
 ## Data patches vs. catalog records
 

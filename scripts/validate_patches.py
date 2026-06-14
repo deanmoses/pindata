@@ -39,7 +39,8 @@ class _StrictLoader(yaml.SafeLoader):
     copy. **Keep the two in sync** — if flipcommons tightens or loosens what it
     accepts, update this loader (and the schema) to match, or the gate goes
     stale. ``tests/test_validate_patches.py`` pins the shared rules (duplicate
-    keys, JSON-shaped scalars, rejected non-JSON tags) as a drift tripwire.
+    keys, non-string mapping keys, JSON-shaped scalars, rejected non-JSON tags)
+    as a drift tripwire.
     """
 
 
@@ -48,6 +49,18 @@ def _no_duplicate_keys(loader: _StrictLoader, node: yaml.MappingNode) -> dict:
     mapping: dict = {}
     for key_node, value_node in node.value:
         key = loader.construct_object(key_node)
+        if not isinstance(key, str):
+            # JSON object keys are always strings, so a non-string key is
+            # non-JSON-shaped — notably the unquoted `1:` cites handle the patch
+            # format forbids (the schema's numeric-handle `propertyNames` pattern
+            # silently passes int keys, since JSON Schema `pattern` ignores
+            # non-strings). flipcommons' loader rejects these; mirror it here.
+            raise yaml.constructor.ConstructorError(
+                "while constructing a mapping",
+                node.start_mark,
+                f"mapping key {key!r} is not a string; quote it (e.g. \"1\":)",
+                key_node.start_mark,
+            )
         if key in mapping:
             raise yaml.constructor.ConstructorError(
                 "while constructing a mapping",

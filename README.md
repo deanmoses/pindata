@@ -13,7 +13,7 @@ The data is validated against JSON schemas, exported to JSON, and published to C
 **Downstream projects:**
 
 - [Pinexplore](https://github.com/deanmoses/pinexplore) — analyzes, validates, and explores pinball data
-- [Pinbase](https://github.com/deanmoses/pinbase) — pinball catalog website
+- [Flipcommons](https://github.com/The-Flip/flipcommons) — collaborative pinball catalog website + production DB
 
 ## Why Markdown?
 

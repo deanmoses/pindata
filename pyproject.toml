@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [tool.pytest.ini_options]
-pythonpath = ["lib", "scripts"]
+pythonpath = ["lib", "scripts", "patches/authoring"]
 
 [dependency-groups]
 dev = [

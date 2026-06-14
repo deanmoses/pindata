@@ -188,6 +188,83 @@ def check_resolved(requested: Iterable[object], found: Iterable[object]) -> None
 
 
 # --------------------------------------------------------------------------- #
+# inline citations (cites: map + marker correspondence)                       #
+# --------------------------------------------------------------------------- #
+#
+# A description (or string field) may carry inline citation markers
+# `[[cite:<handle>]]`. A handle splits by strict lexical grammar - the same split
+# the backend uses (see flipcommons DataPatches.md / the patch adapter's process
+# step, "classify handles"):
+#   - all-digits  (^[0-9]+$)  -> a NEW citation, minted this patch; MUST have a
+#                                matching `cites:` entry to mint from.
+#   - all-lowercase-letters (^[a-z]+$) -> an EXISTING CitationInstance.slug (the
+#                                re-edit / rehydration case); carries no `cites:`
+#                                entry. patchkit can't confirm it RESOLVES - the
+#                                backend does that at apply time - but the shape is
+#                                valid here.
+#   - anything else -> a structural error (e.g. a raw-pk `[[cite:id:1]]`, `1a`,
+#                                uppercase, punctuation): rejected at author time.
+# The numeric/slug split is lexical, so within-entry correspondence needs no DB.
+# These rules INTENTIONALLY duplicate the backend's per-entry checks (patchkit
+# fails fast; the backend stays authoritative) - keep the two in sync if either
+# changes. The cross-entry "one entry per entity" guard is backend-only: entry()
+# builds one entry at a time and structurally can't see siblings.
+
+_CITE_MARKER = re.compile(r"\[\[cite:([^\]]+)\]\]")
+_NUMERIC_HANDLE = re.compile(r"^[0-9]+$")
+_SLUG_HANDLE = re.compile(r"^[a-z]+$")
+
+# A cite handle: the numeric label ('1', '2') wiring a [[cite:N]] marker to its spec.
+type Handle = str
+# One cite spec: a 'scheme:id' / URL string, or a `{url, archive}` map of URLs.
+type CiteSpec = str | Mapping[str, str]
+
+
+def _cite_spec(spec: CiteSpec) -> str:
+    """Render one cite spec value: a `{url, archive}` flow map, or a scalar string."""
+    if isinstance(spec, Mapping):
+        inner = ", ".join(f"{k}: {_scalar(v)}" for k, v in spec.items())
+        return f"{{ {inner} }}"
+    return _scalar(spec)
+
+
+def _check_cites(
+    ref: str, texts: Sequence[str], cites: Mapping[Handle, CiteSpec] | None
+) -> None:
+    """Enforce within-entry marker<->cites correspondence (mirrors backend per-entry rules)."""
+    cite_keys = {str(k) for k in (cites or {})}
+    for key in cite_keys:
+        if not _NUMERIC_HANDLE.match(key):
+            raise ValueError(
+                f"{ref}: cites key {key!r} must be a numeric handle "
+                f"(an existing slug marker needs no cites: entry)"
+            )
+    numeric_markers: set[str] = set()
+    for text in texts:
+        for handle in _CITE_MARKER.findall(text):
+            if _NUMERIC_HANDLE.match(handle):
+                numeric_markers.add(handle)
+            elif _SLUG_HANDLE.match(handle):
+                continue  # existing slug; resolution is the backend's job
+            else:
+                raise ValueError(
+                    f"{ref}: malformed cite handle [[cite:{handle}]] "
+                    f"(use a numeric handle for a new cite or a slug for an existing one)"
+                )
+    missing = numeric_markers - cite_keys
+    if missing:
+        raise ValueError(
+            f"{ref}: cite handles {sorted(missing, key=int)} are referenced by a "
+            f"marker but have no cites: entry to mint from"
+        )
+    unused = cite_keys - numeric_markers
+    if unused:
+        raise ValueError(
+            f"{ref}: cites: entries {sorted(unused, key=int)} are not referenced by any marker"
+        )
+
+
+# --------------------------------------------------------------------------- #
 # YAML entry / patch emission                                                 #
 # --------------------------------------------------------------------------- #
 
@@ -201,7 +278,10 @@ def entry(
     cite: str | None = None,
     fields: Mapping[str, object] | None = None,
     description: str | None = None,
+    cites: Mapping[Handle, CiteSpec] | None = None,
     tags: Sequence[str] | None = None,
+    relationships: Mapping[str, Sequence[str]] | None = None,
+    remove: Mapping[str, Sequence[str]] | None = None,
     retract: Sequence[str] | None = None,
     comment: str | None = None,
     commented: bool = False,
@@ -215,7 +295,21 @@ def entry(
     cite:   'scheme:id' e.g. 'ipdb:4443'.
     fields: scalar/FK claims; value used as-is for scalars, target public_id for FKs.
     description: folded `>` block (for vocab creation).
+    cites:  inline-citation map for new cites referenced from `description`/`fields`
+        markers: `{ handle: spec }` where handle is a numeric string ('1', '2' -
+        no ordering) and spec is a 'scheme:id', a URL string, or `{url, archive}`.
+        Each numeric `[[cite:<handle>]]` marker must have an entry here; each entry
+        must be referenced by a marker. Existing-slug markers (`[[cite:<slug>]]`,
+        from rehydration) need no entry. Emitted with the handle key quoted (the
+        backend loader rejects bare integer YAML keys).
     tags / retract: lists -> `tag: [...]` / `retract: [...]`.
+    relationships: namespace -> members, the general relationship emitter
+        (`tags=` is the `tag` shorthand). Members are bare strings — FK
+        public_ids (`theme: [medieval]`) or string members for aliases /
+        abbreviations (`manufacturer_alias: [Stern Pinball, Stern Inc]`). Each
+        member is escaped, so free-text alias strings with commas/colons are safe.
+    remove: namespace -> members to drop, emits `remove: { ns: [...] }` (the
+        relationship counterpart of `retract`).
     commented: prefix every line with '# ' (FLAGGED rows kept in-file for a human call).
     comment: trailing `# ...` on the ref line.
     """
@@ -223,6 +317,9 @@ def entry(
         raise ValueError(f"{ref}: create + expect are contradictory (create is for a new entity)")
     if create and retract:
         raise ValueError(f"{ref}: create + retract are invalid (nothing to retract on a new entity)")
+    cite_texts = [description] if description is not None else []
+    cite_texts += [v for v in (fields or {}).values() if isinstance(v, str)]
+    _check_cites(ref, cite_texts, cites)
     pre = "  # " if commented else "  "
     sub = "  #     " if commented else "      "
     head = f"{pre}- {ref}:"
@@ -244,8 +341,21 @@ def entry(
         lines.append(f"{sub}description: >")
         for line in _fold(clean_text(description)):
             lines.append(f"{sub}  {line}")
+    if cites:
+        lines.append(f"{sub}cites:")
+        for handle, spec in cites.items():
+            lines.append(f"{sub}  '{handle}': {_cite_spec(spec)}")
     if tags:
         lines.append(f"{sub}tag: [{', '.join(tags)}]")
+    for namespace, members in (relationships or {}).items():
+        inner = ", ".join(_scalar(m) for m in members)
+        lines.append(f"{sub}{namespace}: [{inner}]")
+    if remove:
+        inner = ", ".join(
+            f"{ns}: [{', '.join(_scalar(m) for m in members)}]"
+            for ns, members in remove.items()
+        )
+        lines.append(f"{sub}remove: {{ {inner} }}")
     if retract:
         lines.append(f"{sub}retract: [{', '.join(retract)}]")
     return "\n".join(lines)
@@ -310,75 +420,33 @@ def write_patch(
 
 
 # --------------------------------------------------------------------------- #
-# self-test                                                                   #
+# demo                                                                        #
 # --------------------------------------------------------------------------- #
+#
+# `python patchkit.py` prints sample output so an author can eyeball the emitted
+# YAML. The authoritative checks live in tests/test_patchkit.py (run `pytest`).
 
 if __name__ == "__main__":
-    # smoke test - run `python patchkit.py`
-    assert yamlq("a'b") == "'a''b'"
-    assert clean_text("“flasher” — ok") == '"flasher" - ok'
-    assert clean_text("Günter Wulff — gegründet") == "Günter Wulff - gegründet"  # keeps umlauts
-    assert clean_text("bad�char") == "badchar"  # drops only mojibake
-    # source-text extraction
-    assert sentences("One. Two? Three!") == ["One.", "Two?", "Three!"]
-    assert sentence_with("Foo bar. Baz qux.", "baz") == "Baz qux."
-    assert sentence_with("Foo bar.", "nope") == ""
-    assert clean_ipdb_quote("6022 / 1946 / 1 Player This is a bagatelle.") == "This is a bagatelle."
-    assert clean_ipdb_quote("“Plain” quote.") == '"Plain" quote.'  # also normalizes typography
-    # drops the framing introducer, keeps the quoted passage itself
-    assert clean_ipdb_quote('The backglass translates as follows: "Win a prize."') == "Win a prize."
-    assert clean_ipdb_quote("a " * 200, limit=20).endswith("[...]")  # marks truncation
-    assert guard({"year": None, "ipdb_id": 42}) == {"ipdb_id": 42}
-    assert guard({"year": 1990, "ipdb_id": None}) == {"year": 1990}
-    assert guard({"corporate_entity__slug": "bally", "year": None, "ipdb_id": None}) == {
-        "corporate_entity": "bally"
-    }
-    e = entry(
-        "model.mazatron",
-        expect={"ipdb_id": 4443},
-        note=source_note("IPDB", 'exists only as a "prototype" machine'),
-        cite="ipdb:4443",
-        fields={"production_status": "unreleased"},
-        tags=["prototype"],
+    print(
+        entry(
+            "model.mazatron",
+            expect={"ipdb_id": 4443},
+            note=source_note("IPDB", 'exists only as a "prototype" machine'),
+            cite="ipdb:4443",
+            fields={"production_status": "unreleased"},
+            tags=["prototype"],
+        )
     )
-    assert "expect: { ipdb_id: 4443 }" in e
-    assert '''note: 'IPDB says "exists only as a "prototype" machine"\'''' in e
-    assert "production_status: unreleased" in e
-    assert "tag: [prototype]" in e
-    v = entry("game-format.slot-machine", create=True, fields={"name": "Slot Machine", "display_order": 5},
-              description="Coin-operated   gambling machines.")
-    assert "create: true" in v
-    assert "description: >" in v
-    # string values that look like JSON literals stay quoted (strings, not coerced)
-    assert "game_format: '404'" in entry("model.x", fields={"game_format": "404"})
-    assert "v: 'true'" in entry("model.x", fields={"v": "true"})
-    # contradictory kwargs raise
-    for make in (
-        lambda: entry("model.x", create=True, expect={"year": 1}),
-        lambda: entry("model.x", create=True, retract=["x"]),
-    ):
-        try:
-            make()
-            raise AssertionError("expected ValueError")
-        except ValueError:
-            pass
-    # source_root: header + folded description + escaped flow-map links
-    sr = source_root(
-        "Arcade Heroes",
-        description="Arcade & amusement industry news.",
-        links=[("https://arcadeheroes.com/", "Arcade Heroes", "homepage")],
+    print(
+        entry(
+            "model.mazatron",
+            expect={"ipdb_id": 4443},
+            description="A 1990 solid-state prototype by Mac Pinball.[[cite:1]] "
+                        "Only two units are known to survive.[[cite:2]]",
+            cites={
+                "1": "ipdb:4443",
+                "2": {"url": "https://pinside.com/thread", "archive": "https://web.archive.org/x"},
+            },
+            note="Narrative compiled from IPDB and Pinside.",
+        )
     )
-    assert "  - name: Arcade Heroes" in sr
-    assert "    source_type: web" in sr
-    assert "url: 'https://arcadeheroes.com/'" in sr  # url quoted (has ':')
-    assert "label: Arcade Heroes, link_type: homepage" in sr
-    # write_patch emits a sources: block before claims:
-    import tempfile
-    with tempfile.NamedTemporaryFile("r", suffix=".yaml", delete=False) as fh:
-        write_patch(fh.name, attribution="flipcommons-catalog", description="x",
-                    entries=[e], sources=[sr])
-        body = Path(fh.name).read_text()
-    assert body.index("sources:") < body.index("claims:") < body.index("- model.mazatron")
-    print("patchkit self-test OK")
-    print(e)
-    print(v)
