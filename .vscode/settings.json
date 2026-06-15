@@ -1,5 +1,28 @@
 {
   "editor.formatOnSave": true,
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "editor.codeActionsOnSave": { "source.fixAll.markdownlint": "explicit" }
+  "[yaml]": { "editor.wordWrap": "on" },
+  "editor.codeActionsOnSave": { "source.fixAll.markdownlint": "explicit" },
+
+  // Turn Pylance/Pyright type checking OFF so it doesn't double-report with the
+  // mypy extension (a second, mypy-unaware validator). Mirrors sister repo
+  // pinexplore. extraPaths mirrors pyproject's `pythonpath` so Pylance still
+  // resolves the flat scripts/lib imports for autocomplete + go-to-definition.
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/lib",
+    "${workspaceFolder}/scripts",
+    "${workspaceFolder}/patches/authoring"
+  ],
+
+  // Run the mypy extension from the workspace root so it reads pyproject's
+  // [tool.mypy] (which quiets unresolved-import noise — see pyproject.toml).
+  "mypy-type-checker.cwd": "${workspaceFolder}",
+  // Force the same import-noise suppression into the extension's invocation, in
+  // case it doesn't pick up pyproject's [tool.mypy]. import-untyped = a lib that
+  // is installed but ships no stubs (PyYAML, jsonschema, boto3).
+  "mypy-type-checker.args": [
+    "--ignore-missing-imports",
+    "--disable-error-code=import-untyped"
+  ]
 }

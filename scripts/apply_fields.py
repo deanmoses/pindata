@@ -55,7 +55,7 @@ def _resolve_schema_name(catalog_path: Path) -> str:
     return schema_name
 
 
-def _insert_field(frontmatter_lines: list[str], key: str, value: str, property_order: list[str]) -> list[str]:
+def _insert_field(frontmatter_lines: list[str], key: str, value: str | list[str], property_order: list[str]) -> list[str]:
     """Insert a key: value line at the correct position in frontmatter lines.
 
     frontmatter_lines[0] is '---' and frontmatter_lines[-1] is '---'.
@@ -215,7 +215,7 @@ def apply_fields(
     errors = validate_frontmatter(new_fm, schema_name, catalog_path)
     if errors:
         raise ValueError(
-            f"Validation failed after applying fields:\n" + "\n".join(errors)
+            "Validation failed after applying fields:\n" + "\n".join(errors)
         )
 
     catalog_path.write_text(new_content, encoding="utf-8")
@@ -266,7 +266,7 @@ def rename_credit_slug(
     errors = validate_frontmatter(new_fm, schema_name, catalog_path)
     if errors:
         raise ValueError(
-            f"Validation failed after renaming credit slug:\n" + "\n".join(errors)
+            "Validation failed after renaming credit slug:\n" + "\n".join(errors)
         )
 
     # Reassemble and write

@@ -151,15 +151,27 @@ def clean_ipdb_quote(text: str, limit: int = 240) -> str:
 # guards / resolution                                                         #
 # --------------------------------------------------------------------------- #
 
-_GUARD_ALIASES = {
+# An entity reference the patch targets (a slug / public-id / 'type:id' form).
+type Ref = str
+# A catalog field/column name, including resolved-row aliases ('corporate_entity__slug').
+type FieldName = str
+# A canonical expect: key ('corporate_entity', never the '__slug' alias).
+type GuardKey = str
+# A catalog field value: year int, slug str, ipdb_id int.
+type FieldValue = object
+# A single-key expect: mapping (canonical key -> field value).
+type Guard = dict[GuardKey, FieldValue]
+
+# Maps each canonical GuardKey to the FieldNames to probe for its value, in order.
+_GUARD_ALIASES: dict[GuardKey, tuple[FieldName, ...]] = {
     "corporate_entity": ("corporate_entity", "corporate_entity__slug", "corporate_entity_slug"),
 }
 
 
 def guard(
-    row: Mapping[str, object],
-    prefer: Sequence[str] = ("ipdb_id", "year", "corporate_entity"),
-) -> dict[str, object]:
+    row: Mapping[FieldName, FieldValue],
+    prefer: Sequence[GuardKey] = ("ipdb_id", "year", "corporate_entity"),
+) -> Guard:
     """Pick the most specific available `expect:` guard from a live-catalog row.
 
     `row` is a plain dict of resolved values (e.g. from
@@ -179,7 +191,7 @@ def guard(
     return {}
 
 
-def check_resolved(requested: Iterable[object], found: Iterable[object]) -> None:
+def check_resolved(requested: Iterable[Ref], found: Iterable[Ref]) -> None:
     """Raise if any requested ref didn't resolve in the live DB (typo or drift)."""
     have = set(found)
     missing = [r for r in requested if r not in have]
@@ -229,7 +241,7 @@ def _cite_spec(spec: CiteSpec) -> str:
 
 
 def _check_cites(
-    ref: str, texts: Sequence[str], cites: Mapping[Handle, CiteSpec] | None
+    ref: Ref, texts: Sequence[str], cites: Mapping[Handle, CiteSpec] | None
 ) -> None:
     """Enforce within-entry marker<->cites correspondence (mirrors backend per-entry rules)."""
     cite_keys = {str(k) for k in (cites or {})}
@@ -270,13 +282,13 @@ def _check_cites(
 
 
 def entry(
-    ref: str,
+    ref: Ref,
     *,
     create: bool = False,
-    expect: Mapping[str, object] | None = None,
+    expect: Mapping[GuardKey, FieldValue] | None = None,
     note: str | None = None,
     cite: str | None = None,
-    fields: Mapping[str, object] | None = None,
+    fields: Mapping[FieldName, FieldValue] | None = None,
     description: str | None = None,
     cites: Mapping[Handle, CiteSpec] | None = None,
     tags: Sequence[str] | None = None,

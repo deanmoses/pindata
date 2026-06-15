@@ -88,13 +88,7 @@ make validate
 
 ## Data patches vs. catalog records
 
-The catalog under `catalog/` is the canonical baseline. Targeted **corrections**
-and source-attributed updates that need to reach already-seeded downstream
-databases live separately, as YAML **data patches** under `patches/`
-(`NNNN-slug.yaml`) — not as edits to catalog records. They ride the same
-`make push` → R2 path but are shipped verbatim rather than exported to JSON, and
-are applied downstream without a full re-ingest. See [Patches.md](Patches.md)
-for the patch file format and pindata's transport role.
+The catalog under `catalog/` is the canonical baseline. Targeted **corrections** and source-attributed updates that need to reach already-seeded downstream databases are handled separately, as YAML **data patches** — not as edits to catalog records. Data patches are no longer authored here; they live in the sibling **flippatch** repo (`../flippatch`), which authors, validates, and ships them. See flippatch's docs for the patch file format.
 
 ## Rationale
 

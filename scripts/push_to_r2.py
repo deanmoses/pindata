@@ -6,10 +6,6 @@ Exports catalog markdown to JSON, then uploads all files under the
 R2 bucket holds raw ingest sources (IPDB, OPDB, etc.) at the root, so
 the prefix keeps catalog exports separate.
 
-Raw data patches under ``patches/`` ride along verbatim at
-``pindata/patches/`` (no JSON conversion) so flipcommons' ``ingest_patches``
-can parse the YAML directly.
-
 Writes its own manifest at ``pindata/manifest.json``.  The
 root-level ``manifest.json`` is owned by pinexplore's push script and
 covers only non-prefixed ingest source files.
@@ -36,11 +32,6 @@ from dotenv import load_dotenv
 REPO_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(REPO_ROOT / ".env")
 EXPORT_DIR = REPO_ROOT / "export"
-# Data patches ship verbatim (no JSON conversion) under pindata/patches/.
-# flipcommons' ingest_patches consumes the raw YAML; the manifest sha256 is
-# for download integrity only (immutability uses a separate normalized-content
-# hash computed at apply time).
-PATCHES_DIR = REPO_ROOT / "patches"
 EXCLUDE = {
     "manifest.json",
     ".DS_Store",
@@ -59,8 +50,7 @@ def _collect_files(src: Path, path_prefix: str = "") -> list[dict]:
     """Walk src and return manifest entries, excluding dotfiles and stale files.
 
     Each entry carries a transient ``_local`` absolute path (stripped before
-    the manifest is written) so callers can mix sources rooted at different
-    directories (e.g. ``export/`` and ``patches/``).
+    the manifest is written).
     """
     entries = []
     for root, dirs, files in os.walk(src):
@@ -78,30 +68,6 @@ def _collect_files(src: Path, path_prefix: str = "") -> list[dict]:
                     "_local": full,
                 }
             )
-    entries.sort(key=lambda e: e["path"])
-    return entries
-
-
-def _collect_patch_files(src: Path, path_prefix: str = "patches/") -> list[dict]:
-    """Collect top-level data patch files (``NNNN-slug.yaml``) only.
-
-    Patches ship verbatim under ``pindata/patches/``.  Unlike the catalog
-    export, the ``patches/`` tree is NOT walked recursively: subdirectories
-    such as ``authoring/`` hold scratch tooling (generators, worksheets,
-    caches) that must never be shipped to downstream consumers.
-    """
-    entries = []
-    for full in src.glob("*.yaml"):
-        if not full.is_file() or full.name in EXCLUDE:
-            continue
-        entries.append(
-            {
-                "path": path_prefix + full.name,
-                "size": full.stat().st_size,
-                "sha256": _sha256(full),
-                "_local": full,
-            }
-        )
     entries.sort(key=lambda e: e["path"])
     return entries
 
@@ -150,14 +116,9 @@ def main() -> int:
             print("ERROR: export_catalog_json.py failed", file=sys.stderr)
             return 1
 
-    # Step 2: Build manifest (catalog JSON + raw data patches)
+    # Step 2: Build manifest (catalog JSON)
     print("Building manifest...")
     entries = _collect_files(EXPORT_DIR)
-    if PATCHES_DIR.is_dir():
-        patch_entries = _collect_patch_files(PATCHES_DIR, path_prefix="patches/")
-        entries += patch_entries
-        entries.sort(key=lambda e: e["path"])
-        print(f"  {len(patch_entries)} patch files")
     manifest_path = EXPORT_DIR / "manifest.json"
     manifest_entries = [
         {k: v for k, v in e.items() if k != "_local"} for e in entries
